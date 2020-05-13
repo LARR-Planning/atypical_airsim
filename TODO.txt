@@ -1,0 +1,8 @@
+What should I do???
+
+Writing PID controller code
+
+Current drone PID controller -> Works for following goal(position) controller. When they got position goal, just give cmd to go that point.
+
+My code is for following given trajectory with acc_desired. Need to cover for this objective.
+Also, consider car dynamics.

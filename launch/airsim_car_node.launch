@@ -1,0 +1,25 @@
+<launch>
+	
+	<node name="airsim_car_node" pkg="atypical_ros" type="atypical_airsim_car_node" output="screen">
+	<!-- <node pkg="nodelet" type="nodelet" name="airsim_nodelet_manager" args="manager" output="screen" /> -->
+	<!-- <node pkg="nodelet" type="nodelet" name="airsim_nodelet" args="standalone airsim_ros_pkgs/airsim_ros_nodelet airsim_nodelet_manager" output="screen"> -->
+
+		<!-- ROS timer rates. Note that timer callback will be processed at maximum possible rate, upperbounded by the following ROS params -->
+		<param name="is_vulkan" type="bool" value="false" /> 
+		<!-- <param name="update_airsim_img_response_every_n_sec" type="double" value="0.05" />  -->
+		<param name="update_airsim_control_every_n_sec" type="double" value="0.001" />
+		<param name="update_lidar_every_n_sec" type="double" value="0.01" />
+	</node>
+
+	<!-- Static transforms -->
+	<include file="$(find atypical_ros)/launch/static_transforms.launch"/>
+
+	<!--<node name="eval_pub" pkg="airsim_ros_pkgs" type="eval_pub" output="screen">
+		<remap from="/car_cmd" to="/airsim_car_node/PhysXCar/vel_cmd_body_frame"/>
+	</node> -->
+	
+	<node name="twist2stamp" pkg="atypical_ros" type="twist2stamp" output="screen">
+<!-- <remap from="/acc_cmd_body_frame" to="/airsim_car_node/PhysXCar/acc_cmd_body_frame"/> -->
+</node>
+	<node name="rviz" pkg="rviz" type="rviz" output="screen"/>
+</launch>

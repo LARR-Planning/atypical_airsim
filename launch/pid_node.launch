@@ -1,0 +1,14 @@
+<launch>
+<!-- global params -->
+<!-- PID position controller node -->
+    <node name="pid_node" pkg="atypical_ros" type="pid_node" output="screen">
+        <!-- <param name="update_control_every_n_sec" type="double" value="0.01" /> this needs to be in sync with airsim_ros_wrapper? -->
+        <param name="kp" type="double" value="0.50" />
+        <param name="kd" type="double" value="0.05" />
+        <param name="ki" type="double" value = "0.10" />
+        <param name="steer_ratio" type="double" value = "5.0" />
+        <param name="update_period" type="double" value = "5.0" />
+
+    </node>
+
+</launch>

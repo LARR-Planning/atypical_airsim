@@ -1,0 +1,9 @@
+<launch> 
+
+<!-- AirSim ROS Wrapper -->
+	<include file="$(find atypical_ros)/launch/airsim_car_node.launch"/>
+<!-- Vehicle Dynamic Constraints -->
+	<!-- <include file="$(find airsim_ros_pkgs)/launch/dynamic_constraints.launch"/> -->
+<!-- Simple PID Position Controller -->
+	<include file="$(find atypical_ros)/launch/pid_node.launch"/>
+</launch>
