@@ -126,6 +126,11 @@ void AirsimCar_ROSWrapper::create_ros_pubs_from_settings_json()
         set_nans_to_zeros_in_pose(*vehicle_setting);
         // auto vehicle_setting_local = vehicle_setting.get();
 
+        // JBS
+        pose_object_enu_pub = nh_private_.advertise<geometry_msgs::PoseStamped>("object_pose",10);
+
+
+
         append_static_vehicle_tf(curr_vehicle_name, *vehicle_setting);
         // vehicle_name_idx_map_[curr_vehicle_name] = idx; // allows fast lookup in command callbacks in case of a lot of drones  
 
@@ -260,6 +265,52 @@ void AirsimCar_ROSWrapper::control_car(CarRpcLibClient& client, geometry_msgs::T
 
 }
 
+geometry_msgs::PoseStamped AirsimCar_ROSWrapper::ned_pose_to_enu_pose(const geometry_msgs::PoseStamped & pose_ned){
+
+    geometry_msgs::PoseStamped pose_stamped;
+    pose_stamped.header.frame_id = pose_ned.header.frame_id;
+    // odom_ned_msg.header.frame_id = world_frame_id_;
+    // odom_ned_msg.child_frame_id = "/airsim/odom_local_ned"; // todo make param
+    Eigen::Quaternionf quat;
+    Eigen::Vector3f transl;
+    transl(0) = pose_ned.pose.position.x;
+    transl(1) = pose_ned.pose.position.y;
+    transl(2) = pose_ned.pose.position.z;
+    quat.x() =  pose_ned.pose.orientation.x;
+    quat.y() =  pose_ned.pose.orientation.y;
+    quat.z() =  pose_ned.pose.orientation.z;
+    quat.w() =  pose_ned.pose.orientation.w;
+
+    Eigen::Matrix3f rotm_en;
+    Eigen::Affine3f transform;
+    rotm_en << 1,0,0,
+            0,-1,0,
+            0,0,-1;
+
+    quat.normalize();
+    transform.setIdentity();
+    transform.translate(transl);
+    transform.rotate(quat);
+
+    transform.prerotate(rotm_en);
+    transform.rotate(rotm_en.transpose()); // to enu
+
+    // std::cout << transform.matrix() << std::endl;
+
+    quat = Eigen::Quaternionf(transform.rotation());
+    pose_stamped.pose.position.x = transform.translation()(0);
+    pose_stamped.pose.position.y = transform.translation()(1);
+    pose_stamped.pose.position.z = transform.translation()(2);
+
+    pose_stamped.pose.orientation.w = quat.w();
+    pose_stamped.pose.orientation.x = quat.x();
+    pose_stamped.pose.orientation.y = quat.y();
+    pose_stamped.pose.orientation.z = quat.z();
+
+    return pose_stamped;
+}
+
+
 
 void AirsimCar_ROSWrapper::car_state_timer_cb(const ros::TimerEvent& event)
 {
@@ -277,6 +328,24 @@ void AirsimCar_ROSWrapper::car_state_timer_cb(const ros::TimerEvent& event)
             car_ros.curr_car_state = airsim_client_.getCarState(car_ros.vehicle_name_);
             lck.unlock();
             ros::Time curr_ros_time = ros::Time::now();
+
+            // JBS
+            auto pose_true = airsim_client_.simGetObjectPose(object_name); // ned
+            ROS_INFO_STREAM("Object "<< object_name << " : " << pose_true.position.x() << " , " << pose_true.position.y()  << " , " << pose_true.position.z());
+            geometry_msgs::PoseStamped object_pose_ned;
+            object_pose_ned.header.frame_id = "map"; // ?
+            object_pose_ned.pose.position.x = pose_true.position.x();
+            object_pose_ned.pose.position.y = pose_true.position.y();
+            object_pose_ned.pose.position.z = pose_true.position.z();
+            object_pose_ned.pose.orientation.x = pose_true.orientation.x();
+            object_pose_ned.pose.orientation.y = pose_true.orientation.y();
+            object_pose_ned.pose.orientation.z = pose_true.orientation.z();
+            object_pose_ned.pose.orientation.w = pose_true.orientation.w();
+
+            if (not std::isnan(pose_true.position.x())){
+                pose_object_enu_pub.publish(ned_pose_to_enu_pose(object_pose_ned));
+            }
+
 
             // convert airsim drone state to ROS msgs
             car_ros.cur_odom_ned = get_odom_msg_from_airsim_state(car_ros.curr_car_state);

@@ -80,7 +80,13 @@ private:
     msr::airlib::CarRpcLibClient airsim_client_lidar_;
 
     ros::NodeHandle nh_;
-    ros::NodeHandle nh_private_;    
+    ros::NodeHandle nh_private_;
+
+    string object_name; // JBS
+    geometry_msgs::PoseStamped object_pose_enu;
+    geometry_msgs::PoseStamped ned_pose_to_enu_pose(const geometry_msgs::PoseStamped & pose_ned);
+    ros::Publisher pose_object_enu_pub;
+
 
     //Ros Publisher
     ros::Publisher pub_tf_odom;
@@ -89,6 +95,8 @@ private:
     ros::Publisher origin_geo_point_pub_;
     //TODO: How to publish dynamic obstacle????? 
     //std::vector<ros::Publisher> pub_posewithcovariance_dyn_obst;
+
+
 
     /// ROS subscriber callbacks
     void acc_cmd_body_frame_cb(const geometry_msgs::TwistStamped::ConstPtr& msg, const std::string& vehicle_name);
