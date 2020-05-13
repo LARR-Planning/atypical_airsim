@@ -26,7 +26,7 @@ class YawController
         double get_angle(double radius)
         {
             double angle = atan(wheel_base_/radius ) * steer_ratio_;
-            cout << "Inside get_angle "; cout <<angle << endl;
+            // cout << "Inside get_angle "; cout <<angle << endl;
             double return_ang = std::max(min_angle_, std::min(max_angle_, angle));
             // cout << "Return_angle "; cout <<return_ang << endl;
 

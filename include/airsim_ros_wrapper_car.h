@@ -23,6 +23,7 @@
 #include <sensor_msgs/NavSatFix.h>
 #include <sensor_msgs/Imu.h>
 #include <atypical_ros/GPSYaw.h>
+#include <driving_msgs/VehicleCmd.h>
 
 #include <tf2/LinearMath/Matrix3x3.h>
 #include <tf2/LinearMath/Quaternion.h>
@@ -93,6 +94,8 @@ private:
     void acc_cmd_body_frame_cb(const geometry_msgs::TwistStamped::ConstPtr& msg, const std::string& vehicle_name);
     void acc_cmd_world_frame_cb(const geometry_msgs::TwistStamped::ConstPtr& msg, const std::string& vehicle_name);
 
+    void vehicle_cmd_cb(const driving_msgs::VehicleCmd::ConstPtr& msg, const std::string& vehicle_name);
+
     // void acc_cmd_world_frame_cb(const airsim_ros_pkgs::VelCmd::ConstPtr& msg, const std::string& vehicle_name);
     // void acc_cmd_body_frame_cb(const airsim_ros_pkgs::VelCmd::ConstPtr& msg, const std::string& vehicle_name);
 
@@ -123,6 +126,7 @@ private:
         
         ros::Subscriber sub_acc_cmd_body_frame;
         ros::Subscriber sub_acc_cmd_world_frame;
+        ros::Subscriber sub_vehicle_cmd;
 
         //Estimation
         nav_msgs::Odometry cur_odom_ned;

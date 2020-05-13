@@ -143,6 +143,9 @@ void AirsimCar_ROSWrapper::create_ros_pubs_from_settings_json()
         car_ros.sub_acc_cmd_world_frame = nh_private_.subscribe<geometry_msgs::TwistStamped>(curr_vehicle_name + "/acc_cmd_world_frame", 1, 
             boost::bind(&AirsimCar_ROSWrapper::acc_cmd_world_frame_cb, this, _1, car_ros.vehicle_name_));
 
+        car_ros.sub_vehicle_cmd = nh_private_.subscribe<driving_msgs::VehicleCmd>(curr_vehicle_name + "/vehicle_cmd", 1, 
+            boost::bind(&AirsimCar_ROSWrapper::vehicle_cmd_cb, this, _1, car_ros.vehicle_name_));
+
 
         car_ros_vec_.push_back(car_ros);
         idx++;
@@ -519,24 +522,11 @@ void AirsimCar_ROSWrapper::acc_cmd_body_frame_cb(const geometry_msgs::TwistStamp
 
     double roll, pitch, yaw;
     tf2::Matrix3x3(get_tf2_quat(car_ros_vec_[vehicle_idx].curr_car_state.kinematics_estimated.pose.orientation)).getRPY(roll, pitch, yaw); // ros uses xyzw
+    // car_ros_vec_[vehicle_idx].acc_cmd.header = msg->header;
+    // car_ros_vec_[vehicle_idx].acc_cmd.twist.linear = msg->twist.linear;    
+    
+    // car_ros_vec_[vehicle_idx].acc_cmd.twist.angular = msg->twist.angular;
 
-    // yaw = yaw + PI/2;
-    car_ros_vec_[vehicle_idx].acc_cmd.header = msg->header;
-    // car_ros_vec_[vehicle_idx].acc_cmd.twist.linear.x = msg->twist.linear.x * cos(yaw) + (msg->twist.linear.y * sin(yaw)); //body frame assuming zero pitch roll
-    //car_ros_vec_[vehicle_idx].acc_cmd.twist.linear.y = (msg->twist.linear.x * sin(yaw)) + (msg->twist.linear.y * cos(yaw)); //body frame
-    car_ros_vec_[vehicle_idx].acc_cmd.twist.linear = msg->twist.linear;    
-    // std::cout << car_ros_vec_[vehicle_idx].acc_cmd.twist.linear.x  << std::endl;
-    // std:: cout << "yaw "; std::cout << yaw << std::endl;
-    car_ros_vec_[vehicle_idx].acc_cmd.twist.angular = msg->twist.angular;
-
-    // todo do actual body frame?
-    // car_ros_vec_[vehicle_idx].acc_cmd.x = (msg->twist.linear.x * cos(yaw)) - (msg->twist.linear.y * sin(yaw)); //body frame assuming zero pitch roll
-    // car_ros_vec_[vehicle_idx].acc_cmd.y = (msg->twist.linear.x * sin(yaw)) + (msg->twist.linear.y * cos(yaw)); //body frame
-    // car_ros_vec_[vehicle_idx].acc_cmd.z = msg->twist.linear.z;
-    // car_ros_vec_[vehicle_idx].acc_cmd.drivetrain = msr::airlib::DrivetrainType::MaxDegreeOfFreedom;
-    // car_ros_vec_[vehicle_idx].acc_cmd.yaw_mode.is_rate = true;
-    // airsim uses degrees
-    // car_ros_vec_[vehicle_idx].acc_cmd.yaw_mode.yaw_or_rate = math_common::rad2deg(msg->twist.angular.z);
     car_ros_vec_[vehicle_idx].has_acc_cmd = true;
 }
 
@@ -698,3 +688,38 @@ atypical_ros::GPSYaw AirsimCar_ROSWrapper::get_gps_msg_from_airsim_geo_point(con
     return gps_msg;
 }
 
+
+void AirsimCar_ROSWrapper::vehicle_cmd_cb(const driving_msgs::VehicleCmd::ConstPtr& msg, const std::string& vehicle_name)
+{
+    std::lock_guard<std::recursive_mutex> guard(car_control_mutex_);
+
+    int vehicle_idx = vehicle_name_idx_map_[vehicle_name];
+
+    double roll, pitch, yaw;
+    tf2::Matrix3x3(get_tf2_quat(car_ros_vec_[vehicle_idx].curr_car_state.kinematics_estimated.pose.orientation)).getRPY(roll, pitch, yaw); // ros uses xyzw
+
+    // yaw = yaw + PI/2;
+    // car_ros_vec_[vehicle_idx].acc_cmd.header = msg->header;
+    // car_ros_vec_[vehicle_idx].acc_cmd.twist.linear.x = msg->twist.linear.x * cos(yaw) + (msg->twist.linear.y * sin(yaw)); //body frame assuming zero pitch roll
+    //car_ros_vec_[vehicle_idx].acc_cmd.twist.linear.y = (msg->twist.linear.x * sin(yaw)) + (msg->twist.linear.y * cos(yaw)); //body frame
+    car_ros_vec_[vehicle_idx].acc_cmd.twist.linear.x = msg->accel_decel_cmd;
+    car_ros_vec_[vehicle_idx].acc_cmd.twist.linear.y= 0.0;
+    car_ros_vec_[vehicle_idx].acc_cmd.twist.linear.z = 0.0;
+        
+    // std::cout << car_ros_vec_[vehicle_idx].acc_cmd.twist.linear.x  << std::endl;
+    // std:: cout << "yaw "; std::cout << yaw << std::endl;
+    car_ros_vec_[vehicle_idx].acc_cmd.twist.angular.x = 0.0;
+    car_ros_vec_[vehicle_idx].acc_cmd.twist.angular.y = 0.0;
+    car_ros_vec_[vehicle_idx].acc_cmd.twist.angular.z = msg->steer_angle_cmd;
+    
+
+    // todo do actual body frame?
+    // car_ros_vec_[vehicle_idx].acc_cmd.x = (msg->twist.linear.x * cos(yaw)) - (msg->twist.linear.y * sin(yaw)); //body frame assuming zero pitch roll
+    // car_ros_vec_[vehicle_idx].acc_cmd.y = (msg->twist.linear.x * sin(yaw)) + (msg->twist.linear.y * cos(yaw)); //body frame
+    // car_ros_vec_[vehicle_idx].acc_cmd.z = msg->twist.linear.z;
+    // car_ros_vec_[vehicle_idx].acc_cmd.drivetrain = msr::airlib::DrivetrainType::MaxDegreeOfFreedom;
+    // car_ros_vec_[vehicle_idx].acc_cmd.yaw_mode.is_rate = true;
+    // airsim uses degrees
+    // car_ros_vec_[vehicle_idx].acc_cmd.yaw_mode.yaw_or_rate = math_common::rad2deg(msg->twist.angular.z);
+    car_ros_vec_[vehicle_idx].has_acc_cmd = true;
+}

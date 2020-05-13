@@ -33,6 +33,7 @@ find_package(catkin REQUIRED COMPONENTS
   tf
   tf2
   tf2_ros
+  driving_msgs
 )
 
 add_message_files(
@@ -96,10 +97,10 @@ target_link_libraries(atypical_airsim_settings_parser ${catkin_LIBRARIES} AirLib
 #####
 add_library(atypical_airsim_ros_car src/airsim_ros_wrapper_car.cpp)
 add_dependencies(atypical_airsim_ros_car ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-target_link_libraries(atypical_airsim_ros_car ${catkin_LIBRARIES} ${OpenCV_LIBS} yaml-cpp AirLib atypical_airsim_settings_parser)
+target_link_libraries(atypical_airsim_ros_car ${catkin_LIBRARIES} ${OpenCV_LIBS} yaml-cpp AirLib atypical_airsim_settings_parser )
 
 add_executable(atypical_airsim_car_node src/airsim_car_node.cpp)
-target_link_libraries(atypical_airsim_car_node ${catkin_LIBRARIES} AirLib atypical_airsim_ros_car)
+target_link_libraries(atypical_airsim_car_node ${catkin_LIBRARIES} AirLib atypical_airsim_ros_car )
 #####
 
 
@@ -112,10 +113,10 @@ target_link_libraries(twist2stamp ${catkin_LIBRARIES} AirLib)
 
 add_library(pid_controller src/car_pid.cpp)
 add_dependencies(pid_controller ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-target_link_libraries(pid_controller ${catkin_LIBRARIES} AirLib)
+target_link_libraries(pid_controller ${catkin_LIBRARIES} AirLib )
 
 add_executable(pid_node src/pid_wrapper_node.cpp src/pid_wrapper.cpp)
-target_link_libraries(pid_node ${catkin_LIBRARIES} AirLib pid_controller)
+target_link_libraries(pid_node ${catkin_LIBRARIES} AirLib pid_controller )
 
 install(TARGETS
     #list of nodes

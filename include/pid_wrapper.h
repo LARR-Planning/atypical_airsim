@@ -6,6 +6,7 @@
 #include <visualization_msgs/MarkerArray.h>
 #include <visualization_msgs/Marker.h>
 #include <nav_msgs/Path.h>
+#include <driving_msgs/VehicleCmd.h>
 #include <tf/transform_listener.h>
 #include <tf/tf.h>
 
@@ -36,6 +37,13 @@ class pid_wrapper
 
     void des_path_gen(double time_step, bool update);
     geometry_msgs::Pose dynamics(geometry_msgs::Pose prev_pose, geometry_msgs::TwistStamped input, double time_step);
+    driving_msgs::VehicleCmd convert_twst_to_vehicle_cmd(geometry_msgs::Twist twist)
+    {
+        driving_msgs::VehicleCmd cmd;
+        cmd.accel_decel_cmd = twist.linear.x;
+        cmd.steer_angle_cmd = twist.angular.z;
+        return cmd;
+    }
 
     private:
     ros::NodeHandle nh_;
@@ -44,7 +52,7 @@ class pid_wrapper
     ros::Subscriber sub_des_acc; //Subscriber for desirced accerelation(high level control)
     ros::Subscriber sub_odom; //Current odometry (pose)
     ros::Subscriber sub_vel; //Current velocity (twist)
-    ros::Publisher  pub_acc_cmd;
+    ros::Publisher  pub_acc_cmd; //Publish Vehicle Cmd
     ros::Publisher pub_vis_path;
     
     geometry_msgs::TwistStamped prev_acc_cmd;

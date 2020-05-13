@@ -23,7 +23,7 @@ pid_wrapper::pid_wrapper(const ros::NodeHandle &nh, const ros::NodeHandle &nh_pr
     pid_controller.set_controller(kp, ki, kd, steer_ratio);
 
 
-    pub_acc_cmd = nh_.advertise<geometry_msgs::TwistStamped>("/airsim_car_node/PhysXCar/acc_cmd_body_frame", 50);
+    pub_acc_cmd = nh_.advertise<driving_msgs::VehicleCmd>("/airsim_car_node/PhysXCar/vehicle_cmd", 50);
     pub_vis_path = nh_.advertise<nav_msgs::Path>("desired_path", 50);
 
     last_time = ros::Time::now().toSec();
@@ -102,8 +102,9 @@ void pid_wrapper::loop()
             acc_publish.twist.linear.x = acceleration;
             acc_publish.header.frame_id = "/PhysXCar/odom_local_ned";
             acc_publish.header.stamp = ros::Time::now();
-
-            pub_acc_cmd.publish(acc_publish);
+            
+            driving_msgs::VehicleCmd cmd = convert_twst_to_vehicle_cmd(acc_publish.twist);
+            pub_acc_cmd.publish(cmd);
 
         }
 
