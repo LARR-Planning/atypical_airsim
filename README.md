@@ -1,3 +1,3 @@
-# airsim_ros_pkgs
+# atypical_airsim
 
-This page has moved [here](https://github.com/microsoft/AirSim/blob/master/docs/airsim_ros_pkgs.md).
+This code is modified version of [here](https://github.com/microsoft/AirSim/blob/master/docs/airsim_ros_pkgs.md) for use of ROS in autonomous vehicle research.
