@@ -27,12 +27,12 @@ namespace converter{
 
         converter(ros::NodeHandle& nh) : nh_(nh)
         {
-            sub_non_stamped = nh.subscribe("/acc_cmd", 1000, &converter::converter::callback_non_stamped, this); 
+            sub_non_stamped = nh.subscribe("/acc_cmd", 100, &converter::converter::callback_non_stamped, this); 
             pub_stamped = nh.advertise<geometry_msgs::TwistStamped>("/acc_cmd_body_frame", 100);
 
             while(ros::ok())
             {   ros::spinOnce();
-                ros::Rate loop_rate(50);
+                ros::Rate loop_rate(100);
                 // ROS_INFO("%d", has_twist);
                 if(has_twist)
                 {
