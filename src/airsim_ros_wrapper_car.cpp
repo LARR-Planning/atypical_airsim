@@ -83,6 +83,7 @@ void AirsimCar_ROSWrapper::initialize_ros()
     double update_airsim_control_every_n_sec;
     nh_private_.getParam("is_vulkan", is_vulkan_);
     nh_private_.getParam("update_airsim_control_every_n_sec", update_airsim_control_every_n_sec);
+    nh_private_.getParam("object_name",object_name);
     acc_cmd_duration_ = 0.05; // todo rosparam
     // todo enforce dynamics constraints in this node as well?
     // nh_.getParam("max_vert_vel_", max_vert_vel_);
@@ -148,7 +149,7 @@ void AirsimCar_ROSWrapper::create_ros_pubs_from_settings_json()
         car_ros.sub_acc_cmd_world_frame = nh_private_.subscribe<geometry_msgs::TwistStamped>(curr_vehicle_name + "/acc_cmd_world_frame", 1, 
             boost::bind(&AirsimCar_ROSWrapper::acc_cmd_world_frame_cb, this, _1, car_ros.vehicle_name_));
 
-        car_ros.sub_vehicle_cmd = nh_private_.subscribe<driving_msgs::VehicleCmd>(curr_vehicle_name + "/vehicle_cmd", 1, 
+        car_ros.sub_vehicle_cmd = nh_private_.subscribe<driving_msgs::VehicleCmd>(curr_vehicle_name + "/vehicle_cmd", 1,
             boost::bind(&AirsimCar_ROSWrapper::vehicle_cmd_cb, this, _1, car_ros.vehicle_name_));
 
 
@@ -331,7 +332,7 @@ void AirsimCar_ROSWrapper::car_state_timer_cb(const ros::TimerEvent& event)
 
             // JBS
             auto pose_true = airsim_client_.simGetObjectPose(object_name); // ned
-            ROS_INFO_STREAM("Object "<< object_name << " : " << pose_true.position.x() << " , " << pose_true.position.y()  << " , " << pose_true.position.z());
+            ROS_DEBUG_STREAM("Object "<< object_name << " : " << pose_true.position.x() << " , " << pose_true.position.y()  << " , " << pose_true.position.z());
             geometry_msgs::PoseStamped object_pose_ned;
             object_pose_ned.header.frame_id = "map"; // ?
             object_pose_ned.pose.position.x = pose_true.position.x();

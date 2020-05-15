@@ -1,0 +1,37 @@
+<launch>
+
+    <param name="use_sim_time" value="true"/>
+    <arg name="bag_path" value="$(find atypical_driving)/log/autoDrive.bag"/>
+    <node name="play_autoDrive" pkg="rosbag" type="play"  args="--clock --loop $(arg bag_path)"/>
+
+    <!-- run pointcloud_to_laserscan node -->
+    <node pkg="pointcloud_to_laserscan" type="pointcloud_to_laserscan_node" name="pointcloud_to_laserscan">
+
+        <remap from="cloud_in" to="/airsim_car_node/PhysXCar/lidar/LidarSensor1"/>
+        <remap from="scan" to="/scan"/>
+        <rosparam>
+            target_frame:  LidarSensor1  # Leave disabled to output scan in pointcloud frame
+            transform_tolerance: 0.01
+            min_height: -10.0
+            max_height: 0.0
+
+            angle_min: -3.1408 # -M_PI/2
+            angle_max: 3.1408 # M_PI/2
+            angle_increment: 0.0087 # M_PI/360.0
+            scan_time: 0.3333
+            range_min: 0.45
+            range_max: 100.0
+            use_inf: true
+            inf_epsilon: 1.0
+
+            # Concurrency level, affects number of pointclouds queued for processing and number of threads used
+            # 0 : Detect number of cores
+            # 1 : Single threaded
+            # 2->inf : Parallelism level
+            concurrency_level: 1
+        </rosparam>
+    </node>
+
+    <node name="rviz" pkg="rviz" type="rviz" output="screen" args = "-d $(find atypical_ros)/rviz/default.rviz"/>
+
+</launch>

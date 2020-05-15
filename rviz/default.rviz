@@ -72,7 +72,7 @@ Visualization Manager:
           Value: true
         map:
           Value: true
-        world_ent:
+        world_ned:
           Value: true
       Marker Scale: 1
       Name: TF
@@ -81,7 +81,7 @@ Visualization Manager:
       Show Names: true
       Tree:
         map:
-          world_ent:
+          world_ned:
             PhysXCar:
               PhysXCar/odom_local_ned:
                 LidarSensor1:

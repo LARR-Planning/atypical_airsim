@@ -1,6 +1,6 @@
 <launch>
 
-	<node name="airsim_car_node" pkg="atypical_ros" type="airsim_car_node" output="screen">
+	<node name="airsim_car_node" pkg="atypical_ros" type="atypical_airsim_car_node" output="screen">
 		<!-- <node pkg="nodelet" type="nodelet" name="airsim_nodelet_manager" args="manager" output="screen" /> -->
 		<!-- <node pkg="nodelet" type="nodelet" name="airsim_nodelet" args="standalone airsim_ros_pkgs/airsim_ros_nodelet airsim_nodelet_manager" output="screen"> -->
 
@@ -21,7 +21,7 @@
 	</node> -->
 
 	<node name="twist2stamp" pkg="atypical_ros" type="twist2stamp" output="screen">
-		<remap from="/acc_cmd_body_frame" to="/airsim_car_node/PhysXCar/acc_cmd_body_frame"/>
+<!--		<remap from="/acc_cmd_body_frame" to="/airsim_car_node/PhysXCar/acc_cmd_body_frame"/>-->
 	</node>
 	<node name="rviz" pkg="rviz" type="rviz" output="screen" args = "-d $(find atypical_ros)/rviz/default.rviz"/>
 
