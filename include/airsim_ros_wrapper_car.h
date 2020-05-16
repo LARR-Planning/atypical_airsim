@@ -98,6 +98,7 @@ private:
 
 
 
+
     /// ROS subscriber callbacks
     void acc_cmd_body_frame_cb(const geometry_msgs::TwistStamped::ConstPtr& msg, const std::string& vehicle_name);
     void acc_cmd_world_frame_cb(const geometry_msgs::TwistStamped::ConstPtr& msg, const std::string& vehicle_name);
@@ -154,12 +155,14 @@ private:
     // ROS timer
     ros::Timer airsim_control_update_timer_;
     ros::Timer airsim_lidar_update_timer_;
+    ros::Timer airsim_object_update_timer_; // JBS
 
     void publish_odom_tf(const nav_msgs::Odometry& odom_ned_msg);
 
     /// ROS timer callbacks
     void car_state_timer_cb(const ros::TimerEvent& event); // update car state from airsim_client_ every nth sec
     void lidar_timer_cb(const ros::TimerEvent& event);
+    void objects_timer_cb(const ros::TimerEvent& event); // JBS update the pose of object
 
     std::recursive_mutex car_control_mutex_;
 
