@@ -1,0 +1,6 @@
+rosbag record -b 2000 /acc_cmd /acc_cmd_body_frame /airsim_car_node/PhysXCar/acc_cmd_body_frame /airsim_car_node/PhysXCar/acc_cmd_world_frame /airsim_car_node/PhysXCar/odom_local_ned /airsim_car_node/PhysXCar/twist_local_ned /airsim_car_node/PhysXCar/vehicle_cmd /airsim_car_node/object_pose /tf /tf_static
+
+
+
+
+  

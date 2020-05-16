@@ -710,7 +710,6 @@ void AirsimCar_ROSWrapper::lidar_timer_cb(const ros::TimerEvent& event)
             for (const auto& vehicle_lidar_pair: vehicle_lidar_map_)
             {
                 std::unique_lock<std::recursive_mutex> lck(car_control_mutex_);
-
                 auto lidar_data = airsim_client_lidar_.getLidarData(vehicle_lidar_pair.second, vehicle_lidar_pair.first); // airsim api is imu_name, vehicle_name
 
 
@@ -725,26 +724,29 @@ void AirsimCar_ROSWrapper::lidar_timer_cb(const ros::TimerEvent& event)
 
 
 
-                // JBS
-                /**
-                auto pose_true = airsim_client_.simGetObjectPose(object_name); // ned
-                ROS_DEBUG_STREAM("Object "<< object_name << " : " << pose_true.position.x() << " , " << pose_true.position.y()  << " , " << pose_true.position.z());
-                geometry_msgs::PoseStamped object_pose_ned;
-                object_pose_ned.header.frame_id = "map"; // ?
-                object_pose_ned.pose.position.x = pose_true.position.x();
-                object_pose_ned.pose.position.y = pose_true.position.y();
-                object_pose_ned.pose.position.z = pose_true.position.z();
-                object_pose_ned.pose.orientation.x = pose_true.orientation.x();
-                object_pose_ned.pose.orientation.y = pose_true.orientation.y();
-                object_pose_ned.pose.orientation.z = pose_true.orientation.z();
-                object_pose_ned.pose.orientation.w = pose_true.orientation.w();
-
-                if (not std::isnan(pose_true.position.x())){
-                    pose_object_enu_pub.publish(ned_pose_to_enu_pose(object_pose_ned));
-                }
-                **/
                 ctr++;
-            } 
+            }
+            /**
+            std::unique_lock<std::recursive_mutex> lck(car_control_mutex_);
+
+            // JBS
+            auto pose_true = airsim_client_.simGetObjectPose(object_name); // ned
+            lck.unlock();
+            ROS_DEBUG_STREAM("Object "<< object_name << " : " << pose_true.position.x() << " , " << pose_true.position.y()  << " , " << pose_true.position.z());
+            geometry_msgs::PoseStamped object_pose_ned;
+            object_pose_ned.header.frame_id = "map"; // ?
+            object_pose_ned.pose.position.x = pose_true.position.x();
+            object_pose_ned.pose.position.y = pose_true.position.y();
+            object_pose_ned.pose.position.z = pose_true.position.z();
+            object_pose_ned.pose.orientation.x = pose_true.orientation.x();
+            object_pose_ned.pose.orientation.y = pose_true.orientation.y();
+            object_pose_ned.pose.orientation.z = pose_true.orientation.z();
+            object_pose_ned.pose.orientation.w = pose_true.orientation.w();
+
+            if (not std::isnan(pose_true.position.x())){
+                pose_object_enu_pub.publish(ned_pose_to_enu_pose(object_pose_ned));
+            }
+**/
         }
 
 
