@@ -143,9 +143,9 @@ void AirsimCar_ROSWrapper::create_ros_pubs_from_settings_json()
         Car_ROS car_ros;
         car_ros.odom_frame_id_ = curr_vehicle_name + "/odom_local_ned";
         car_ros.vehicle_name_ = curr_vehicle_name;
-        car_ros.pub_odom_local_ned = nh_private_.advertise<nav_msgs::Odometry>(curr_vehicle_name + "/odom_local_ned", 10);
+        car_ros.pub_odom_local_ned = nh_private_.advertise<nav_msgs::Odometry>(curr_vehicle_name + "/odom_local_ned", 50);
         // car_ros.pub_global_gps = nh_private_.advertise<sensor_msgs::NavSatFix>(curr_vehicle_name + "/global_gps", 10);
-        car_ros.pub_twist_local_ned = nh_private_.advertise<geometry_msgs::TwistStamped>(curr_vehicle_name + "/twist_local_ned", 10);
+        car_ros.pub_twist_local_ned = nh_private_.advertise<geometry_msgs::TwistStamped>(curr_vehicle_name + "/twist_local_ned", 50);
 
         // bind to a single callback. todo optimal subs queue length
         // bind multiple topics to a single callback, but keep track of which vehicle name it was by passing curr_vehicle_name as the 2nd argument 
@@ -722,8 +722,6 @@ void AirsimCar_ROSWrapper::lidar_timer_cb(const ros::TimerEvent& event)
                 lidar_msg.header.frame_id = vehicle_lidar_pair.second; // sensor frame name. todo add to doc
                 lidar_msg.header.stamp = ros::Time::now();
                 lidar_pub_vec_[ctr].publish(lidar_msg);
-
-
 
                 // JBS
                 /**

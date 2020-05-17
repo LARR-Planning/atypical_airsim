@@ -25,9 +25,10 @@
 	</node>
 	<node name="rviz" pkg="rviz" type="rviz" output="screen" args = "-d $(find atypical_ros)/rviz/default.rviz"/>
 
-	<node pkg="turtlebot_teleop" type="turtlebot_teleop_key" name="turtlebot_teleop_keyboard" output="screen">
+	<!-- <node pkg="turtlebot_teleop" type="turtlebot_teleop_key" name="turtlebot_teleop_keyboard" output="screen">
 		<remap from="/turtlebot_teleop_keyboard/cmd_vel" to="/acc_cmd"/>
-	</node>
+	</node> -->
+	<include file="$(find atypical_ros)/launch/turtlebot.launch"/>
 
 	<include file="$(find atypical_ros)/launch/octomap_tracking_server.launch"/>
 

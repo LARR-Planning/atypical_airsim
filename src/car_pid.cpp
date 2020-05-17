@@ -51,10 +51,10 @@ void Controller::control(geometry_msgs::TwistStamped twist_des, geometry_msgs::T
     // double tmp_velocity_error = twist_des.twist.linear.x - cur_speed;
 
     double tmp_acceleration = vel_controller.step(tmp_velocity_error, time_span); // Get velocity correction from PID controller
-    //cout << "des_vel ";
-    //cout << twist_des.twist.linear.x << endl;
-    //cout << "vel_error";
-    //cout << tmp_velocity_error << endl;
+    cout << "des_vel ";
+    cout << twist_des.twist.linear.x << endl;
+    cout << "vel_error";
+    cout << tmp_velocity_error << endl;
     double tmp_steer = yaw_controller.get_steering(twist_des.twist.linear.x, twist_des.twist.angular.z, cur_twist.twist.linear.x); //Calculate steering angle 
 
     // if( cur_twist.twist.linear.x < MIN_VEL)
