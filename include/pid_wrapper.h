@@ -46,6 +46,7 @@ class pid_wrapper
     }
 
     private:
+    bool isCallbackReceived = false;
     ros::NodeHandle nh_;
     ros::NodeHandle nh_private_;    
 

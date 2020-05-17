@@ -423,6 +423,7 @@ void AirsimCar_ROSWrapper::car_state_timer_cb(const ros::TimerEvent& event)
 
             // publish to ROS!  
             car_ros.pub_odom_local_ned.publish(car_ros.cur_odom_ned);
+            ROS_INFO( "[Wrapper timer] cur_twist [x,y] = [%f,%f]",car_ros.cur_odom_ned.twist.twist.linear.x,car_ros.cur_odom_ned.twist.twist.linear.y);
 
             publish_odom_tf(car_ros.cur_odom_ned);
 
@@ -763,7 +764,7 @@ void AirsimCar_ROSWrapper::lidar_timer_cb(const ros::TimerEvent& event)
                 lidar_msg.header.stamp = ros::Time::now();
                 lidar_pub_vec_[ctr].publish(lidar_msg);
 
-                // JBS
+                //JBS
             
                 auto pose_true = airsim_client_object_.simGetObjectPose(object_name); // ned
                 ROS_DEBUG_STREAM("Object "<< object_name << " : " << pose_true.position.x() << " , " << pose_true.position.y()  << " , " << pose_true.position.z());
