@@ -30,11 +30,11 @@ const std::unordered_map<int, std::string> AirsimCar_ROSWrapper::image_type_int_
 AirsimCar_ROSWrapper::AirsimCar_ROSWrapper(const ros::NodeHandle& nh, const ros::NodeHandle& nh_private) : 
     nh_(nh), 
     nh_private_(nh_private),
-    // object_async_spinner_(1, &object_timer_cb_queue_), // a thread for image callbacks to be 'spun' by img_async_spinner_ 
+    object_async_spinner_(1, &object_timer_cb_queue_), //JBS a thread for image callbacks to be 'spun' by img_async_spinner_ 
     lidar_async_spinner_(1, &lidar_timer_cb_queue_) // same as above, but for lidar
 {
     is_used_lidar_timer_cb_queue_ = false;
-    // is_used_img_timer_cb_queue_ = false;
+    is_used_object_timer_cb_queue_ = false; //JBS
 
     world_frame_id_ = "world_ned"; // todo rosparam?
 
@@ -60,7 +60,7 @@ void AirsimCar_ROSWrapper::initialize_airsim()
         airsim_client_.confirmConnection();
         // airsim_client_images_.confirmConnection();
         airsim_client_lidar_.confirmConnection();
-        // airsim_client_object_.confirmConnection(); //JBS 
+        airsim_client_object_.confirmConnection(); //JBS 
         for (const auto& vehicle_name : vehicle_names_)
         {
             airsim_client_.enableApiControl(true, vehicle_name); // todo expose as rosservice?
@@ -221,6 +221,7 @@ void AirsimCar_ROSWrapper::create_ros_pubs_from_settings_json()
     // todo mimic gazebo's /use_sim_time feature which publishes airsim's clock time..via an rpc call?!
     // clock_pub_ = nh_private_.advertise<rosgraph_msgs::Clock>("clock", 10); 
 
+
     if (lidar_pub_vec_.size() > 0)
     {    
         double update_lidar_every_n_sec;
@@ -235,8 +236,8 @@ void AirsimCar_ROSWrapper::create_ros_pubs_from_settings_json()
             is_used_lidar_timer_cb_queue_ = true;
             
             // JBS
-            //ros::TimerOptions timer_options1(ros::Duration(update_lidar_every_n_sec), boost::bind(&AirsimCar_ROSWrapper::objects_timer_cb, this, _1), &object_timer_cb_queue_);
-            //airsim_object_update_timer_ = nh_private_.createTimer(timer_options1);
+            // ros::TimerOptions timer_options1(ros::Duration(update_lidar_every_n_sec), boost::bind(&AirsimCar_ROSWrapper::objects_timer_cb, this, _1), &object_timer_cb_queue_);
+            // airsim_object_update_timer_ = nh_private_.createTimer(timer_options1);
 
 
 
@@ -247,13 +248,25 @@ void AirsimCar_ROSWrapper::create_ros_pubs_from_settings_json()
         }
     }
 
-
-
-
-
-
-
-
+    //Dabin
+    // if(true)
+    // {
+    //     double update_lidar_every_n_sec;
+    //     nh_private_.getParam("update_lidar_every_n_sec", update_lidar_every_n_sec);
+    //     nh_private_.setCallbackQueue(&object_timer_cb_queue_); //JBS 
+    //     bool separate_spinner = true; // todo debugging race condition
+    //     if(separate_spinner)
+    //     {
+    //         // JBS
+    //         ros::TimerOptions timer_options1(ros::Duration(update_lidar_every_n_sec), boost::bind(&AirsimCar_ROSWrapper::objects_timer_cb, this, _1), &object_timer_cb_queue_);
+    //         airsim_object_update_timer_ = nh_private_.createTimer(timer_options1);
+    //         is_used_object_timer_cb_queue_ = true;
+    //     }
+    //     else
+    //     {
+    //         airsim_object_update_timer_ = nh_private_.createTimer(ros::Duration(update_lidar_every_n_sec), &AirsimCar_ROSWrapper::objects_timer_cb, this);
+    //     }
+    // }
 
 
 
@@ -364,7 +377,7 @@ try{
    object_pose_ned.pose.orientation.w = pose_true.orientation.w();
 
    if (not std::isnan(pose_true.position.x())){
-       pose_object_enu_pub.publish(ned_pose_to_enu_pose(object_pose_ned));
+    //    pose_object_enu_pub.publish(ned_pose_to_enu_pose(object_pose_ned));
    }
     }
         catch (rpc::rpc_error& e)
@@ -752,21 +765,21 @@ void AirsimCar_ROSWrapper::lidar_timer_cb(const ros::TimerEvent& event)
 
                 // JBS
             
-                // auto pose_true = airsim_client_object_.simGetObjectPose(object_name); // ned
-                // ROS_DEBUG_STREAM("Object "<< object_name << " : " << pose_true.position.x() << " , " << pose_true.position.y()  << " , " << pose_true.position.z());
-                // geometry_msgs::PoseStamped object_pose_ned;
-                // object_pose_ned.header.frame_id = "map"; // ?
-                // object_pose_ned.pose.position.x = pose_true.position.x();
-                // object_pose_ned.pose.position.y = pose_true.position.y();
-                // object_pose_ned.pose.position.z = pose_true.position.z();
-                // object_pose_ned.pose.orientation.x = pose_true.orientation.x();
-                // object_pose_ned.pose.orientation.y = pose_true.orientation.y();
-                // object_pose_ned.pose.orientation.z = pose_true.orientation.z();
-                // object_pose_ned.pose.orientation.w = pose_true.orientation.w();
+                auto pose_true = airsim_client_object_.simGetObjectPose(object_name); // ned
+                ROS_DEBUG_STREAM("Object "<< object_name << " : " << pose_true.position.x() << " , " << pose_true.position.y()  << " , " << pose_true.position.z());
+                geometry_msgs::PoseStamped object_pose_ned;
+                object_pose_ned.header.frame_id = "map"; // ?
+                object_pose_ned.pose.position.x = pose_true.position.x();
+                object_pose_ned.pose.position.y = pose_true.position.y();
+                object_pose_ned.pose.position.z = pose_true.position.z();
+                object_pose_ned.pose.orientation.x = pose_true.orientation.x();
+                object_pose_ned.pose.orientation.y = pose_true.orientation.y();
+                object_pose_ned.pose.orientation.z = pose_true.orientation.z();
+                object_pose_ned.pose.orientation.w = pose_true.orientation.w();
 
-                // if (not std::isnan(pose_true.position.x())){
-                //     pose_object_enu_pub.publish(ned_pose_to_enu_pose(object_pose_ned));
-                // }
+                if (not std::isnan(pose_true.position.x())){
+                    pose_object_enu_pub.publish(ned_pose_to_enu_pose(object_pose_ned));
+                }
                 
                 ctr++;
             } 

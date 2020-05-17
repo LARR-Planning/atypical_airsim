@@ -75,8 +75,8 @@ void pid_wrapper::loop()
             //cout << "twist_des.twist.linear.x "; cout << twist_des.twist.linear.x <<endl;
             pid_controller.control(twist_des, cur_twist, time_step);
 
-            //cout << "cur_twist x ";
-            //cout << cur_twist.twist.linear.x << endl;
+            cout << "cur_twist x ";
+            cout << cur_twist.twist.linear.x << endl;
             //cout << "cur_twist y ";
             //cout << cur_twist.twist.linear.y << endl;
 
@@ -233,6 +233,9 @@ void pid_wrapper::odom_cb(const nav_msgs::Odometry &msg)
     cur_twist.header.frame_id = msg.header.frame_id;
     cur_twist.header.stamp = msg.header.stamp;
     cur_twist.header.seq = msg.header.seq;
+
+    cout << "!!!!msg twlist ";
+    cout << msg.twist.twist.linear.y << endl;
    
 }
 

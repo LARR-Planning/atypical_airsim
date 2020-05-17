@@ -68,10 +68,10 @@ public:
     ~AirsimCar_ROSWrapper() {}; 
 
     ros::AsyncSpinner lidar_async_spinner_;
-    //ros::AsyncSpinner object_async_spinner_;
+    ros::AsyncSpinner object_async_spinner_; // JBS
 
     bool is_used_lidar_timer_cb_queue_;
-
+    bool is_used_object_timer_cb_queue_; // JBS
 
     void initialize_airsim();
     void initialize_ros();
