@@ -75,8 +75,8 @@ void pid_wrapper::loop()
             //cout << "twist_des.twist.linear.x "; cout << twist_des.twist.linear.x <<endl;
             pid_controller.control(twist_des, cur_twist, time_step);
 
-            cout << "cur_twist x ";
-            cout << cur_twist.twist.linear.x << endl;
+            //cout << "cur_twist x ";
+            //cout << cur_twist.twist.linear.x << endl;
             //cout << "cur_twist y ";
             //cout << cur_twist.twist.linear.y << endl;
 
