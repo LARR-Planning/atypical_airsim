@@ -234,7 +234,6 @@ void pid_wrapper::odom_cb(const nav_msgs::Odometry &msg)
     cur_twist.header.stamp = msg.header.stamp;
     cur_twist.header.seq = msg.header.seq;
    
-
 }
 
 void pid_wrapper::twist_cb(const geometry_msgs::TwistStamped &msg)

@@ -30,7 +30,7 @@ const std::unordered_map<int, std::string> AirsimCar_ROSWrapper::image_type_int_
 AirsimCar_ROSWrapper::AirsimCar_ROSWrapper(const ros::NodeHandle& nh, const ros::NodeHandle& nh_private) : 
     nh_(nh), 
     nh_private_(nh_private),
-    // img_async_spinner_(1, &img_timer_cb_queue_), // a thread for image callbacks to be 'spun' by img_async_spinner_ 
+    // object_async_spinner_(1, &object_timer_cb_queue_), // a thread for image callbacks to be 'spun' by img_async_spinner_ 
     lidar_async_spinner_(1, &lidar_timer_cb_queue_) // same as above, but for lidar
 {
     is_used_lidar_timer_cb_queue_ = false;
@@ -60,7 +60,7 @@ void AirsimCar_ROSWrapper::initialize_airsim()
         airsim_client_.confirmConnection();
         // airsim_client_images_.confirmConnection();
         airsim_client_lidar_.confirmConnection();
-
+        // airsim_client_object_.confirmConnection(); //JBS 
         for (const auto& vehicle_name : vehicle_names_)
         {
             airsim_client_.enableApiControl(true, vehicle_name); // todo expose as rosservice?
@@ -94,7 +94,6 @@ void AirsimCar_ROSWrapper::initialize_ros()
 
     create_ros_pubs_from_settings_json();
     airsim_control_update_timer_ = nh_private_.createTimer(ros::Duration(update_airsim_control_every_n_sec), &AirsimCar_ROSWrapper::car_state_timer_cb, this);
-    //airsim_object_update_timer_ = nh_private_.createTimer(ros::Duration(update_airsim_control_every_n_sec*2), &AirsimCar_ROSWrapper::objects_timer_cb, this);
 
 }
 
@@ -227,18 +226,28 @@ void AirsimCar_ROSWrapper::create_ros_pubs_from_settings_json()
         double update_lidar_every_n_sec;
         nh_private_.getParam("update_lidar_every_n_sec", update_lidar_every_n_sec);
         nh_private_.setCallbackQueue(&lidar_timer_cb_queue_);
+        // nh_private_.setCallbackQueue(&object_timer_cb_queue_); //JBS 
         bool separate_spinner = true; // todo debugging race condition
         if(separate_spinner)
         {
             ros::TimerOptions timer_options(ros::Duration(update_lidar_every_n_sec), boost::bind(&AirsimCar_ROSWrapper::lidar_timer_cb, this, _1), &lidar_timer_cb_queue_);
             airsim_lidar_update_timer_ = nh_private_.createTimer(timer_options);            
             is_used_lidar_timer_cb_queue_ = true;
+            
+            // JBS
+            //ros::TimerOptions timer_options1(ros::Duration(update_lidar_every_n_sec), boost::bind(&AirsimCar_ROSWrapper::objects_timer_cb, this, _1), &object_timer_cb_queue_);
+            //airsim_object_update_timer_ = nh_private_.createTimer(timer_options1);
+
+
+
         }
         else
         {
             airsim_lidar_update_timer_ = nh_private_.createTimer(ros::Duration(update_lidar_every_n_sec), &AirsimCar_ROSWrapper::lidar_timer_cb, this);
         }
     }
+
+
 
 
 
@@ -263,10 +272,19 @@ void AirsimCar_ROSWrapper::control_car(CarRpcLibClient& client, geometry_msgs::T
     CarApiBase::CarControls controls;
     controls.steering = -cmd_vel.twist.angular.z;
     controls.throttle = cmd_vel.twist.linear.x;
+    // if(cmd_vel.twist.linear.x < 0)
+    // {
+    //     controls.brake = -1.0*controls.throttle;
+    //     controls.throttle = 0.0;
+    // }
+    // else{
+    //     controls.brake = 0.0;
+    // }
+
     // ROS_INFO("Throttle: %f", cmd_vel.twist.linear.x);
     // ROS_INFO("%f", controls.steering);
     // ROS_INFO("%f", controls.throttle);
-    if(std::abs(cmd_vel.twist.linear.x) > 0)
+    if(cmd_vel.twist.linear.x > 0)
     {
         controls.is_manual_gear = true;
         controls.manual_gear = 3;
@@ -326,26 +344,34 @@ geometry_msgs::PoseStamped AirsimCar_ROSWrapper::ned_pose_to_enu_pose(const geom
 }
 
 void AirsimCar_ROSWrapper::objects_timer_cb(const ros::TimerEvent &event) {
+try{
+   ROS_DEBUG_STREAM("In timer cb");
+   std::unique_lock<std::recursive_mutex> lck(car_control_mutex_);
 
-//    ROS_DEBUG_STREAM("In timer cb");
-//    auto pose_true = airsim_client_.simGetObjectPose(object_name); // ned
-//
-//    // JBS
-//
-//    ROS_DEBUG_STREAM("Object "<< object_name << " : " << pose_true.position.x() << " , " << pose_true.position.y()  << " , " << pose_true.position.z());
-//    geometry_msgs::PoseStamped object_pose_ned;
-//    object_pose_ned.header.frame_id = "map"; // ?
-//    object_pose_ned.pose.position.x = pose_true.position.x();
-//    object_pose_ned.pose.position.y = pose_true.position.y();
-//    object_pose_ned.pose.position.z = pose_true.position.z();
-//    object_pose_ned.pose.orientation.x = pose_true.orientation.x();
-//    object_pose_ned.pose.orientation.y = pose_true.orientation.y();
-//    object_pose_ned.pose.orientation.z = pose_true.orientation.z();
-//    object_pose_ned.pose.orientation.w = pose_true.orientation.w();
-//
-//    if (not std::isnan(pose_true.position.x())){
-//        pose_object_enu_pub.publish(ned_pose_to_enu_pose(object_pose_ned));
-//    }
+   auto pose_true = airsim_client_object_.simGetObjectPose(object_name); // ned
+   lck.unlock();
+   // JBS
+
+   ROS_DEBUG_STREAM("Object "<< object_name << " : " << pose_true.position.x() << " , " << pose_true.position.y()  << " , " << pose_true.position.z());
+   geometry_msgs::PoseStamped object_pose_ned;
+   object_pose_ned.header.frame_id = "map"; // ?
+   object_pose_ned.pose.position.x = pose_true.position.x();
+   object_pose_ned.pose.position.y = pose_true.position.y();
+   object_pose_ned.pose.position.z = pose_true.position.z();
+   object_pose_ned.pose.orientation.x = pose_true.orientation.x();
+   object_pose_ned.pose.orientation.y = pose_true.orientation.y();
+   object_pose_ned.pose.orientation.z = pose_true.orientation.z();
+   object_pose_ned.pose.orientation.w = pose_true.orientation.w();
+
+   if (not std::isnan(pose_true.position.x())){
+       pose_object_enu_pub.publish(ned_pose_to_enu_pose(object_pose_ned));
+   }
+    }
+        catch (rpc::rpc_error& e)
+    {
+        std::string msg = e.get_error().as<std::string>();
+        std::cout << "Exception raised by the API, didn't get object information." << std::endl << msg << std::endl;
+    }
 
 }
 
@@ -714,6 +740,7 @@ void AirsimCar_ROSWrapper::lidar_timer_cb(const ros::TimerEvent& event)
                 auto lidar_data = airsim_client_lidar_.getLidarData(vehicle_lidar_pair.second, vehicle_lidar_pair.first); // airsim api is imu_name, vehicle_name
 
 
+
                 ROS_DEBUG_STREAM("In timer cb");
 
 
@@ -724,23 +751,23 @@ void AirsimCar_ROSWrapper::lidar_timer_cb(const ros::TimerEvent& event)
                 lidar_pub_vec_[ctr].publish(lidar_msg);
 
                 // JBS
-                /**
-                auto pose_true = airsim_client_.simGetObjectPose(object_name); // ned
-                ROS_DEBUG_STREAM("Object "<< object_name << " : " << pose_true.position.x() << " , " << pose_true.position.y()  << " , " << pose_true.position.z());
-                geometry_msgs::PoseStamped object_pose_ned;
-                object_pose_ned.header.frame_id = "map"; // ?
-                object_pose_ned.pose.position.x = pose_true.position.x();
-                object_pose_ned.pose.position.y = pose_true.position.y();
-                object_pose_ned.pose.position.z = pose_true.position.z();
-                object_pose_ned.pose.orientation.x = pose_true.orientation.x();
-                object_pose_ned.pose.orientation.y = pose_true.orientation.y();
-                object_pose_ned.pose.orientation.z = pose_true.orientation.z();
-                object_pose_ned.pose.orientation.w = pose_true.orientation.w();
+            
+                // auto pose_true = airsim_client_object_.simGetObjectPose(object_name); // ned
+                // ROS_DEBUG_STREAM("Object "<< object_name << " : " << pose_true.position.x() << " , " << pose_true.position.y()  << " , " << pose_true.position.z());
+                // geometry_msgs::PoseStamped object_pose_ned;
+                // object_pose_ned.header.frame_id = "map"; // ?
+                // object_pose_ned.pose.position.x = pose_true.position.x();
+                // object_pose_ned.pose.position.y = pose_true.position.y();
+                // object_pose_ned.pose.position.z = pose_true.position.z();
+                // object_pose_ned.pose.orientation.x = pose_true.orientation.x();
+                // object_pose_ned.pose.orientation.y = pose_true.orientation.y();
+                // object_pose_ned.pose.orientation.z = pose_true.orientation.z();
+                // object_pose_ned.pose.orientation.w = pose_true.orientation.w();
 
-                if (not std::isnan(pose_true.position.x())){
-                    pose_object_enu_pub.publish(ned_pose_to_enu_pose(object_pose_ned));
-                }
-                **/
+                // if (not std::isnan(pose_true.position.x())){
+                //     pose_object_enu_pub.publish(ned_pose_to_enu_pose(object_pose_ned));
+                // }
+                
                 ctr++;
             } 
         }

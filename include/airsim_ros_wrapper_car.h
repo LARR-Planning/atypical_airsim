@@ -68,6 +68,8 @@ public:
     ~AirsimCar_ROSWrapper() {}; 
 
     ros::AsyncSpinner lidar_async_spinner_;
+    //ros::AsyncSpinner object_async_spinner_;
+
     bool is_used_lidar_timer_cb_queue_;
 
 
@@ -78,6 +80,7 @@ private:
 
     msr::airlib::CarRpcLibClient airsim_client_;
     msr::airlib::CarRpcLibClient airsim_client_lidar_;
+    msr::airlib::CarRpcLibClient airsim_client_object_; // JBS
 
     ros::NodeHandle nh_;
     ros::NodeHandle nh_private_;
@@ -115,6 +118,7 @@ private:
     std::vector<ros::Publisher> pub_tf_object; //tf of dynamic obstacles
 
     ros::CallbackQueue lidar_timer_cb_queue_;
+    ros::CallbackQueue object_timer_cb_queue_;
 
     struct Car_ROS
     {   

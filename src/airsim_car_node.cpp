@@ -18,6 +18,7 @@ int main(int argc, char ** argv)
     if (airsim_car_ros_wrapper.is_used_lidar_timer_cb_queue_)
     {
         airsim_car_ros_wrapper.lidar_async_spinner_.start();
+        // airsim_car_ros_wrapper.object_async_spinner_.start();
     }
 
     ros::spin();

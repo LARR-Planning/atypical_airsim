@@ -1,0 +1,5403 @@
+simmode_name: Car
+Lidar
+AirsimCar_ROSWrapper Initialized!
+Waiting for connection - 
+Connected!
+
+Client Ver:1 (Min Req:1), Server Ver:1 (Min Req:1)
+Waiting for connection - 
+Connected!
+
+Client Ver:1 (Min Req:1), Server Ver:1 (Min Req:1)
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0
+vel_error0
+cur_twist x 0
+des_vel 0.000125004
+vel_error0.000125004
+cur_twist x 0
+des_vel 0.000250148
+vel_error0.000250148
+cur_twist x 0
+des_vel 0.000375133
+vel_error0.000375133
+cur_twist x 0
+des_vel 0.000500116
+vel_error0.000500116
+cur_twist x 0
+des_vel 0.000749915
+vel_error0.000991257
+cur_twist x -0.000241342
+des_vel 0.000999875
+vel_error-0.00894485
+cur_twist x 0.00994472
+des_vel 0.00137492
+vel_error0.0535657
+cur_twist x -0.0521908
+des_vel 0.00175045
+vel_error0.0396745
+cur_twist x -0.0379241
+des_vel 0.00212487
+vel_error-0.00395753
+cur_twist x 0.0060824
+des_vel 0.00249988
+vel_error0.0247999
+cur_twist x -0.0223
+des_vel 0.00300034
+vel_error-0.00546875
+cur_twist x 0.0084691
+des_vel 0.00349988
+vel_error0.0231991
+cur_twist x -0.0196992
+des_vel 0.00399986
+vel_error-0.00697523
+cur_twist x 0.0109751
+des_vel 0.00449985
+vel_error0.0281383
+cur_twist x -0.0236385
+des_vel 0.00512551
+vel_error-0.0150236
+cur_twist x 0.0201491
+des_vel 0.0057499
+vel_error0.0388077
+cur_twist x -0.0330578
+des_vel 0.0063749
+vel_error-0.0138203
+cur_twist x 0.0201952
+des_vel 0.00700054
+vel_error-0.0174549
+cur_twist x 0.0244555
+des_vel 0.0077498
+vel_error-0.0389008
+cur_twist x 0.0466506
+des_vel 0.00850059
+vel_error-0.00134589
+cur_twist x 0.00984647
+des_vel 0.00924975
+vel_error-0.0334966
+cur_twist x 0.0427464
+des_vel 0.0100008
+vel_error-0.0201534
+cur_twist x 0.0301542
+des_vel 0.0107506
+vel_error0.00783334
+cur_twist x 0.00291726
+des_vel 0.0114998
+vel_error-0.0251777
+cur_twist x 0.0366775
+des_vel 0.0122499
+vel_error0.00306903
+cur_twist x 0.00918085
+des_vel 0.0129998
+vel_error0.00122412
+cur_twist x 0.0117757
+des_vel 0.0137499
+vel_error-0.0289922
+cur_twist x 0.042742
+des_vel 0.0144998
+vel_error-0.0257672
+cur_twist x 0.040267
+des_vel 0.0152499
+vel_error0.0022762
+cur_twist x 0.0129737
+des_vel 0.0160007
+vel_error-0.0284388
+cur_twist x 0.0444395
+des_vel 0.0169762
+vel_error-0.00689162
+cur_twist x 0.0238679
+des_vel 0.0174998
+vel_error-0.0329991
+cur_twist x 0.0504988
+des_vel 0.0182507
+vel_error-0.0340506
+cur_twist x 0.0523013
+des_vel 0.0190006
+vel_error-0.000203275
+cur_twist x 0.0192039
+des_vel 0.0197498
+vel_error-0.0356399
+cur_twist x 0.0553898
+des_vel 0.0204997
+vel_error-0.00315493
+cur_twist x 0.0236547
+des_vel 0.0212498
+vel_error0.0212495
+cur_twist x 3.28513e-07
+des_vel 0.0219997
+vel_error-0.0349595
+cur_twist x 0.0569592
+des_vel 0.0227498
+vel_error-0.0015979
+cur_twist x 0.0243477
+des_vel 0.0235011
+vel_error-0.0337564
+cur_twist x 0.0572575
+des_vel 0.0242499
+vel_error0.000157667
+cur_twist x 0.0240922
+des_vel 0.0249999
+vel_error-0.032577
+cur_twist x 0.0575769
+des_vel 0.0257499
+vel_error0.000986955
+cur_twist x 0.0247629
+des_vel 0.0265006
+vel_error-0.031407
+cur_twist x 0.0579075
+des_vel 0.0272498
+vel_error0.00182065
+cur_twist x 0.0254291
+des_vel 0.0279998
+vel_error-0.0307936
+cur_twist x 0.0587934
+des_vel 0.0287505
+vel_error-0.0625171
+cur_twist x 0.0912676
+des_vel 0.0294999
+vel_error-0.034801
+cur_twist x 0.0643009
+des_vel 0.0302498
+vel_error-0.0482141
+cur_twist x 0.0784638
+des_vel 0.0309998
+vel_error-0.0488891
+cur_twist x 0.0798889
+des_vel 0.0317506
+vel_error-0.0178732
+cur_twist x 0.0496238
+des_vel 0.0325014
+vel_error-0.051191
+cur_twist x 0.0836924
+des_vel 0.0332505
+vel_error-0.0189205
+cur_twist x 0.052171
+des_vel 0.0340006
+vel_error-0.0457321
+cur_twist x 0.0797326
+des_vel 0.0347497
+vel_error-0.0144048
+cur_twist x 0.0491545
+des_vel 0.0355006
+vel_error-0.0461111
+cur_twist x 0.0816117
+des_vel 0.0362505
+vel_error-0.0113269
+cur_twist x 0.0475775
+des_vel 0.0369998
+vel_error-0.00915168
+cur_twist x 0.0461515
+des_vel 0.0377497
+vel_error-0.0409716
+cur_twist x 0.0787213
+des_vel 0.0384997
+vel_error-0.0396171
+cur_twist x 0.0781168
+des_vel 0.0393747
+vel_error-0.00527701
+cur_twist x 0.0446517
+des_vel 0.0402499
+vel_error-0.00362837
+cur_twist x 0.0438783
+des_vel 0.0411248
+vel_error-0.0355797
+cur_twist x 0.0767045
+des_vel 0.0419997
+vel_error-0.0344151
+cur_twist x 0.0764148
+des_vel 0.0430012
+vel_error-0.0331699
+cur_twist x 0.0761711
+des_vel 0.0439998
+vel_error0.00126086
+cur_twist x 0.0427389
+des_vel 0.0450009
+vel_error-0.0305233
+cur_twist x 0.0755242
+des_vel 0.0461256
+vel_error0.00377229
+cur_twist x 0.0423533
+des_vel 0.0472496
+vel_error-0.0278073
+cur_twist x 0.0750569
+des_vel 0.0483747
+vel_error0.00638385
+cur_twist x 0.0419908
+des_vel 0.0495008
+vel_error-0.0255856
+cur_twist x 0.0750863
+des_vel 0.0507495
+vel_error-0.0243026
+cur_twist x 0.0750521
+des_vel 0.0520006
+vel_error-0.023147
+cur_twist x 0.0751476
+des_vel 0.053251
+vel_error0.0123871
+cur_twist x 0.0408639
+des_vel 0.0544995
+vel_error-0.0183374
+cur_twist x 0.0728369
+des_vel 0.0557496
+vel_error0.0149348
+cur_twist x 0.0408148
+des_vel 0.0571263
+vel_error-0.0172336
+cur_twist x 0.0743599
+des_vel 0.0585008
+vel_error0.0169037
+cur_twist x 0.0415972
+des_vel 0.0598745
+vel_error-0.0149308
+cur_twist x 0.0748053
+des_vel 0.0612494
+vel_error0.0191045
+cur_twist x 0.0421449
+des_vel 0.0627494
+vel_error-0.0128321
+cur_twist x 0.0755815
+des_vel 0.064251
+vel_error0.0214058
+cur_twist x 0.0428451
+des_vel 0.0657494
+vel_error-0.0100957
+cur_twist x 0.0758451
+des_vel 0.0672495
+vel_error-0.00937689
+cur_twist x 0.0766264
+des_vel 0.0688744
+vel_error-0.00833647
+cur_twist x 0.0772109
+des_vel 0.0705006
+vel_error0.0260658
+cur_twist x 0.0444348
+des_vel 0.0721244
+vel_error-0.00525762
+cur_twist x 0.077382
+des_vel 0.0737495
+vel_error-0.00415053
+cur_twist x 0.0779
+des_vel 0.0754994
+vel_error0.0305531
+cur_twist x 0.0449463
+des_vel 0.0772522
+vel_error0.0323481
+cur_twist x 0.0449042
+des_vel 0.0789995
+vel_error0.00107773
+cur_twist x 0.0779218
+des_vel 0.0807496
+vel_error0.0073407
+cur_twist x 0.0734089
+des_vel 0.0826262
+vel_error0.00795687
+cur_twist x 0.0746693
+des_vel 0.0844995
+vel_error0.0425328
+cur_twist x 0.0419667
+des_vel 0.0863763
+vel_error0.011355
+cur_twist x 0.0750213
+des_vel 0.0882517
+vel_error0.045995
+cur_twist x 0.0422567
+des_vel 0.090251
+vel_error0.0478686
+cur_twist x 0.0423825
+des_vel 0.0922495
+vel_error0.0498829
+cur_twist x 0.0423666
+des_vel 0.0942493
+vel_error0.0188651
+cur_twist x 0.0753841
+des_vel 0.0962495
+vel_error0.0211992
+cur_twist x 0.0750503
+des_vel 0.0982493
+vel_error0.0561235
+cur_twist x 0.0421258
+des_vel 0.100374
+vel_error0.0582311
+cur_twist x 0.0421433
+des_vel 0.102499
+vel_error0.0273558
+cur_twist x 0.0751434
+des_vel 0.104627
+vel_error0.0296564
+cur_twist x 0.0749704
+des_vel 0.106749
+vel_error0.0678695
+cur_twist x 0.0388799
+des_vel 0.108999
+vel_error0.0398044
+cur_twist x 0.069195
+des_vel 0.111249
+vel_error0.0403916
+cur_twist x 0.0708577
+des_vel 0.1135
+vel_error0.0750458
+cur_twist x 0.0384539
+des_vel 0.115749
+vel_error0.0435135
+cur_twist x 0.0722358
+des_vel 0.118124
+vel_error0.0785946
+cur_twist x 0.0395295
+des_vel 0.120499
+vel_error0.0479068
+cur_twist x 0.0725924
+des_vel 0.122877
+vel_error0.0831083
+cur_twist x 0.0397683
+des_vel 0.125249
+vel_error0.0519886
+cur_twist x 0.0732605
+des_vel 0.127752
+vel_error0.0871993
+cur_twist x 0.0405525
+des_vel 0.130249
+vel_error0.0561579
+cur_twist x 0.0740913
+des_vel 0.132749
+vel_error0.0583449
+cur_twist x 0.0744044
+des_vel 0.135252
+vel_error0.093705
+cur_twist x 0.0415473
+des_vel 0.137752
+vel_error0.0958339
+cur_twist x 0.0419179
+des_vel 0.140374
+vel_error0.0654116
+cur_twist x 0.0749624
+des_vel 0.143002
+vel_error0.0678822
+cur_twist x 0.0751195
+des_vel 0.145627
+vel_error0.103341
+cur_twist x 0.0422854
+des_vel 0.148252
+vel_error0.0729286
+cur_twist x 0.0753232
+des_vel 0.151002
+vel_error0.107903
+cur_twist x 0.0430989
+des_vel 0.153749
+vel_error0.0777625
+cur_twist x 0.0759867
+des_vel 0.156499
+vel_error0.113265
+cur_twist x 0.0432342
+des_vel 0.159249
+vel_error0.115455
+cur_twist x 0.0437942
+des_vel 0.162124
+vel_error0.0852346
+cur_twist x 0.0768895
+des_vel 0.164999
+vel_error0.0878143
+cur_twist x 0.0771848
+des_vel 0.167874
+vel_error0.0899065
+cur_twist x 0.0779674
+des_vel 0.170749
+vel_error0.125138
+cur_twist x 0.0456108
+des_vel 0.173749
+vel_error0.0950991
+cur_twist x 0.0786498
+des_vel 0.176749
+vel_error0.0976506
+cur_twist x 0.0790985
+des_vel 0.179749
+vel_error0.133336
+cur_twist x 0.046413
+des_vel 0.182752
+vel_error0.135858
+cur_twist x 0.0468937
+des_vel 0.185874
+vel_error0.106181
+cur_twist x 0.0796934
+des_vel 0.188999
+vel_error0.109478
+cur_twist x 0.0795211
+des_vel 0.192127
+vel_error0.144546
+cur_twist x 0.0475807
+des_vel 0.195249
+vel_error0.114613
+cur_twist x 0.0806358
+des_vel 0.198499
+vel_error0.146755
+cur_twist x 0.0517441
+des_vel 0.201749
+vel_error0.117031
+cur_twist x 0.084718
+des_vel 0.205002
+vel_error0.144179
+cur_twist x 0.060823
+des_vel 0.208374
+vel_error0.116387
+cur_twist x 0.091987
+des_vel 0.211752
+vel_error0.13061
+cur_twist x 0.0811416
+des_vel 0.215124
+vel_error0.124049
+cur_twist x 0.0910752
+des_vel 0.218499
+vel_error0.123975
+cur_twist x 0.0945238
+des_vel 0.222002
+vel_error0.129839
+cur_twist x 0.0921638
+des_vel 0.225499
+vel_error0.138436
+cur_twist x 0.0870627
+des_vel 0.228999
+vel_error0.136927
+cur_twist x 0.0920721
+des_vel 0.232499
+vel_error0.142411
+cur_twist x 0.0900874
+des_vel 0.236003
+vel_error0.143879
+cur_twist x 0.0921235
+des_vel 0.239627
+vel_error0.117916
+cur_twist x 0.121711
+des_vel 0.243253
+vel_error0.117971
+cur_twist x 0.125282
+des_vel 0.246877
+vel_error0.138405
+cur_twist x 0.108472
+des_vel 0.250502
+vel_error0.143914
+cur_twist x 0.106589
+des_vel 0.254248
+vel_error0.139787
+cur_twist x 0.114461
+des_vel 0.258002
+vel_error0.131208
+cur_twist x 0.126794
+des_vel 0.261753
+vel_error0.137877
+cur_twist x 0.123875
+des_vel 0.265498
+vel_error0.148072
+cur_twist x 0.117427
+des_vel 0.269253
+vel_error0.151386
+cur_twist x 0.117867
+des_vel 0.273004
+vel_error0.138702
+cur_twist x 0.134301
+des_vel 0.276752
+vel_error0.131485
+cur_twist x 0.145267
+des_vel 0.280499
+vel_error0.139139
+cur_twist x 0.14136
+des_vel 0.284248
+vel_error0.143834
+cur_twist x 0.140414
+des_vel 0.287999
+vel_error0.140489
+cur_twist x 0.14751
+des_vel 0.291748
+vel_error0.144511
+cur_twist x 0.147238
+des_vel 0.295499
+vel_error0.152483
+cur_twist x 0.143016
+des_vel 0.299248
+vel_error0.14534
+cur_twist x 0.153909
+des_vel 0.302999
+vel_error0.132217
+cur_twist x 0.170782
+des_vel 0.306748
+vel_error0.138901
+cur_twist x 0.167848
+des_vel 0.310499
+vel_error0.160014
+cur_twist x 0.150485
+des_vel 0.314248
+vel_error0.15511
+cur_twist x 0.159139
+des_vel 0.318003
+vel_error0.158448
+cur_twist x 0.159555
+des_vel 0.321751
+vel_error0.167038
+cur_twist x 0.154714
+des_vel 0.325498
+vel_error0.141609
+cur_twist x 0.18389
+des_vel 0.329252
+vel_error0.162737
+cur_twist x 0.166515
+des_vel 0.333004
+vel_error0.151442
+cur_twist x 0.181562
+des_vel 0.336753
+vel_error0.163442
+cur_twist x 0.173311
+des_vel 0.340499
+vel_error0.157753
+cur_twist x 0.182746
+des_vel 0.344248
+vel_error0.145828
+cur_twist x 0.19842
+des_vel 0.348005
+vel_error0.145578
+cur_twist x 0.202426
+des_vel 0.351749
+vel_error0.163595
+cur_twist x 0.188154
+des_vel 0.355499
+vel_error0.154186
+cur_twist x 0.201312
+des_vel 0.359249
+vel_error0.16863
+cur_twist x 0.190619
+des_vel 0.363002
+vel_error0.157933
+cur_twist x 0.205069
+des_vel 0.366749
+vel_error0.151975
+cur_twist x 0.214774
+des_vel 0.370498
+vel_error0.174445
+cur_twist x 0.196053
+des_vel 0.374248
+vel_error0.168651
+cur_twist x 0.205597
+des_vel 0.377998
+vel_error0.177008
+cur_twist x 0.20099
+des_vel 0.381748
+vel_error0.163199
+cur_twist x 0.21855
+des_vel 0.385499
+vel_error0.186705
+cur_twist x 0.198794
+des_vel 0.389248
+vel_error0.172026
+cur_twist x 0.217222
+des_vel 0.392999
+vel_error0.171807
+cur_twist x 0.221192
+des_vel 0.396753
+vel_error0.1762
+cur_twist x 0.220552
+des_vel 0.400499
+vel_error0.168126
+cur_twist x 0.232372
+des_vel 0.404249
+vel_error0.162629
+cur_twist x 0.241621
+des_vel 0.407998
+vel_error0.182084
+cur_twist x 0.225914
+des_vel 0.411748
+vel_error0.191892
+cur_twist x 0.219857
+des_vel 0.415503
+vel_error0.196627
+cur_twist x 0.218875
+des_vel 0.419248
+vel_error0.202381
+cur_twist x 0.216867
+des_vel 0.422998
+vel_error0.192276
+cur_twist x 0.230722
+des_vel 0.426748
+vel_error0.193359
+cur_twist x 0.233389
+des_vel 0.430499
+vel_error0.195647
+cur_twist x 0.234852
+des_vel 0.434249
+vel_error0.182647
+cur_twist x 0.251602
+des_vel 0.437999
+vel_error0.19514
+cur_twist x 0.242859
+des_vel 0.441748
+vel_error0.178588
+cur_twist x 0.26316
+des_vel 0.445499
+vel_error0.194123
+cur_twist x 0.251375
+des_vel 0.449252
+vel_error0.192382
+cur_twist x 0.25687
+des_vel 0.452999
+vel_error0.194026
+cur_twist x 0.258973
+des_vel 0.456749
+vel_error0.181536
+cur_twist x 0.275213
+des_vel 0.460498
+vel_error0.182305
+cur_twist x 0.278193
+des_vel 0.464248
+vel_error0.182539
+cur_twist x 0.28171
+des_vel 0.467999
+vel_error0.178689
+cur_twist x 0.28931
+des_vel 0.471748
+vel_error0.168994
+cur_twist x 0.302755
+des_vel 0.475498
+vel_error0.164008
+cur_twist x 0.311491
+des_vel 0.479248
+vel_error0.172622
+cur_twist x 0.306626
+des_vel 0.482999
+vel_error0.163438
+cur_twist x 0.319561
+des_vel 0.486748
+vel_error0.159635
+cur_twist x 0.327114
+des_vel 0.490499
+vel_error0.173624
+cur_twist x 0.316876
+des_vel 0.494248
+vel_error0.164757
+cur_twist x 0.329491
+des_vel 0.497999
+vel_error0.164908
+cur_twist x 0.333091
+des_vel 0.501748
+vel_error0.17306
+cur_twist x 0.328689
+des_vel 0.505499
+vel_error0.16998
+cur_twist x 0.335519
+des_vel 0.509248
+vel_error0.176417
+cur_twist x 0.332832
+des_vel 0.512999
+vel_error0.16585
+cur_twist x 0.347149
+des_vel 0.516748
+vel_error0.183208
+cur_twist x 0.333541
+des_vel 0.520499
+vel_error0.166838
+cur_twist x 0.35366
+des_vel 0.524248
+vel_error0.162618
+cur_twist x 0.36163
+des_vel 0.528005
+vel_error0.17549
+cur_twist x 0.352515
+des_vel 0.531749
+vel_error0.18626
+cur_twist x 0.345489
+des_vel 0.535502
+vel_error0.183302
+cur_twist x 0.3522
+des_vel 0.539248
+vel_error0.175796
+cur_twist x 0.363452
+des_vel 0.543003
+vel_error0.167088
+cur_twist x 0.375915
+des_vel 0.546748
+vel_error0.159807
+cur_twist x 0.386941
+des_vel 0.550504
+vel_error0.17376
+cur_twist x 0.376744
+des_vel 0.554248
+vel_error0.167661
+cur_twist x 0.386587
+des_vel 0.557999
+vel_error0.177031
+cur_twist x 0.380968
+des_vel 0.396349
+vel_error0
+cur_twist x 0.396349
+des_vel 0.400099
+vel_error0.0124526
+cur_twist x 0.387646
+des_vel 0.403853
+vel_error0.00481179
+cur_twist x 0.399041
+des_vel 0.407599
+vel_error0.0270898
+cur_twist x 0.380509
+des_vel 0.411349
+vel_error-0.00389557
+cur_twist x 0.415244
+des_vel 0.415099
+vel_error0.00250993
+cur_twist x 0.412589
+des_vel 0.418852
+vel_error0.00431934
+cur_twist x 0.414533
+des_vel 0.422599
+vel_error0.0142827
+cur_twist x 0.408316
+des_vel 0.426353
+vel_error0.0117365
+cur_twist x 0.414616
+des_vel 0.430099
+vel_error-0.00663449
+cur_twist x 0.436733
+des_vel 0.433849
+vel_error0.0156903
+cur_twist x 0.418158
+des_vel 0.437599
+vel_error-0.00192439
+cur_twist x 0.439524
+des_vel 0.441349
+vel_error0.00182706
+cur_twist x 0.439522
+des_vel 0.445099
+vel_error0.00742973
+cur_twist x 0.437669
+des_vel 0.448852
+vel_error0.0339801
+cur_twist x 0.414872
+des_vel 0.452603
+vel_error0.0410475
+cur_twist x 0.411556
+des_vel 0.456348
+vel_error0.0240326
+cur_twist x 0.432316
+des_vel 0.460099
+vel_error0.0503893
+cur_twist x 0.40971
+des_vel 0.463854
+vel_error0.042152
+cur_twist x 0.421702
+des_vel 0.467601
+vel_error0.0355384
+cur_twist x 0.432063
+des_vel 0.471354
+vel_error0.0381169
+cur_twist x 0.433237
+des_vel 0.475099
+vel_error0.061085
+cur_twist x 0.414014
+des_vel 0.478849
+vel_error0.0652183
+cur_twist x 0.41363
+des_vel 0.482601
+vel_error0.0817967
+cur_twist x 0.400805
+des_vel 0.486349
+vel_error0.0749737
+cur_twist x 0.411375
+des_vel 0.490099
+vel_error0.0851225
+cur_twist x 0.404976
+des_vel 0.493848
+vel_error0.10718
+cur_twist x 0.386669
+des_vel 0.497599
+vel_error0.112692
+cur_twist x 0.384908
+des_vel 0.501351
+vel_error0.103177
+cur_twist x 0.398173
+des_vel 0.505099
+vel_error0.127811
+cur_twist x 0.377288
+des_vel 0.508849
+vel_error0.126723
+cur_twist x 0.382125
+des_vel 0.512599
+vel_error0.124518
+cur_twist x 0.38808
+des_vel 0.516349
+vel_error0.13605
+cur_twist x 0.380299
+des_vel 0.520099
+vel_error0.124798
+cur_twist x 0.395301
+des_vel 0.523849
+vel_error0.142547
+cur_twist x 0.381301
+des_vel 0.527599
+vel_error0.130332
+cur_twist x 0.397267
+des_vel 0.531349
+vel_error0.138234
+cur_twist x 0.393114
+des_vel 0.535099
+vel_error0.151673
+cur_twist x 0.383426
+des_vel 0.538849
+vel_error0.140974
+cur_twist x 0.397875
+des_vel 0.542604
+vel_error0.141762
+cur_twist x 0.400841
+des_vel 0.546348
+vel_error0.161611
+cur_twist x 0.384737
+des_vel 0.550104
+vel_error0.149982
+cur_twist x 0.400121
+des_vel 0.553849
+vel_error0.167172
+cur_twist x 0.386677
+des_vel 0.557599
+vel_error0.164109
+cur_twist x 0.393489
+des_vel 0.561349
+vel_error0.154965
+cur_twist x 0.406384
+des_vel 0.565103
+vel_error0.168179
+cur_twist x 0.396924
+des_vel 0.568853
+vel_error0.170561
+cur_twist x 0.398291
+des_vel 0.572599
+vel_error0.162858
+cur_twist x 0.409741
+des_vel 0.576349
+vel_error0.171895
+cur_twist x 0.404454
+des_vel 0.580099
+vel_error0.169463
+cur_twist x 0.410636
+des_vel 0.583849
+vel_error0.184172
+cur_twist x 0.399676
+des_vel 0.587599
+vel_error0.19523
+cur_twist x 0.392368
+des_vel 0.591349
+vel_error0.17849
+cur_twist x 0.412859
+des_vel 0.595099
+vel_error0.188692
+cur_twist x 0.406407
+des_vel 0.598849
+vel_error0.163895
+cur_twist x 0.434954
+des_vel 0.602603
+vel_error0.182405
+cur_twist x 0.420198
+des_vel 0.606349
+vel_error0.163691
+cur_twist x 0.442658
+des_vel 0.610099
+vel_error0.158614
+cur_twist x 0.451485
+des_vel 0.613853
+vel_error0.172446
+cur_twist x 0.441407
+des_vel 0.617599
+vel_error0.171601
+cur_twist x 0.445998
+des_vel 0.621349
+vel_error0.169836
+cur_twist x 0.451512
+des_vel 0.625099
+vel_error0.187964
+cur_twist x 0.437135
+des_vel 0.628849
+vel_error0.178664
+cur_twist x 0.450184
+des_vel 0.632603
+vel_error0.193041
+cur_twist x 0.439562
+des_vel 0.636353
+vel_error0.186365
+cur_twist x 0.449987
+des_vel 0.640099
+vel_error0.207028
+cur_twist x 0.433071
+des_vel 0.643849
+vel_error0.17846
+cur_twist x 0.465389
+des_vel 0.647603
+vel_error0.196407
+cur_twist x 0.451195
+des_vel 0.651353
+vel_error0.177384
+cur_twist x 0.473969
+des_vel 0.655099
+vel_error0.196835
+cur_twist x 0.458264
+des_vel 0.658849
+vel_error0.172132
+cur_twist x 0.486717
+des_vel 0.662599
+vel_error0.19278
+cur_twist x 0.469819
+des_vel 0.666349
+vel_error0.174363
+cur_twist x 0.491985
+des_vel 0.670103
+vel_error0.173516
+cur_twist x 0.496587
+des_vel 0.673849
+vel_error0.195007
+cur_twist x 0.478841
+des_vel 0.677599
+vel_error0.194407
+cur_twist x 0.483192
+des_vel 0.681349
+vel_error0.19303
+cur_twist x 0.488319
+des_vel 0.685099
+vel_error0.175895
+cur_twist x 0.509204
+des_vel 0.688849
+vel_error0.196797
+cur_twist x 0.492052
+des_vel 0.692599
+vel_error0.178152
+cur_twist x 0.514447
+des_vel 0.696349
+vel_error0.186659
+cur_twist x 0.50969
+des_vel 0.700106
+vel_error0.170166
+cur_twist x 0.52994
+des_vel 0.703849
+vel_error0.189526
+cur_twist x 0.514323
+des_vel 0.707599
+vel_error0.172433
+cur_twist x 0.535166
+des_vel 0.711349
+vel_error0.189017
+cur_twist x 0.522332
+des_vel 0.715099
+vel_error0.170975
+cur_twist x 0.544124
+des_vel 0.718853
+vel_error0.169793
+cur_twist x 0.549061
+des_vel 0.722599
+vel_error0.190465
+cur_twist x 0.532134
+des_vel 0.726352
+vel_error0.17218
+cur_twist x 0.554173
+des_vel 0.730103
+vel_error0.192338
+cur_twist x 0.537766
+des_vel 0.733849
+vel_error0.167934
+cur_twist x 0.565915
+des_vel 0.737599
+vel_error0.187917
+cur_twist x 0.549682
+des_vel 0.741349
+vel_error0.184396
+cur_twist x 0.556953
+des_vel 0.745099
+vel_error0.190697
+cur_twist x 0.554402
+des_vel 0.748849
+vel_error0.196991
+cur_twist x 0.551858
+des_vel 0.752599
+vel_error0.203405
+cur_twist x 0.549194
+des_vel 0.756349
+vel_error0.204769
+cur_twist x 0.55158
+des_vel 0.760099
+vel_error0.197957
+cur_twist x 0.562142
+des_vel 0.763849
+vel_error0.199667
+cur_twist x 0.564182
+des_vel 0.767603
+vel_error0.202916
+cur_twist x 0.564687
+des_vel 0.771354
+vel_error0.201817
+cur_twist x 0.569536
+des_vel 0.775099
+vel_error0.19362
+cur_twist x 0.581479
+des_vel 0.778853
+vel_error0.191607
+cur_twist x 0.587246
+des_vel 0.782603
+vel_error0.186251
+cur_twist x 0.596352
+des_vel 0.786349
+vel_error0.183998
+cur_twist x 0.60235
+des_vel 0.790099
+vel_error0.194163
+cur_twist x 0.595936
+des_vel 0.793852
+vel_error0.199557
+cur_twist x 0.594295
+des_vel 0.797599
+vel_error0.20037
+cur_twist x 0.597229
+des_vel 0.801349
+vel_error0.194614
+cur_twist x 0.606734
+des_vel 0.8051
+vel_error0.190323
+cur_twist x 0.614777
+des_vel 0.808849
+vel_error0.187027
+cur_twist x 0.621822
+des_vel 0.812599
+vel_error0.187569
+cur_twist x 0.62503
+des_vel 0.816349
+vel_error0.187622
+cur_twist x 0.628727
+des_vel 0.820099
+vel_error0.188607
+cur_twist x 0.631491
+des_vel 0.823849
+vel_error0.184064
+cur_twist x 0.639784
+des_vel 0.827603
+vel_error0.185284
+cur_twist x 0.642319
+des_vel 0.831352
+vel_error0.186789
+cur_twist x 0.644563
+des_vel 0.835099
+vel_error0.185452
+cur_twist x 0.649647
+des_vel 0.838849
+vel_error0.18671
+cur_twist x 0.652139
+des_vel 0.842599
+vel_error0.185318
+cur_twist x 0.657281
+des_vel 0.846353
+vel_error0.183861
+cur_twist x 0.662491
+des_vel 0.850099
+vel_error0.184996
+cur_twist x 0.665103
+des_vel 0.853849
+vel_error0.186242
+cur_twist x 0.667606
+des_vel 0.857599
+vel_error0.184901
+cur_twist x 0.672698
+des_vel 0.861349
+vel_error0.18608
+cur_twist x 0.675269
+des_vel 0.865099
+vel_error0.184761
+cur_twist x 0.680339
+des_vel 0.868852
+vel_error0.18586
+cur_twist x 0.682992
+des_vel 0.872602
+vel_error0.184444
+cur_twist x 0.688158
+des_vel 0.876349
+vel_error0.182888
+cur_twist x 0.69346
+des_vel 0.880099
+vel_error0.184151
+cur_twist x 0.695948
+des_vel 0.883849
+vel_error0.185241
+cur_twist x 0.698607
+des_vel 0.887604
+vel_error0.18367
+cur_twist x 0.703934
+des_vel 0.891349
+vel_error0.184953
+cur_twist x 0.706396
+des_vel 0.895103
+vel_error0.18603
+cur_twist x 0.709073
+des_vel 0.898849
+vel_error0.18238
+cur_twist x 0.716468
+des_vel 0.902599
+vel_error0.183528
+cur_twist x 0.719071
+des_vel 0.906349
+vel_error0.184664
+cur_twist x 0.721684
+des_vel 0.910099
+vel_error0.185607
+cur_twist x 0.724492
+des_vel 0.913849
+vel_error0.181416
+cur_twist x 0.732432
+des_vel 0.917599
+vel_error0.182506
+cur_twist x 0.735092
+des_vel 0.921353
+vel_error0.183666
+cur_twist x 0.737687
+des_vel 0.9251
+vel_error0.182164
+cur_twist x 0.742935
+des_vel 0.928849
+vel_error0.183683
+cur_twist x 0.745166
+des_vel 0.932599
+vel_error0.182458
+cur_twist x 0.750141
+des_vel 0.936349
+vel_error0.180194
+cur_twist x 0.756155
+des_vel 0.940099
+vel_error0.181532
+cur_twist x 0.758567
+des_vel 0.943849
+vel_error0.182261
+cur_twist x 0.761588
+des_vel 0.947599
+vel_error0.18365
+cur_twist x 0.763949
+des_vel 0.951349
+vel_error0.18212
+cur_twist x 0.769229
+des_vel 0.955099
+vel_error0.180529
+cur_twist x 0.774569
+des_vel 0.958849
+vel_error0.18128
+cur_twist x 0.777569
+des_vel 0.962599
+vel_error0.1691
+cur_twist x 0.793499
+des_vel 0.966349
+vel_error0.175926
+cur_twist x 0.790422
+des_vel 0.970099
+vel_error0.176915
+cur_twist x 0.793183
+des_vel 0.973849
+vel_error0.175993
+cur_twist x 0.797855
+des_vel 0.977604
+vel_error0.177283
+cur_twist x 0.800321
+des_vel 0.981353
+vel_error0.178991
+cur_twist x 0.802362
+des_vel 0.985099
+vel_error0.177854
+cur_twist x 0.807245
+des_vel 0.988849
+vel_error0.176499
+cur_twist x 0.81235
+des_vel 0.992603
+vel_error0.177456
+cur_twist x 0.815147
+des_vel 0.996349
+vel_error0.178742
+cur_twist x 0.817607
+des_vel 1.0001
+vel_error0.179612
+cur_twist x 0.82049
+des_vel 1.00385
+vel_error0.178076
+cur_twist x 0.825772
+des_vel 1.0076
+vel_error0.176388
+cur_twist x 0.831211
+des_vel 1.01135
+vel_error0.17467
+cur_twist x 0.836679
+des_vel 1.0151
+vel_error0.175711
+cur_twist x 0.839388
+des_vel 1.01885
+vel_error0.176567
+cur_twist x 0.842282
+des_vel 1.0226
+vel_error0.177788
+cur_twist x 0.844815
+des_vel 1.02635
+vel_error0.1751
+cur_twist x 0.851248
+des_vel 1.0301
+vel_error0.17419
+cur_twist x 0.855909
+des_vel 1.03385
+vel_error0.174543
+cur_twist x 0.859306
+des_vel 1.0376
+vel_error0.176015
+cur_twist x 0.861584
+des_vel 1.04135
+vel_error0.174665
+cur_twist x 0.866684
+des_vel 1.0451
+vel_error0.172639
+cur_twist x 0.872461
+des_vel 1.04885
+vel_error0.170718
+cur_twist x 0.878131
+des_vel 1.0526
+vel_error0.171461
+cur_twist x 0.881138
+des_vel 1.05635
+vel_error0.174486
+cur_twist x 0.881863
+des_vel 1.0601
+vel_error0.174867
+cur_twist x 0.885232
+des_vel 1.06385
+vel_error0.167839
+cur_twist x 0.896015
+des_vel 1.0676
+vel_error0.169394
+cur_twist x 0.898206
+des_vel 1.07135
+vel_error0.170389
+cur_twist x 0.900963
+des_vel 1.0751
+vel_error0.171123
+cur_twist x 0.903976
+des_vel 1.07885
+vel_error0.167231
+cur_twist x 0.911618
+des_vel 1.0826
+vel_error0.167832
+cur_twist x 0.914767
+des_vel 1.08635
+vel_error0.169458
+cur_twist x 0.916891
+des_vel 1.0901
+vel_error0.168482
+cur_twist x 0.921616
+des_vel 1.09385
+vel_error0.168357
+cur_twist x 0.925492
+des_vel 1.0976
+vel_error0.170027
+cur_twist x 0.927572
+des_vel 1.10135
+vel_error0.164977
+cur_twist x 0.936372
+des_vel 1.1051
+vel_error0.166269
+cur_twist x 0.93883
+des_vel 1.10885
+vel_error0.168883
+cur_twist x 0.939969
+des_vel 1.1126
+vel_error0.164887
+cur_twist x 0.947712
+des_vel 1.11635
+vel_error0.166518
+cur_twist x 0.949834
+des_vel 1.1201
+vel_error0.164613
+cur_twist x 0.95549
+des_vel 1.12385
+vel_error0.163959
+cur_twist x 0.95989
+des_vel 1.1276
+vel_error0.163213
+cur_twist x 0.964385
+des_vel 1.13135
+vel_error0.1616
+cur_twist x 0.969748
+des_vel 1.1351
+vel_error0.162617
+cur_twist x 0.972482
+des_vel 1.13885
+vel_error0.163527
+cur_twist x 0.975322
+des_vel 1.1426
+vel_error0.16514
+cur_twist x 0.977459
+des_vel 1.14635
+vel_error0.160081
+cur_twist x 0.986268
+des_vel 1.1501
+vel_error0.161114
+cur_twist x 0.988985
+des_vel 1.15391
+vel_error0.16182
+cur_twist x 0.992086
+des_vel 1.1576
+vel_error0.161404
+cur_twist x 0.996195
+des_vel 1.16135
+vel_error0.159942
+cur_twist x 1.00141
+des_vel 1.1651
+vel_error0.159219
+cur_twist x 1.00588
+des_vel 1.16885
+vel_error0.160896
+cur_twist x 1.00796
+des_vel 1.1726
+vel_error0.161172
+cur_twist x 1.01143
+des_vel 1.17635
+vel_error0.159331
+cur_twist x 1.01702
+des_vel 1.1801
+vel_error0.157766
+cur_twist x 1.02233
+des_vel 1.18385
+vel_error0.156026
+cur_twist x 1.02783
+des_vel 1.1876
+vel_error0.157042
+cur_twist x 1.03056
+des_vel 1.19135
+vel_error0.158109
+cur_twist x 1.03324
+des_vel 1.1951
+vel_error0.156558
+cur_twist x 1.03855
+des_vel 1.19885
+vel_error0.157863
+cur_twist x 1.04099
+des_vel 1.2026
+vel_error0.156384
+cur_twist x 1.04622
+des_vel 1.20635
+vel_error0.154665
+cur_twist x 1.05168
+des_vel 1.2101
+vel_error0.155859
+cur_twist x 1.05424
+des_vel 1.21385
+vel_error0.156288
+cur_twist x 1.05756
+des_vel 1.2176
+vel_error0.157593
+cur_twist x 1.06001
+des_vel 1.22135
+vel_error0.15394
+cur_twist x 1.06741
+des_vel 1.2251
+vel_error0.153638
+cur_twist x 1.07146
+des_vel 1.22885
+vel_error0.152742
+cur_twist x 1.07611
+des_vel 1.2326
+vel_error0.153643
+cur_twist x 1.07896
+des_vel 1.23635
+vel_error0.154535
+cur_twist x 1.08181
+des_vel 1.2401
+vel_error0.153643
+cur_twist x 1.08646
+des_vel 1.24385
+vel_error0.153799
+cur_twist x 1.09005
+des_vel 1.2476
+vel_error0.15269
+cur_twist x 1.09491
+des_vel 1.25135
+vel_error0.153834
+cur_twist x 1.09752
+des_vel 1.2551
+vel_error0.152217
+cur_twist x 1.10288
+des_vel 1.25885
+vel_error0.154419
+cur_twist x 1.10443
+des_vel 1.2626
+vel_error0.151489
+cur_twist x 1.11111
+des_vel 1.26635
+vel_error0.152731
+cur_twist x 1.11362
+des_vel 1.2701
+vel_error0.150945
+cur_twist x 1.11915
+des_vel 1.27385
+vel_error0.15671
+cur_twist x 1.11714
+des_vel 1.2776
+vel_error0.149232
+cur_twist x 1.12837
+des_vel 1.28135
+vel_error0.142091
+cur_twist x 1.13926
+des_vel 1.2851
+vel_error0.133578
+cur_twist x 1.15152
+des_vel 1.28885
+vel_error0.136175
+cur_twist x 1.15267
+des_vel 1.2926
+vel_error0.141095
+cur_twist x 1.1515
+des_vel 1.29635
+vel_error0.139944
+cur_twist x 1.1564
+des_vel 1.3001
+vel_error0.142028
+cur_twist x 1.15808
+des_vel 1.30385
+vel_error0.14397
+cur_twist x 1.15988
+des_vel 1.3076
+vel_error0.141107
+cur_twist x 1.16649
+des_vel 1.31135
+vel_error0.143317
+cur_twist x 1.16803
+des_vel 1.3151
+vel_error0.144959
+cur_twist x 1.17014
+des_vel 1.31885
+vel_error0.146482
+cur_twist x 1.17237
+des_vel 1.3226
+vel_error0.145719
+cur_twist x 1.17688
+des_vel 1.32635
+vel_error0.147225
+cur_twist x 1.17912
+des_vel 1.3301
+vel_error0.146156
+cur_twist x 1.18394
+des_vel 1.33385
+vel_error0.147458
+cur_twist x 1.18639
+des_vel 1.3376
+vel_error0.146952
+cur_twist x 1.19065
+des_vel 1.34135
+vel_error0.144701
+cur_twist x 1.19665
+des_vel 1.3451
+vel_error0.14587
+cur_twist x 1.19923
+des_vel 1.34885
+vel_error0.147229
+cur_twist x 1.20162
+des_vel 1.3526
+vel_error0.145589
+cur_twist x 1.20701
+des_vel 1.35635
+vel_error0.150883
+cur_twist x 1.20547
+des_vel 1.3601
+vel_error0.144277
+cur_twist x 1.21582
+des_vel 1.36385
+vel_error0.143006
+cur_twist x 1.22084
+des_vel 1.3676
+vel_error0.144191
+cur_twist x 1.22341
+des_vel 1.37135
+vel_error0.143001
+cur_twist x 1.22835
+des_vel 1.3751
+vel_error0.143618
+cur_twist x 1.23148
+des_vel 1.37885
+vel_error0.14499
+cur_twist x 1.23386
+des_vel 1.3826
+vel_error0.146147
+cur_twist x 1.23646
+des_vel 1.38635
+vel_error0.144897
+cur_twist x 1.24145
+des_vel 1.3901
+vel_error0.145861
+cur_twist x 1.24424
+des_vel 1.39385
+vel_error0.141768
+cur_twist x 1.25208
+des_vel 1.3976
+vel_error0.142674
+cur_twist x 1.25493
+des_vel 1.40135
+vel_error0.143921
+cur_twist x 1.25743
+des_vel 1.4051
+vel_error0.14212
+cur_twist x 1.26298
+des_vel 1.40885
+vel_error0.14334
+cur_twist x 1.26551
+des_vel 1.4126
+vel_error0.14442
+cur_twist x 1.26818
+des_vel 1.41635
+vel_error0.142822
+cur_twist x 1.27353
+des_vel 1.4201
+vel_error0.141292
+cur_twist x 1.27881
+des_vel 1.42385
+vel_error0.14515
+cur_twist x 1.2787
+des_vel 1.42759
+vel_error0.135498
+cur_twist x 1.2921
+des_vel 1.43135
+vel_error0.138687
+cur_twist x 1.29266
+des_vel 1.4351
+vel_error0.138911
+cur_twist x 1.29619
+des_vel 1.43885
+vel_error0.137583
+cur_twist x 1.30127
+des_vel 1.4426
+vel_error0.138812
+cur_twist x 1.30379
+des_vel 1.44635
+vel_error0.140376
+cur_twist x 1.30597
+des_vel 1.4501
+vel_error0.138815
+cur_twist x 1.31128
+des_vel 1.45385
+vel_error0.139849
+cur_twist x 1.314
+des_vel 1.4576
+vel_error0.139085
+cur_twist x 1.31852
+des_vel 1.46135
+vel_error0.13921
+cur_twist x 1.32214
+des_vel 1.4651
+vel_error0.140587
+cur_twist x 1.32451
+des_vel 1.46885
+vel_error0.138983
+cur_twist x 1.32987
+des_vel 1.4726
+vel_error0.140374
+cur_twist x 1.33222
+des_vel 1.47635
+vel_error0.1401
+cur_twist x 1.33625
+des_vel 1.4801
+vel_error0.138575
+cur_twist x 1.34153
+des_vel 1.48385
+vel_error0.135085
+cur_twist x 1.34877
+des_vel 1.4876
+vel_error0.136073
+cur_twist x 1.35153
+des_vel 1.49135
+vel_error0.134903
+cur_twist x 1.35645
+des_vel 1.4951
+vel_error0.135138
+cur_twist x 1.35996
+des_vel 1.49885
+vel_error0.13652
+cur_twist x 1.36233
+des_vel 1.5026
+vel_error0.134935
+cur_twist x 1.36766
+des_vel 1.50635
+vel_error0.136331
+cur_twist x 1.37002
+des_vel 1.5101
+vel_error0.137444
+cur_twist x 1.37266
+des_vel 1.51385
+vel_error0.132913
+cur_twist x 1.38094
+des_vel 1.5176
+vel_error0.133991
+cur_twist x 1.38361
+des_vel 1.52135
+vel_error0.135144
+cur_twist x 1.3862
+des_vel 1.38903
+vel_error0
+cur_twist x 1.38903
+des_vel 1.39278
+vel_error-0.00476679
+cur_twist x 1.39755
+des_vel 1.39653
+vel_error-0.00368281
+cur_twist x 1.40022
+des_vel 1.40028
+vel_error-0.00503315
+cur_twist x 1.40532
+des_vel 1.40403
+vel_error-0.00404278
+cur_twist x 1.40808
+des_vel 1.40778
+vel_error-0.00405102
+cur_twist x 1.41183
+des_vel 1.41153
+vel_error-0.00112333
+cur_twist x 1.41266
+des_vel 1.41528
+vel_error0.00298127
+cur_twist x 1.4123
+des_vel 1.41903
+vel_error0.00870128
+cur_twist x 1.41033
+des_vel 1.42278
+vel_error0.0140695
+cur_twist x 1.40871
+des_vel 1.42653
+vel_error0.0199795
+cur_twist x 1.40655
+des_vel 1.43028
+vel_error0.0289025
+cur_twist x 1.40138
+des_vel 1.43404
+vel_error0.0384869
+cur_twist x 1.39555
+des_vel 1.43778
+vel_error0.0512064
+cur_twist x 1.38658
+des_vel 1.44153
+vel_error0.0556359
+cur_twist x 1.3859
+des_vel 1.44528
+vel_error0.0626829
+cur_twist x 1.3826
+des_vel 1.44903
+vel_error0.069607
+cur_twist x 1.37943
+des_vel 1.45278
+vel_error0.0795377
+cur_twist x 1.37324
+des_vel 1.45653
+vel_error0.0888734
+cur_twist x 1.36766
+des_vel 1.46028
+vel_error0.0987242
+cur_twist x 1.36156
+des_vel 1.46403
+vel_error0.105447
+cur_twist x 1.35858
+des_vel 1.46778
+vel_error0.114295
+cur_twist x 1.35349
+des_vel 1.47153
+vel_error0.119994
+cur_twist x 1.35154
+des_vel 1.47528
+vel_error0.126195
+cur_twist x 1.34909
+des_vel 1.47903
+vel_error0.131734
+cur_twist x 1.3473
+des_vel 1.48279
+vel_error0.139362
+cur_twist x 1.34342
+des_vel 1.48654
+vel_error0.145429
+cur_twist x 1.34111
+des_vel 1.49028
+vel_error0.152675
+cur_twist x 1.33761
+des_vel 1.49403
+vel_error0.157898
+cur_twist x 1.33613
+des_vel 1.49779
+vel_error0.162424
+cur_twist x 1.33536
+des_vel 1.50153
+vel_error0.174274
+cur_twist x 1.32726
+des_vel 1.50528
+vel_error0.171691
+cur_twist x 1.33359
+des_vel 1.50903
+vel_error0.176161
+cur_twist x 1.33287
+des_vel 1.51278
+vel_error0.180656
+cur_twist x 1.33213
+des_vel 1.51654
+vel_error0.184794
+cur_twist x 1.33174
+des_vel 1.52028
+vel_error0.193506
+cur_twist x 1.32678
+des_vel 1.52404
+vel_error0.190905
+cur_twist x 1.33313
+des_vel 1.52779
+vel_error0.195882
+cur_twist x 1.3319
+des_vel 1.53153
+vel_error0.199005
+cur_twist x 1.33253
+des_vel 1.53528
+vel_error0.207555
+cur_twist x 1.32773
+des_vel 1.53903
+vel_error0.203272
+cur_twist x 1.33576
+des_vel 1.54278
+vel_error0.207246
+cur_twist x 1.33554
+des_vel 1.54653
+vel_error0.21005
+cur_twist x 1.33648
+des_vel 1.55028
+vel_error0.212503
+cur_twist x 1.33778
+des_vel 1.55403
+vel_error0.217426
+cur_twist x 1.33661
+des_vel 1.55778
+vel_error0.215502
+cur_twist x 1.34228
+des_vel 1.56153
+vel_error0.21921
+cur_twist x 1.34232
+des_vel 1.56529
+vel_error0.220198
+cur_twist x 1.34509
+des_vel 1.56903
+vel_error0.222618
+cur_twist x 1.34642
+des_vel 1.57278
+vel_error0.220519
+cur_twist x 1.35226
+des_vel 1.57654
+vel_error0.223871
+cur_twist x 1.35266
+des_vel 1.58028
+vel_error0.224239
+cur_twist x 1.35604
+des_vel 1.58404
+vel_error0.226187
+cur_twist x 1.35785
+des_vel 1.58778
+vel_error0.225541
+cur_twist x 1.36224
+des_vel 1.59153
+vel_error0.228321
+cur_twist x 1.36321
+des_vel 1.59528
+vel_error0.230168
+cur_twist x 1.36511
+des_vel 1.59904
+vel_error0.229988
+cur_twist x 1.36905
+des_vel 1.60278
+vel_error0.232073
+cur_twist x 1.37071
+des_vel 1.60654
+vel_error0.230876
+cur_twist x 1.37566
+des_vel 1.61028
+vel_error0.233061
+cur_twist x 1.37722
+des_vel 1.61403
+vel_error0.232376
+cur_twist x 1.38166
+des_vel 1.61778
+vel_error0.234025
+cur_twist x 1.38376
+des_vel 1.62153
+vel_error0.235487
+cur_twist x 1.38604
+des_vel 1.62528
+vel_error0.233689
+cur_twist x 1.39159
+des_vel 1.62904
+vel_error0.235924
+cur_twist x 1.39311
+des_vel 1.63279
+vel_error0.234971
+cur_twist x 1.39781
+des_vel 1.63653
+vel_error0.236249
+cur_twist x 1.40028
+des_vel 1.64028
+vel_error0.237436
+cur_twist x 1.40285
+des_vel 1.64403
+vel_error0.234594
+cur_twist x 1.40944
+des_vel 1.64778
+vel_error0.23243
+cur_twist x 1.41535
+des_vel 1.65153
+vel_error0.233582
+cur_twist x 1.41795
+des_vel 1.65529
+vel_error0.233988
+cur_twist x 1.4213
+des_vel 1.65903
+vel_error0.232673
+cur_twist x 1.42636
+des_vel 1.66278
+vel_error0.2323
+cur_twist x 1.43048
+des_vel 1.66653
+vel_error0.233521
+cur_twist x 1.43301
+des_vel 1.67029
+vel_error0.23233
+cur_twist x 1.43796
+des_vel 1.67403
+vel_error0.235852
+cur_twist x 1.43818
+des_vel 1.67778
+vel_error0.231889
+cur_twist x 1.44589
+des_vel 1.68153
+vel_error0.233185
+cur_twist x 1.44835
+des_vel 1.68528
+vel_error0.234194
+cur_twist x 1.45109
+des_vel 1.68903
+vel_error0.232836
+cur_twist x 1.4562
+des_vel 1.69279
+vel_error0.230783
+cur_twist x 1.462
+des_vel 1.69653
+vel_error0.232426
+cur_twist x 1.46411
+des_vel 1.70028
+vel_error0.230993
+cur_twist x 1.46929
+des_vel 1.70404
+vel_error0.23195
+cur_twist x 1.47209
+des_vel 1.70779
+vel_error0.233304
+cur_twist x 1.47448
+des_vel 1.71153
+vel_error0.230062
+cur_twist x 1.48147
+des_vel 1.71528
+vel_error0.232228
+cur_twist x 1.48305
+des_vel 1.71903
+vel_error0.230568
+cur_twist x 1.48846
+des_vel 1.72278
+vel_error0.231738
+cur_twist x 1.49104
+des_vel 1.72654
+vel_error0.230057
+cur_twist x 1.49648
+des_vel 1.73029
+vel_error0.231063
+cur_twist x 1.49922
+des_vel 1.73403
+vel_error0.231994
+cur_twist x 1.50204
+des_vel 1.73778
+vel_error0.232836
+cur_twist x 1.50495
+des_vel 1.74153
+vel_error0.23104
+cur_twist x 1.51049
+des_vel 1.74529
+vel_error0.236901
+cur_twist x 1.50839
+des_vel 1.74903
+vel_error0.225713
+cur_twist x 1.52332
+des_vel 1.75278
+vel_error0.226083
+cur_twist x 1.5267
+des_vel 1.75653
+vel_error0.227083
+cur_twist x 1.52945
+des_vel 1.76028
+vel_error0.228153
+cur_twist x 1.53213
+des_vel 1.76403
+vel_error0.225979
+cur_twist x 1.53805
+des_vel 1.76778
+vel_error0.221406
+cur_twist x 1.54638
+des_vel 1.77153
+vel_error0.222479
+cur_twist x 1.54905
+des_vel 1.77528
+vel_error0.219299
+cur_twist x 1.55598
+des_vel 1.77903
+vel_error0.220534
+cur_twist x 1.5585
+des_vel 1.78278
+vel_error0.2194
+cur_twist x 1.56338
+des_vel 1.78653
+vel_error0.220342
+cur_twist x 1.56619
+des_vel 1.79028
+vel_error0.22001
+cur_twist x 1.57027
+des_vel 1.79403
+vel_error0.219206
+cur_twist x 1.57483
+des_vel 1.79778
+vel_error0.218003
+cur_twist x 1.57978
+des_vel 1.80153
+vel_error0.219132
+cur_twist x 1.5824
+des_vel 1.80528
+vel_error0.21974
+cur_twist x 1.58554
+des_vel 1.80903
+vel_error0.217623
+cur_twist x 1.59141
+des_vel 1.81278
+vel_error0.219183
+cur_twist x 1.5936
+des_vel 1.81653
+vel_error0.217675
+cur_twist x 1.59886
+des_vel 1.82028
+vel_error0.216039
+cur_twist x 1.60424
+des_vel 1.82403
+vel_error0.222118
+cur_twist x 1.60191
+des_vel 1.82778
+vel_error0.210892
+cur_twist x 1.61689
+des_vel 1.83153
+vel_error0.211946
+cur_twist x 1.61959
+des_vel 1.83528
+vel_error0.211749
+cur_twist x 1.62353
+des_vel 1.83903
+vel_error0.212838
+cur_twist x 1.62619
+des_vel 1.84278
+vel_error0.21139
+cur_twist x 1.63139
+des_vel 1.84653
+vel_error0.212697
+cur_twist x 1.63383
+des_vel 1.85029
+vel_error0.213804
+cur_twist x 1.63648
+des_vel 1.85403
+vel_error0.217685
+cur_twist x 1.63635
+des_vel 1.85778
+vel_error0.214129
+cur_twist x 1.64365
+des_vel 1.86154
+vel_error0.206755
+cur_twist x 1.65478
+des_vel 1.86528
+vel_error0.208938
+cur_twist x 1.65634
+des_vel 1.86904
+vel_error0.210459
+cur_twist x 1.65858
+des_vel 1.87278
+vel_error0.217546
+cur_twist x 1.65524
+des_vel 1.87653
+vel_error0.213376
+cur_twist x 1.66316
+des_vel 1.88029
+vel_error0.2054
+cur_twist x 1.67489
+des_vel 1.88403
+vel_error0.20383
+cur_twist x 1.6802
+des_vel 1.88778
+vel_error0.203926
+cur_twist x 1.68386
+des_vel 1.89153
+vel_error0.203128
+cur_twist x 1.68841
+des_vel 1.89529
+vel_error0.204918
+cur_twist x 1.69037
+des_vel 1.89903
+vel_error0.204563
+cur_twist x 1.69447
+des_vel 1.90278
+vel_error0.206008
+cur_twist x 1.69677
+des_vel 1.90653
+vel_error0.208324
+cur_twist x 1.69821
+des_vel 1.91029
+vel_error0.206226
+cur_twist x 1.70406
+des_vel 1.91404
+vel_error0.205002
+cur_twist x 1.70903
+des_vel 1.91778
+vel_error0.206348
+cur_twist x 1.71143
+des_vel 1.92153
+vel_error0.204879
+cur_twist x 1.71665
+des_vel 1.92528
+vel_error0.203258
+cur_twist x 1.72202
+des_vel 1.92903
+vel_error0.202977
+cur_twist x 1.72606
+des_vel 1.93279
+vel_error0.202355
+cur_twist x 1.73043
+des_vel 1.93653
+vel_error0.203506
+cur_twist x 1.73303
+des_vel 1.94028
+vel_error0.204652
+cur_twist x 1.73563
+des_vel 1.94403
+vel_error0.20326
+cur_twist x 1.74077
+des_vel 1.94778
+vel_error0.20435
+cur_twist x 1.74343
+des_vel 1.95154
+vel_error0.202787
+cur_twist x 1.74875
+des_vel 1.95528
+vel_error0.204421
+cur_twist x 1.75086
+des_vel 1.95903
+vel_error0.204702
+cur_twist x 1.75433
+des_vel 1.96278
+vel_error0.203102
+cur_twist x 1.75968
+des_vel 1.96654
+vel_error0.203946
+cur_twist x 1.76259
+des_vel 1.97028
+vel_error0.204183
+cur_twist x 1.7661
+des_vel 1.97404
+vel_error0.202798
+cur_twist x 1.77124
+des_vel 1.97778
+vel_error0.200934
+cur_twist x 1.77685
+des_vel 1.98154
+vel_error0.201935
+cur_twist x 1.7796
+des_vel 1.98531
+vel_error0.20006
+cur_twist x 1.78525
+des_vel 1.98903
+vel_error0.202237
+cur_twist x 1.7868
+des_vel 1.99278
+vel_error0.198897
+cur_twist x 1.79389
+des_vel 1.99653
+vel_error0.199917
+cur_twist x 1.79662
+des_vel 2.00028
+vel_error0.198125
+cur_twist x 1.80216
+des_vel 2.00403
+vel_error0.199141
+cur_twist x 1.80489
+des_vel 2.00779
+vel_error0.197622
+cur_twist x 1.81016
+des_vel 2.01153
+vel_error0.19418
+cur_twist x 1.81735
+des_vel 2.01529
+vel_error0.195401
+cur_twist x 1.81989
+des_vel 2.01903
+vel_error0.193927
+cur_twist x 1.8251
+des_vel 2.02278
+vel_error0.196133
+cur_twist x 1.82665
+des_vel 2.02653
+vel_error0.193144
+cur_twist x 1.83339
+des_vel 2.03028
+vel_error0.194369
+cur_twist x 1.83591
+des_vel 2.03404
+vel_error0.192799
+cur_twist x 1.84124
+des_vel 2.03778
+vel_error0.193733
+cur_twist x 1.84405
+des_vel 2.04153
+vel_error0.19199
+cur_twist x 1.84954
+des_vel 2.04528
+vel_error0.19293
+cur_twist x 1.85235
+des_vel 2.04904
+vel_error0.193958
+cur_twist x 1.85508
+des_vel 2.05278
+vel_error0.192207
+cur_twist x 1.86057
+des_vel 2.05654
+vel_error0.190822
+cur_twist x 1.86571
+des_vel 2.06028
+vel_error0.189998
+cur_twist x 1.87028
+des_vel 2.06403
+vel_error0.188572
+cur_twist x 1.87546
+des_vel 2.06778
+vel_error0.189682
+cur_twist x 1.8781
+des_vel 2.07153
+vel_error0.188089
+cur_twist x 1.88344
+des_vel 2.07529
+vel_error0.18918
+cur_twist x 1.88611
+des_vel 2.07904
+vel_error0.190296
+cur_twist x 1.88874
+des_vel 2.08278
+vel_error0.188684
+cur_twist x 1.8941
+des_vel 2.08653
+vel_error0.190937
+cur_twist x 1.8956
+des_vel 2.09028
+vel_error0.189203
+cur_twist x 1.90108
+des_vel 2.09404
+vel_error0.18341
+cur_twist x 1.91063
+des_vel 2.09778
+vel_error0.183738
+cur_twist x 1.91404
+des_vel 2.10154
+vel_error0.182801
+cur_twist x 1.91874
+des_vel 2.10528
+vel_error0.186131
+cur_twist x 1.91915
+des_vel 2.10904
+vel_error0.182049
+cur_twist x 1.92699
+des_vel 2.11278
+vel_error0.183412
+cur_twist x 1.92937
+des_vel 2.11653
+vel_error0.182274
+cur_twist x 1.93426
+des_vel 2.12028
+vel_error0.180784
+cur_twist x 1.9395
+des_vel 2.12403
+vel_error0.181745
+cur_twist x 1.94229
+des_vel 2.12779
+vel_error0.182994
+cur_twist x 1.94479
+des_vel 2.13153
+vel_error0.184092
+cur_twist x 1.94744
+des_vel 2.13528
+vel_error0.182583
+cur_twist x 1.9527
+des_vel 2.13903
+vel_error0.181833
+cur_twist x 1.9572
+des_vel 2.14278
+vel_error0.181118
+cur_twist x 1.96166
+des_vel 2.14653
+vel_error0.178952
+cur_twist x 1.96758
+des_vel 2.15028
+vel_error0.180222
+cur_twist x 1.97006
+des_vel 2.15403
+vel_error0.178851
+cur_twist x 1.97518
+des_vel 2.15778
+vel_error0.1798
+cur_twist x 1.97798
+des_vel 2.16154
+vel_error0.17849
+cur_twist x 1.98305
+des_vel 2.16528
+vel_error0.179569
+cur_twist x 1.98571
+des_vel 2.16903
+vel_error0.181903
+cur_twist x 1.98713
+des_vel 2.17278
+vel_error0.180826
+cur_twist x 1.99196
+des_vel 2.17653
+vel_error0.17573
+cur_twist x 2.0008
+des_vel 2.18028
+vel_error0.175439
+cur_twist x 2.00484
+des_vel 2.18403
+vel_error0.17297
+cur_twist x 2.01106
+des_vel 2.18779
+vel_error0.175426
+cur_twist x 2.01236
+des_vel 2.19154
+vel_error2.19218
+cur_twist x -0.000639676
+des_vel 2.19528
+vel_error0.176811
+cur_twist x 2.01847
+des_vel 2.19903
+vel_error2.1997
+cur_twist x -0.000665798
+des_vel 2.20278
+vel_error0.181987
+cur_twist x 2.0208
+des_vel 2.20654
+vel_error0.172276
+cur_twist x 2.03426
+des_vel 2.21028
+vel_error0.170132
+cur_twist x 2.04015
+des_vel 2.21403
+vel_error0.151072
+cur_twist x 2.06296
+des_vel 2.21778
+vel_error0.122607
+cur_twist x 2.09518
+des_vel 2.22153
+vel_error0.0850264
+cur_twist x 2.13651
+des_vel 2.22528
+vel_error0.062201
+cur_twist x 2.16308
+des_vel 2.22931
+vel_error0.0513062
+cur_twist x 2.178
+des_vel 2.23278
+vel_error0.0425753
+cur_twist x 2.19021
+des_vel 2.23654
+vel_error0.0275948
+cur_twist x 2.20894
+des_vel 2.24028
+vel_error0.0313409
+cur_twist x 2.20894
+des_vel 2.24404
+vel_error0.022814
+cur_twist x 2.22122
+des_vel 2.24778
+vel_error0.0221378
+cur_twist x 2.22564
+des_vel 2.25153
+vel_error0.0197796
+cur_twist x 2.23175
+des_vel 2.25528
+vel_error0.0215932
+cur_twist x 2.23369
+des_vel 2.25903
+vel_error0.022823
+cur_twist x 2.23621
+des_vel 2.26278
+vel_error0.0260165
+cur_twist x 2.23677
+des_vel 2.26653
+vel_error0.0299497
+cur_twist x 2.23658
+des_vel 2.27028
+vel_error0.0336994
+cur_twist x 2.23658
+des_vel 2.27403
+vel_error0.0393585
+cur_twist x 2.23467
+des_vel 2.27779
+vel_error0.0448314
+cur_twist x 2.23296
+des_vel 2.28153
+vel_error0.049479
+cur_twist x 2.23205
+des_vel 2.28528
+vel_error0.0553752
+cur_twist x 2.22991
+des_vel 2.28904
+vel_error0.0599558
+cur_twist x 2.22908
+des_vel 2.29278
+vel_error0.0637014
+cur_twist x 2.22908
+des_vel 2.29653
+vel_error0.0693839
+cur_twist x 2.22715
+des_vel 2.30028
+vel_error0.0758892
+cur_twist x 2.22439
+des_vel 2.30403
+vel_error0.0803595
+cur_twist x 2.22367
+des_vel 2.30778
+vel_error0.0853026
+cur_twist x 2.22248
+des_vel 2.31154
+vel_error0.0895175
+cur_twist x 2.22202
+des_vel 2.31528
+vel_error0.0937374
+cur_twist x 2.22155
+des_vel 2.31904
+vel_error2.32044
+cur_twist x -0.00140396
+des_vel 2.32279
+vel_error0.102166
+cur_twist x 2.22062
+des_vel 2.32653
+vel_error0.104844
+cur_twist x 2.22169
+des_vel 2.33029
+vel_error0.108265
+cur_twist x 2.22202
+des_vel 2.33403
+vel_error0.111084
+cur_twist x 2.22295
+des_vel 2.33779
+vel_error0.110875
+cur_twist x 2.22691
+des_vel 2.34153
+vel_error0.110155
+cur_twist x 2.23138
+des_vel 2.34528
+vel_error0.104393
+cur_twist x 2.24089
+des_vel 2.34904
+vel_error0.104196
+cur_twist x 2.24484
+des_vel 2.35278
+vel_error0.101484
+cur_twist x 2.2513
+des_vel 2.35654
+vel_error0.102594
+cur_twist x 2.25394
+des_vel 2.36029
+vel_error0.101022
+cur_twist x 2.25926
+des_vel 2.36403
+vel_error0.102662
+cur_twist x 2.26137
+des_vel 2.36778
+vel_error0.102887
+cur_twist x 2.26489
+des_vel 2.37153
+vel_error0.104427
+cur_twist x 2.26711
+des_vel 2.37528
+vel_error0.106228
+cur_twist x 2.26905
+des_vel 2.37903
+vel_error0.10683
+cur_twist x 2.2722
+des_vel 2.38278
+vel_error0.107982
+cur_twist x 2.2748
+des_vel 2.38653
+vel_error0.110986
+cur_twist x 2.27555
+des_vel 2.39028
+vel_error0.11197
+cur_twist x 2.27831
+des_vel 2.39404
+vel_error0.114427
+cur_twist x 2.27961
+des_vel 2.39779
+vel_error2.39909
+cur_twist x -0.00129857
+des_vel 2.40153
+vel_error0.119461
+cur_twist x 2.28207
+des_vel 2.40529
+vel_error0.121642
+cur_twist x 2.28364
+des_vel 2.40903
+vel_error0.123836
+cur_twist x 2.2852
+des_vel 2.41278
+vel_error0.12279
+cur_twist x 2.28999
+des_vel 2.41653
+vel_error0.122453
+cur_twist x 2.29408
+des_vel 2.42029
+vel_error0.115845
+cur_twist x 2.30444
+des_vel 2.42403
+vel_error0.112221
+cur_twist x 2.31181
+des_vel 2.42778
+vel_error0.111951
+cur_twist x 2.31583
+des_vel 2.43153
+vel_error0.10811
+cur_twist x 2.32342
+des_vel 2.43529
+vel_error0.108612
+cur_twist x 2.32668
+des_vel 2.43903
+vel_error0.106709
+cur_twist x 2.33232
+des_vel 2.44278
+vel_error0.107925
+cur_twist x 2.33486
+des_vel 2.44653
+vel_error0.109305
+cur_twist x 2.33723
+des_vel 2.45028
+vel_error0.108781
+cur_twist x 2.3415
+des_vel 2.45404
+vel_error0.108725
+cur_twist x 2.34531
+des_vel 2.45779
+vel_error0.110697
+cur_twist x 2.34709
+des_vel 2.46153
+vel_error0.110949
+cur_twist x 2.35058
+des_vel 2.46528
+vel_error0.113015
+cur_twist x 2.35227
+des_vel 2.46903
+vel_error0.112989
+cur_twist x 2.35604
+des_vel 2.47278
+vel_error0.115529
+cur_twist x 2.35725
+des_vel 2.47653
+vel_error0.115961
+cur_twist x 2.36057
+des_vel 2.48028
+vel_error0.116338
+cur_twist x 2.36394
+des_vel 2.48403
+vel_error0.118082
+cur_twist x 2.36595
+des_vel 2.48778
+vel_error0.120363
+cur_twist x 2.36742
+des_vel 2.49153
+vel_error0.120601
+cur_twist x 2.37093
+des_vel 2.49528
+vel_error0.122595
+cur_twist x 2.37269
+des_vel 2.49903
+vel_error0.12274
+cur_twist x 2.37629
+des_vel 2.50278
+vel_error0.122989
+cur_twist x 2.37979
+des_vel 2.50654
+vel_error0.126743
+cur_twist x 2.37979
+des_vel 2.51029
+vel_error0.128692
+cur_twist x 2.38159
+des_vel 2.51403
+vel_error0.130608
+cur_twist x 2.38342
+des_vel 2.3878
+vel_error0
+cur_twist x 2.3878
+des_vel 2.39155
+vel_error0.00200155
+cur_twist x 2.38955
+des_vel 2.3953
+vel_error0.00129288
+cur_twist x 2.394
+des_vel 2.39905
+vel_error0.00268088
+cur_twist x 2.39637
+des_vel 2.4028
+vel_error0.000921472
+cur_twist x 2.40188
+des_vel 2.40655
+vel_error0.00217178
+cur_twist x 2.40438
+des_vel 2.4103
+vel_error0.00426254
+cur_twist x 2.40603
+des_vel 2.41405
+vel_error0.00820361
+cur_twist x 2.40584
+des_vel 2.41781
+vel_error0.013416
+cur_twist x 2.40439
+des_vel 2.42155
+vel_error0.0228635
+cur_twist x 2.39868
+des_vel 2.4253
+vel_error0.0328179
+cur_twist x 2.39248
+des_vel 2.42905
+vel_error0.0448367
+cur_twist x 2.38421
+des_vel 2.4328
+vel_error0.0529734
+cur_twist x 2.37982
+des_vel 2.43655
+vel_error0.0611566
+cur_twist x 2.37539
+des_vel 2.4403
+vel_error0.0738829
+cur_twist x 2.36642
+des_vel 2.44405
+vel_error0.082117
+cur_twist x 2.36193
+des_vel 2.4478
+vel_error0.0947351
+cur_twist x 2.35306
+des_vel 2.45155
+vel_error0.102814
+cur_twist x 2.34874
+des_vel 2.4553
+vel_error0.11486
+cur_twist x 2.34044
+des_vel 2.45905
+vel_error0.122322
+cur_twist x 2.33673
+des_vel 2.4628
+vel_error0.133299
+cur_twist x 2.3295
+des_vel 2.46655
+vel_error0.140459
+cur_twist x 2.32609
+des_vel 2.4703
+vel_error0.150502
+cur_twist x 2.3198
+des_vel 2.47405
+vel_error0.157207
+cur_twist x 2.31684
+des_vel 2.4778
+vel_error0.166232
+cur_twist x 2.31157
+des_vel 2.48155
+vel_error0.172415
+cur_twist x 2.30913
+des_vel 2.4853
+vel_error0.181817
+cur_twist x 2.30348
+des_vel 2.48905
+vel_error0.186624
+cur_twist x 2.30243
+des_vel 2.4928
+vel_error0.193155
+cur_twist x 2.29964
+des_vel 2.49655
+vel_error0.198268
+cur_twist x 2.29828
+des_vel 2.5003
+vel_error0.204467
+cur_twist x 2.29583
+des_vel 2.50405
+vel_error0.210687
+cur_twist x 2.29336
+des_vel 2.5078
+vel_error0.214791
+cur_twist x 2.29301
+des_vel 2.51155
+vel_error0.21939
+cur_twist x 2.29216
+des_vel 2.5153
+vel_error0.223777
+cur_twist x 2.29152
+des_vel 2.51905
+vel_error0.228316
+cur_twist x 2.29073
+des_vel 2.5228
+vel_error0.231455
+cur_twist x 2.29134
+des_vel 2.52655
+vel_error2.52787
+cur_twist x -0.00132698
+des_vel 2.5303
+vel_error0.238695
+cur_twist x 2.2916
+des_vel 2.53405
+vel_error0.242999
+cur_twist x 2.29105
+des_vel 2.5378
+vel_error0.244039
+cur_twist x 2.29376
+des_vel 2.54155
+vel_error0.245529
+cur_twist x 2.29602
+des_vel 2.5453
+vel_error0.240811
+cur_twist x 2.30449
+des_vel 2.54905
+vel_error0.244562
+cur_twist x 2.30449
+des_vel 2.5528
+vel_error0.235666
+cur_twist x 2.31713
+des_vel 2.55655
+vel_error0.235955
+cur_twist x 2.32059
+des_vel 2.5603
+vel_error0.236621
+cur_twist x 2.32368
+des_vel 2.56405
+vel_error2.56556
+cur_twist x -0.00151621
+des_vel 2.5678
+vel_error0.238783
+cur_twist x 2.32901
+des_vel 2.57155
+vel_error0.236872
+cur_twist x 2.33468
+des_vel 2.5753
+vel_error0.240623
+cur_twist x 2.33468
+des_vel 2.57905
+vel_error0.239941
+cur_twist x 2.33911
+des_vel 2.5828
+vel_error0.240595
+cur_twist x 2.3422
+des_vel 2.58655
+vel_error0.23645
+cur_twist x 2.3501
+des_vel 2.5903
+vel_error0.237928
+cur_twist x 2.35237
+des_vel 2.59405
+vel_error0.235916
+cur_twist x 2.35813
+des_vel 2.5978
+vel_error0.237034
+cur_twist x 2.36076
+des_vel 2.60155
+vel_error0.235869
+cur_twist x 2.36568
+des_vel 2.6053
+vel_error0.23507
+cur_twist x 2.37023
+des_vel 2.60905
+vel_error0.236676
+cur_twist x 2.37237
+des_vel 2.6128
+vel_error0.236354
+cur_twist x 2.37644
+des_vel 2.61655
+vel_error0.238133
+cur_twist x 2.37841
+des_vel 2.6203
+vel_error0.237949
+cur_twist x 2.38235
+des_vel 2.62405
+vel_error0.240061
+cur_twist x 2.38399
+des_vel 2.6278
+vel_error0.240213
+cur_twist x 2.38759
+des_vel 2.63155
+vel_error0.242172
+cur_twist x 2.38938
+des_vel 2.6353
+vel_error0.242175
+cur_twist x 2.39312
+des_vel 2.63905
+vel_error0.244338
+cur_twist x 2.39471
+des_vel 2.6428
+vel_error0.244476
+cur_twist x 2.39832
+des_vel 2.64655
+vel_error0.246418
+cur_twist x 2.40013
+des_vel 2.6503
+vel_error0.248334
+cur_twist x 2.40197
+des_vel 2.65405
+vel_error0.248224
+cur_twist x 2.40582
+des_vel 2.6578
+vel_error0.248278
+cur_twist x 2.40952
+des_vel 2.66155
+vel_error0.249995
+cur_twist x 2.41156
+des_vel 2.6653
+vel_error0.249558
+cur_twist x 2.41574
+des_vel 2.66905
+vel_error0.251187
+cur_twist x 2.41786
+des_vel 2.6728
+vel_error0.250743
+cur_twist x 2.42206
+des_vel 2.67655
+vel_error0.252245
+cur_twist x 2.4243
+des_vel 2.6803
+vel_error0.251517
+cur_twist x 2.42878
+des_vel 2.68405
+vel_error0.250751
+cur_twist x 2.4333
+des_vel 2.6878
+vel_error0.251915
+cur_twist x 2.43588
+des_vel 2.69155
+vel_error0.251488
+cur_twist x 2.44006
+des_vel 2.6953
+vel_error0.252843
+cur_twist x 2.44246
+des_vel 2.69905
+vel_error0.251749
+cur_twist x 2.4473
+des_vel 2.7028
+vel_error0.253056
+cur_twist x 2.44974
+des_vel 2.70655
+vel_error0.254358
+cur_twist x 2.45219
+des_vel 2.7103
+vel_error0.253151
+cur_twist x 2.45715
+des_vel 2.71405
+vel_error0.254408
+cur_twist x 2.45964
+des_vel 2.7178
+vel_error0.253105
+cur_twist x 2.46469
+des_vel 2.72155
+vel_error0.253833
+cur_twist x 2.46771
+des_vel 2.7253
+vel_error0.252893
+cur_twist x 2.4724
+des_vel 2.72905
+vel_error0.25406
+cur_twist x 2.47499
+des_vel 2.7328
+vel_error0.252641
+cur_twist x 2.48016
+des_vel 2.73655
+vel_error0.250465
+cur_twist x 2.48608
+des_vel 2.7403
+vel_error0.252405
+cur_twist x 2.48789
+des_vel 2.74405
+vel_error0.250952
+cur_twist x 2.4931
+des_vel 2.7478
+vel_error0.252096
+cur_twist x 2.4957
+des_vel 2.75155
+vel_error0.250657
+cur_twist x 2.50089
+des_vel 2.7553
+vel_error0.251534
+cur_twist x 2.50376
+des_vel 2.75905
+vel_error0.250208
+cur_twist x 2.50884
+des_vel 2.7628
+vel_error0.251295
+cur_twist x 2.5115
+des_vel 2.76655
+vel_error0.252341
+cur_twist x 2.51421
+des_vel 2.7703
+vel_error0.250709
+cur_twist x 2.51959
+des_vel 2.77405
+vel_error0.249034
+cur_twist x 2.52501
+des_vel 2.7778
+vel_error0.250187
+cur_twist x 2.52761
+des_vel 2.78155
+vel_error0.24849
+cur_twist x 2.53306
+des_vel 2.7853
+vel_error0.249536
+cur_twist x 2.53576
+des_vel 2.78905
+vel_error0.247179
+cur_twist x 2.54187
+des_vel 2.7928
+vel_error0.248816
+cur_twist x 2.54398
+des_vel 2.79655
+vel_error0.24706
+cur_twist x 2.54949
+des_vel 2.8003
+vel_error0.248029
+cur_twist x 2.55227
+des_vel 2.80405
+vel_error0.246258
+cur_twist x 2.55779
+des_vel 2.8078
+vel_error0.246571
+cur_twist x 2.56123
+des_vel 2.81155
+vel_error0.245379
+cur_twist x 2.56617
+des_vel 2.8153
+vel_error0.246298
+cur_twist x 2.569
+des_vel 2.81905
+vel_error0.244494
+cur_twist x 2.57455
+des_vel 2.8228
+vel_error0.245473
+cur_twist x 2.57733
+des_vel 2.82655
+vel_error0.243696
+cur_twist x 2.58285
+des_vel 2.8303
+vel_error0.244664
+cur_twist x 2.58564
+des_vel 2.83405
+vel_error0.242888
+cur_twist x 2.59116
+des_vel 2.8378
+vel_error0.243846
+cur_twist x 2.59395
+des_vel 2.84155
+vel_error0.241576
+cur_twist x 2.59997
+des_vel 2.8453
+vel_error0.24288
+cur_twist x 2.60242
+des_vel 2.84905
+vel_error0.241003
+cur_twist x 2.60804
+des_vel 2.8528
+vel_error0.241946
+cur_twist x 2.61085
+des_vel 2.85655
+vel_error0.240085
+cur_twist x 2.61647
+des_vel 2.8603
+vel_error0.241
+cur_twist x 2.6193
+des_vel 2.86405
+vel_error0.239142
+cur_twist x 2.62491
+des_vel 2.8678
+vel_error0.240089
+cur_twist x 2.62771
+des_vel 2.87155
+vel_error0.238221
+cur_twist x 2.63333
+des_vel 2.8753
+vel_error0.238927
+cur_twist x 2.63637
+des_vel 2.87905
+vel_error0.237306
+cur_twist x 2.64175
+des_vel 2.8828
+vel_error0.238255
+cur_twist x 2.64454
+des_vel 2.88655
+vel_error0.236401
+cur_twist x 2.65015
+des_vel 2.8903
+vel_error0.237356
+cur_twist x 2.65294
+des_vel 2.89405
+vel_error0.23559
+cur_twist x 2.65846
+des_vel 2.8978
+vel_error0.236572
+cur_twist x 2.66122
+des_vel 2.90155
+vel_error0.234764
+cur_twist x 2.66678
+des_vel 2.9053
+vel_error0.235747
+cur_twist x 2.66955
+des_vel 2.90905
+vel_error0.233443
+cur_twist x 2.6756
+des_vel 2.9128
+vel_error0.234791
+cur_twist x 2.67801
+des_vel 2.91655
+vel_error0.232921
+cur_twist x 2.68363
+des_vel 2.9203
+vel_error0.233843
+cur_twist x 2.68645
+des_vel 2.92405
+vel_error0.231996
+cur_twist x 2.69205
+des_vel 2.9278
+vel_error0.232683
+cur_twist x 2.69512
+des_vel 2.93155
+vel_error0.231075
+cur_twist x 2.70047
+des_vel 2.9353
+vel_error0.231995
+cur_twist x 2.7033
+des_vel 2.93905
+vel_error0.230155
+cur_twist x 2.70889
+des_vel 2.9428
+vel_error0.231124
+cur_twist x 2.71167
+des_vel 2.94655
+vel_error0.229347
+cur_twist x 2.7172
+des_vel 2.9503
+vel_error0.230326
+cur_twist x 2.71997
+des_vel 2.95405
+vel_error0.228537
+cur_twist x 2.72551
+des_vel 2.9578
+vel_error0.229525
+cur_twist x 2.72827
+des_vel 2.96155
+vel_error0.227797
+cur_twist x 2.73375
+des_vel 2.9653
+vel_error0.228776
+cur_twist x 2.73652
+des_vel 2.96905
+vel_error0.229773
+cur_twist x 2.73927
+des_vel 2.9728
+vel_error0.228003
+cur_twist x 2.7448
+des_vel 2.97655
+vel_error0.228981
+cur_twist x 2.74757
+des_vel 2.9803
+vel_error0.227154
+cur_twist x 2.75315
+des_vel 2.98405
+vel_error0.22812
+cur_twist x 2.75593
+des_vel 2.9878
+vel_error0.226293
+cur_twist x 2.7615
+des_vel 2.99155
+vel_error0.227261
+cur_twist x 2.76429
+des_vel 2.9953
+vel_error0.228226
+cur_twist x 2.76707
+des_vel 2.99905
+vel_error0.226455
+cur_twist x 2.7726
+des_vel 3.0028
+vel_error0.227421
+cur_twist x 2.77538
+des_vel 3.00655
+vel_error0.22289
+cur_twist x 2.78366
+des_vel 3.0103
+vel_error0.221003
+cur_twist x 2.78929
+des_vel 3.01405
+vel_error0.221931
+cur_twist x 2.79212
+des_vel 3.0178
+vel_error0.220015
+cur_twist x 2.79778
+des_vel 3.02155
+vel_error0.220812
+cur_twist x 2.80073
+des_vel 3.0253
+vel_error0.222031
+cur_twist x 2.80327
+des_vel 3.02905
+vel_error0.220332
+cur_twist x 2.80872
+des_vel 3.0328
+vel_error0.221385
+cur_twist x 2.81141
+des_vel 3.03655
+vel_error0.219708
+cur_twist x 2.81684
+des_vel 3.0403
+vel_error0.220624
+cur_twist x 2.81968
+des_vel 3.04405
+vel_error0.218989
+cur_twist x 2.82506
+des_vel 3.0478
+vel_error0.219955
+cur_twist x 2.82785
+des_vel 3.05155
+vel_error0.220938
+cur_twist x 2.83061
+des_vel 3.0553
+vel_error0.219163
+cur_twist x 2.83613
+des_vel 3.05905
+vel_error0.220018
+cur_twist x 2.83903
+des_vel 3.0628
+vel_error0.21843
+cur_twist x 2.84437
+des_vel 3.06655
+vel_error0.219396
+cur_twist x 2.84715
+des_vel 3.0703
+vel_error0.21759
+cur_twist x 2.85271
+des_vel 3.07405
+vel_error0.218575
+cur_twist x 2.85547
+des_vel 3.07779
+vel_error0.216854
+cur_twist x 2.86094
+des_vel 3.08155
+vel_error0.217871
+cur_twist x 2.86368
+des_vel 3.0853
+vel_error0.218872
+cur_twist x 2.86642
+des_vel 3.08905
+vel_error0.213606
+cur_twist x 2.87544
+des_vel 3.0928
+vel_error0.215494
+cur_twist x 2.8773
+des_vel 3.09655
+vel_error0.213785
+cur_twist x 2.88276
+des_vel 3.1003
+vel_error0.214726
+cur_twist x 2.88557
+des_vel 3.10405
+vel_error0.212975
+cur_twist x 2.89107
+des_vel 3.1078
+vel_error0.213876
+cur_twist x 2.89392
+des_vel 3.11155
+vel_error0.214922
+cur_twist x 2.89662
+des_vel 3.1153
+vel_error0.213086
+cur_twist x 2.90222
+des_vel 3.11905
+vel_error0.214007
+cur_twist x 2.90504
+des_vel 3.1228
+vel_error0.212211
+cur_twist x 2.91059
+des_vel 3.12655
+vel_error0.213141
+cur_twist x 2.91341
+des_vel 3.1303
+vel_error0.214074
+cur_twist x 2.91623
+des_vel 3.13405
+vel_error0.212241
+cur_twist x 2.92181
+des_vel 3.1378
+vel_error0.213195
+cur_twist x 2.9246
+des_vel 3.14155
+vel_error0.210922
+cur_twist x 2.93063
+des_vel 3.1453
+vel_error0.212258
+cur_twist x 2.93304
+des_vel 3.14905
+vel_error0.207458
+cur_twist x 2.94159
+des_vel 3.1528
+vel_error0.208348
+cur_twist x 2.94445
+des_vel 3.15655
+vel_error0.206503
+cur_twist x 2.95004
+des_vel 3.1603
+vel_error0.207397
+cur_twist x 2.9529
+des_vel 3.16405
+vel_error0.208333
+cur_twist x 2.95571
+des_vel 3.1678
+vel_error0.2065
+cur_twist x 2.9613
+des_vel 3.17155
+vel_error0.207452
+cur_twist x 2.9641
+des_vel 3.1753
+vel_error0.205586
+cur_twist x 2.96971
+des_vel 3.17905
+vel_error0.206515
+cur_twist x 2.97253
+des_vel 3.1828
+vel_error0.204668
+cur_twist x 2.97813
+des_vel 3.18655
+vel_error0.205624
+cur_twist x 2.98092
+des_vel 3.1903
+vel_error0.203796
+cur_twist x 2.9865
+des_vel 3.19405
+vel_error0.20212
+cur_twist x 2.99193
+des_vel 3.1978
+vel_error0.20315
+cur_twist x 2.99465
+des_vel 3.20155
+vel_error0.204148
+cur_twist x 2.9974
+des_vel 3.2053
+vel_error0.202463
+cur_twist x 3.00284
+des_vel 3.20905
+vel_error0.203535
+cur_twist x 3.00551
+des_vel 3.2128
+vel_error0.201879
+cur_twist x 3.01092
+des_vel 3.21655
+vel_error0.202913
+cur_twist x 3.01363
+des_vel 3.2203
+vel_error0.198224
+cur_twist x 3.02207
+des_vel 3.22405
+vel_error0.199415
+cur_twist x 3.02463
+des_vel 3.2278
+vel_error0.197681
+cur_twist x 3.03012
+des_vel 3.23155
+vel_error3.23293
+cur_twist x -0.00137911
+des_vel 3.2353
+vel_error0.202444
+cur_twist x 3.03285
+des_vel 3.23905
+vel_error0.20094
+cur_twist x 3.03811
+des_vel 3.2428
+vel_error0.2016
+cur_twist x 3.0412
+des_vel 3.24655
+vel_error0.200409
+cur_twist x 3.04614
+des_vel 3.2503
+vel_error0.200451
+cur_twist x 3.04985
+des_vel 3.25405
+vel_error0.18668
+cur_twist x 3.06737
+des_vel 3.2578
+vel_error0.179119
+cur_twist x 3.07868
+des_vel 3.26155
+vel_error0.177731
+cur_twist x 3.08382
+des_vel 3.2653
+vel_error0.172085
+cur_twist x 3.09321
+des_vel 3.26904
+vel_error0.171683
+cur_twist x 3.09736
+des_vel 3.2728
+vel_error0.171678
+cur_twist x 3.10112
+des_vel 3.27655
+vel_error0.168582
+cur_twist x 3.10796
+des_vel 3.2803
+vel_error0.169242
+cur_twist x 3.11105
+des_vel 3.28405
+vel_error0.170075
+cur_twist x 3.11397
+des_vel 3.2878
+vel_error0.16829
+cur_twist x 3.11951
+des_vel 3.29155
+vel_error0.166948
+cur_twist x 3.1246
+des_vel 3.2953
+vel_error0.168258
+cur_twist x 3.12704
+des_vel 3.29905
+vel_error0.167215
+cur_twist x 3.13183
+des_vel 3.3028
+vel_error0.168667
+cur_twist x 3.13413
+des_vel 3.30655
+vel_error0.167198
+cur_twist x 3.13935
+des_vel 3.3103
+vel_error0.169324
+cur_twist x 3.14097
+des_vel 3.31405
+vel_error0.168598
+cur_twist x 3.14545
+des_vel 3.3178
+vel_error0.170109
+cur_twist x 3.14769
+des_vel 3.32155
+vel_error0.169398
+cur_twist x 3.15215
+des_vel 3.3253
+vel_error0.17058
+cur_twist x 3.15472
+des_vel 3.32905
+vel_error0.170151
+cur_twist x 3.1589
+des_vel 3.3328
+vel_error0.171634
+cur_twist x 3.16116
+des_vel 3.33655
+vel_error0.170852
+cur_twist x 3.1657
+des_vel 3.3403
+vel_error0.172317
+cur_twist x 3.16798
+des_vel 3.34405
+vel_error0.171525
+cur_twist x 3.17252
+des_vel 3.3478
+vel_error0.170668
+cur_twist x 3.17713
+des_vel 3.35155
+vel_error0.174424
+cur_twist x 3.17713
+des_vel 3.3553
+vel_error0.171142
+cur_twist x 3.18415
+des_vel 3.35905
+vel_error0.172238
+cur_twist x 3.18681
+des_vel 3.3628
+vel_error0.171612
+cur_twist x 3.19118
+des_vel 3.36655
+vel_error0.175363
+cur_twist x 3.19118
+des_vel 3.3703
+vel_error0.176751
+cur_twist x 3.19355
+des_vel 3.37405
+vel_error0.175857
+cur_twist x 3.19819
+des_vel 3.3778
+vel_error0.174772
+cur_twist x 3.20303
+des_vel 3.38155
+vel_error0.176281
+cur_twist x 3.20527
+des_vel 3.3853
+vel_error0.175149
+cur_twist x 3.21015
+des_vel 3.38905
+vel_error0.176382
+cur_twist x 3.21267
+des_vel 3.3928
+vel_error0.175145
+cur_twist x 3.21765
+des_vel 3.39655
+vel_error0.176245
+cur_twist x 3.2203
+des_vel 3.4003
+vel_error0.175006
+cur_twist x 3.22529
+des_vel 3.40405
+vel_error0.176212
+cur_twist x 3.22784
+des_vel 3.4078
+vel_error0.17485
+cur_twist x 3.23295
+des_vel 3.41155
+vel_error0.176037
+cur_twist x 3.23551
+des_vel 3.4153
+vel_error0.174712
+cur_twist x 3.24058
+des_vel 3.41905
+vel_error0.173362
+cur_twist x 3.24569
+des_vel 3.4228
+vel_error0.174541
+cur_twist x 3.24826
+des_vel 3.42655
+vel_error0.173156
+cur_twist x 3.25339
+des_vel 3.4303
+vel_error0.17386
+cur_twist x 3.25644
+des_vel 3.43405
+vel_error0.172915
+cur_twist x 3.26113
+des_vel 3.4378
+vel_error0.174077
+cur_twist x 3.26372
+des_vel 3.44155
+vel_error0.172613
+cur_twist x 3.26893
+des_vel 3.4453
+vel_error0.173717
+cur_twist x 3.27158
+des_vel 3.44905
+vel_error0.172206
+cur_twist x 3.27684
+des_vel 3.4528
+vel_error0.173303
+cur_twist x 3.27949
+des_vel 3.45655
+vel_error0.17175
+cur_twist x 3.2848
+des_vel 3.4603
+vel_error0.172817
+cur_twist x 3.28748
+des_vel 3.46405
+vel_error0.171213
+cur_twist x 3.29284
+des_vel 3.4678
+vel_error0.172277
+cur_twist x 3.29552
+des_vel 3.47155
+vel_error0.17066
+cur_twist x 3.30089
+des_vel 3.4753
+vel_error0.171622
+cur_twist x 3.30367
+des_vel 3.47905
+vel_error0.172769
+cur_twist x 3.30628
+des_vel 3.4828
+vel_error0.171118
+cur_twist x 3.31168
+des_vel 3.48655
+vel_error0.172169
+cur_twist x 3.31438
+des_vel 3.4903
+vel_error0.170494
+cur_twist x 3.3198
+des_vel 3.49405
+vel_error0.16989
+cur_twist x 3.32416
+des_vel 3.4978
+vel_error0.169806
+cur_twist x 3.32799
+des_vel 3.50155
+vel_error0.170826
+cur_twist x 3.33072
+des_vel 3.5053
+vel_error0.169144
+cur_twist x 3.33615
+des_vel 3.50905
+vel_error0.1675
+cur_twist x 3.34155
+des_vel 3.5128
+vel_error0.168568
+cur_twist x 3.34423
+des_vel 3.34963
+vel_error0
+cur_twist x 3.34963
+des_vel 3.35338
+vel_error0.00106738
+cur_twist x 3.35231
+des_vel 3.35713
+vel_error-0.000483356
+cur_twist x 3.35762
+des_vel 3.36088
+vel_error0.000617781
+cur_twist x 3.36026
+des_vel 3.36463
+vel_error-0.00149369
+cur_twist x 3.36612
+des_vel 3.36838
+vel_error0.000300397
+cur_twist x 3.36808
+des_vel 3.37213
+vel_error0.00482108
+cur_twist x 3.36731
+des_vel 3.37588
+vel_error0.0102731
+cur_twist x 3.36561
+des_vel 3.37963
+vel_error0.0206411
+cur_twist x 3.35899
+des_vel 3.38338
+vel_error0.028781
+cur_twist x 3.3546
+des_vel 3.38713
+vel_error0.0428724
+cur_twist x 3.34426
+des_vel 3.39088
+vel_error0.0530534
+cur_twist x 3.33783
+des_vel 3.39463
+vel_error0.068263
+cur_twist x 3.32637
+des_vel 3.39838
+vel_error0.0782992
+cur_twist x 3.32008
+des_vel 3.40213
+vel_error0.0946669
+cur_twist x 3.30746
+des_vel 3.40588
+vel_error0.104656
+cur_twist x 3.30122
+des_vel 3.40963
+vel_error0.120639
+cur_twist x 3.28899
+des_vel 3.41338
+vel_error0.130354
+cur_twist x 3.28303
+des_vel 3.41713
+vel_error0.139862
+cur_twist x 3.27727
+des_vel 3.42088
+vel_error0.154575
+cur_twist x 3.2663
+des_vel 3.42463
+vel_error0.168264
+cur_twist x 3.25637
+des_vel 3.42838
+vel_error0.176761
+cur_twist x 3.25162
+des_vel 3.43213
+vel_error0.185031
+cur_twist x 3.2471
+des_vel 3.43588
+vel_error0.197124
+cur_twist x 3.23876
+des_vel 3.43963
+vel_error0.205785
+cur_twist x 3.23385
+des_vel 3.44338
+vel_error0.215232
+cur_twist x 3.22815
+des_vel 3.44713
+vel_error0.222153
+cur_twist x 3.22498
+des_vel 3.45088
+vel_error0.231573
+cur_twist x 3.21931
+des_vel 3.45463
+vel_error0.240454
+cur_twist x 3.21418
+des_vel 3.45838
+vel_error0.245865
+cur_twist x 3.21252
+des_vel 3.46213
+vel_error0.253201
+cur_twist x 3.20893
+des_vel 3.46588
+vel_error0.258452
+cur_twist x 3.20743
+des_vel 3.46963
+vel_error0.264928
+cur_twist x 3.20471
+des_vel 3.47338
+vel_error0.269439
+cur_twist x 3.20394
+des_vel 3.47713
+vel_error0.274746
+cur_twist x 3.20238
+des_vel 3.48088
+vel_error0.279049
+cur_twist x 3.20183
+des_vel 3.48463
+vel_error0.283482
+cur_twist x 3.20115
+des_vel 3.48838
+vel_error0.287352
+cur_twist x 3.20103
+des_vel 3.49213
+vel_error0.290932
+cur_twist x 3.2012
+des_vel 3.49588
+vel_error0.294413
+cur_twist x 3.20147
+des_vel 3.49963
+vel_error0.297288
+cur_twist x 3.20234
+des_vel 3.50338
+vel_error0.300439
+cur_twist x 3.20294
+des_vel 3.50713
+vel_error0.302679
+cur_twist x 3.20445
+des_vel 3.51088
+vel_error0.30552
+cur_twist x 3.20536
+des_vel 3.51463
+vel_error0.307193
+cur_twist x 3.20744
+des_vel 3.51838
+vel_error0.309327
+cur_twist x 3.20905
+des_vel 3.52213
+vel_error0.310946
+cur_twist x 3.21118
+des_vel 3.52588
+vel_error0.31328
+cur_twist x 3.2126
+des_vel 3.52963
+vel_error0.315546
+cur_twist x 3.21409
+des_vel 3.53338
+vel_error0.316141
+cur_twist x 3.21724
+des_vel 3.53713
+vel_error0.316471
+cur_twist x 3.22066
+des_vel 3.54088
+vel_error0.318418
+cur_twist x 3.22247
+des_vel 3.54463
+vel_error0.318377
+cur_twist x 3.22625
+des_vel 3.54838
+vel_error0.32016
+cur_twist x 3.22822
+des_vel 3.55213
+vel_error0.319221
+cur_twist x 3.23291
+des_vel 3.55588
+vel_error0.321447
+cur_twist x 3.23443
+des_vel 3.55963
+vel_error0.320836
+cur_twist x 3.23879
+des_vel 3.56338
+vel_error0.322357
+cur_twist x 3.24103
+des_vel 3.56713
+vel_error0.321515
+cur_twist x 3.24562
+des_vel 3.57088
+vel_error0.322612
+cur_twist x 3.24827
+des_vel 3.57463
+vel_error0.321842
+cur_twist x 3.25279
+des_vel 3.57838
+vel_error0.323171
+cur_twist x 3.25521
+des_vel 3.58213
+vel_error0.321951
+cur_twist x 3.26018
+des_vel 3.58588
+vel_error0.320375
+cur_twist x 3.2655
+des_vel 3.58963
+vel_error0.321893
+cur_twist x 3.26774
+des_vel 3.59338
+vel_error0.320504
+cur_twist x 3.27288
+des_vel 3.59713
+vel_error0.321669
+cur_twist x 3.27546
+des_vel 3.60087
+vel_error0.319752
+cur_twist x 3.28112
+des_vel 3.60463
+vel_error0.321305
+cur_twist x 3.28332
+des_vel 3.60838
+vel_error0.322424
+cur_twist x 3.28596
+des_vel 3.61213
+vel_error0.320882
+cur_twist x 3.29125
+des_vel 3.61588
+vel_error0.321987
+cur_twist x 3.29389
+des_vel 3.61963
+vel_error0.319536
+cur_twist x 3.3001
+des_vel 3.62338
+vel_error0.321429
+cur_twist x 3.30196
+des_vel 3.62713
+vel_error0.319687
+cur_twist x 3.30744
+des_vel 3.63088
+vel_error0.320668
+cur_twist x 3.31021
+des_vel 3.63463
+vel_error0.318817
+cur_twist x 3.31581
+des_vel 3.63838
+vel_error0.322567
+cur_twist x 3.31581
+des_vel 3.64213
+vel_error0.320626
+cur_twist x 3.32151
+des_vel 3.64588
+vel_error0.318642
+cur_twist x 3.32724
+des_vel 3.64963
+vel_error0.319509
+cur_twist x 3.33012
+des_vel 3.65338
+vel_error0.317413
+cur_twist x 3.33597
+des_vel 3.65713
+vel_error0.31765
+cur_twist x 3.33948
+des_vel 3.66088
+vel_error0.316191
+cur_twist x 3.34469
+des_vel 3.66463
+vel_error0.317055
+cur_twist x 3.34757
+des_vel 3.66838
+vel_error0.315001
+cur_twist x 3.35338
+des_vel 3.67213
+vel_error0.315835
+cur_twist x 3.3563
+des_vel 3.67588
+vel_error0.313768
+cur_twist x 3.36211
+des_vel 3.67963
+vel_error0.314612
+cur_twist x 3.36502
+des_vel 3.68338
+vel_error0.318362
+cur_twist x 3.36502
+des_vel 3.68713
+vel_error0.310773
+cur_twist x 3.37636
+des_vel 3.69088
+vel_error0.311268
+cur_twist x 3.37962
+des_vel 3.69463
+vel_error0.312134
+cur_twist x 3.3825
+des_vel 3.69838
+vel_error0.309915
+cur_twist x 3.38846
+des_vel 3.70213
+vel_error0.310595
+cur_twist x 3.39154
+des_vel 3.70588
+vel_error0.308217
+cur_twist x 3.39766
+des_vel 3.70963
+vel_error0.308911
+cur_twist x 3.40072
+des_vel 3.71338
+vel_error0.306583
+cur_twist x 3.4068
+des_vel 3.71713
+vel_error0.304331
+cur_twist x 3.4128
+des_vel 3.72088
+vel_error0.304187
+cur_twist x 3.41669
+des_vel 3.72463
+vel_error0.305929
+cur_twist x 3.4187
+des_vel 3.72838
+vel_error0.303823
+cur_twist x 3.42456
+des_vel 3.73213
+vel_error0.304706
+cur_twist x 3.42743
+des_vel 3.73588
+vel_error0.30268
+cur_twist x 3.4332
+des_vel 3.73963
+vel_error0.302766
+cur_twist x 3.43686
+des_vel 3.74338
+vel_error0.301365
+cur_twist x 3.44202
+des_vel 3.74713
+vel_error0.299257
+cur_twist x 3.44788
+des_vel 3.75088
+vel_error0.300112
+cur_twist x 3.45077
+des_vel 3.75463
+vel_error0.29661
+cur_twist x 3.45802
+des_vel 3.75838
+vel_error0.298885
+cur_twist x 3.45949
+des_vel 3.76213
+vel_error0.296962
+cur_twist x 3.46517
+des_vel 3.76588
+vel_error0.297832
+cur_twist x 3.46805
+des_vel 3.76963
+vel_error0.295831
+cur_twist x 3.4738
+des_vel 3.77338
+vel_error0.296492
+cur_twist x 3.47689
+des_vel 3.77713
+vel_error0.29747
+cur_twist x 3.47966
+des_vel 3.78088
+vel_error0.295374
+cur_twist x 3.48551
+des_vel 3.78463
+vel_error0.296193
+cur_twist x 3.48844
+des_vel 3.78838
+vel_error0.294059
+cur_twist x 3.49432
+des_vel 3.79213
+vel_error0.294155
+cur_twist x 3.49798
+des_vel 3.79588
+vel_error0.292656
+cur_twist x 3.50322
+des_vel 3.79963
+vel_error0.293463
+cur_twist x 3.50617
+des_vel 3.80338
+vel_error0.291337
+cur_twist x 3.51204
+des_vel 3.80713
+vel_error0.292169
+cur_twist x 3.51496
+des_vel 3.81088
+vel_error0.290126
+cur_twist x 3.52075
+des_vel 3.81463
+vel_error0.290988
+cur_twist x 3.52365
+des_vel 3.81838
+vel_error0.288954
+cur_twist x 3.52943
+des_vel 3.82213
+vel_error0.289825
+cur_twist x 3.53231
+des_vel 3.82591
+vel_error0.287144
+cur_twist x 3.53877
+des_vel 3.82963
+vel_error0.290863
+cur_twist x 3.53877
+des_vel 3.83338
+vel_error0.286638
+cur_twist x 3.54674
+des_vel 3.83713
+vel_error0.284341
+cur_twist x 3.55279
+des_vel 3.84088
+vel_error0.284663
+cur_twist x 3.55622
+des_vel 3.84463
+vel_error0.286199
+cur_twist x 3.55843
+des_vel 3.84838
+vel_error0.284145
+cur_twist x 3.56423
+des_vel 3.85213
+vel_error0.285062
+cur_twist x 3.56707
+des_vel 3.85588
+vel_error0.283082
+cur_twist x 3.5728
+des_vel 3.85963
+vel_error0.28324
+cur_twist x 3.57639
+des_vel 3.86338
+vel_error0.281824
+cur_twist x 3.58156
+des_vel 3.86713
+vel_error0.282675
+cur_twist x 3.58445
+des_vel 3.87088
+vel_error0.277643
+cur_twist x 3.59324
+des_vel 3.87463
+vel_error0.278456
+cur_twist x 3.59618
+des_vel 3.87838
+vel_error0.279284
+cur_twist x 3.5991
+des_vel 3.88213
+vel_error0.277206
+cur_twist x 3.60493
+des_vel 3.88588
+vel_error0.278128
+cur_twist x 3.60775
+des_vel 3.88963
+vel_error0.275728
+cur_twist x 3.6139
+des_vel 3.89338
+vel_error0.277068
+cur_twist x 3.61631
+des_vel 3.89713
+vel_error0.275066
+cur_twist x 3.62207
+des_vel 3.90088
+vel_error0.275915
+cur_twist x 3.62496
+des_vel 3.90463
+vel_error0.27386
+cur_twist x 3.63077
+des_vel 3.90838
+vel_error0.273924
+cur_twist x 3.63446
+des_vel 3.91213
+vel_error0.272589
+cur_twist x 3.63954
+des_vel 3.91588
+vel_error0.273382
+cur_twist x 3.6425
+des_vel 3.91963
+vel_error0.271253
+cur_twist x 3.64838
+des_vel 3.92338
+vel_error0.271613
+cur_twist x 3.65177
+des_vel 3.92713
+vel_error0.26999
+cur_twist x 3.65714
+des_vel 3.93088
+vel_error0.270804
+cur_twist x 3.66008
+des_vel 3.93463
+vel_error0.271618
+cur_twist x 3.66301
+des_vel 3.93838
+vel_error0.269535
+cur_twist x 3.66885
+des_vel 3.94213
+vel_error0.268933
+cur_twist x 3.6732
+des_vel 3.94588
+vel_error0.268376
+cur_twist x 3.6775
+des_vel 3.94963
+vel_error0.269223
+cur_twist x 3.68041
+des_vel 3.95338
+vel_error0.267155
+cur_twist x 3.68623
+des_vel 3.95713
+vel_error0.26802
+cur_twist x 3.68911
+des_vel 3.96088
+vel_error0.266005
+cur_twist x 3.69488
+des_vel 3.96463
+vel_error0.266854
+cur_twist x 3.69778
+des_vel 3.96839
+vel_error0.267711
+cur_twist x 3.70068
+des_vel 3.97213
+vel_error0.265704
+cur_twist x 3.70643
+des_vel 3.97588
+vel_error0.263755
+cur_twist x 3.71212
+des_vel 3.97963
+vel_error0.264661
+cur_twist x 3.71497
+des_vel 3.98339
+vel_error0.262647
+cur_twist x 3.72074
+des_vel 3.98713
+vel_error0.263475
+cur_twist x 3.72366
+des_vel 3.99088
+vel_error0.261056
+cur_twist x 3.72983
+des_vel 3.99463
+vel_error0.262313
+cur_twist x 3.73232
+des_vel 3.99838
+vel_error0.263208
+cur_twist x 3.73518
+des_vel 4.00213
+vel_error0.261238
+cur_twist x 3.74089
+des_vel 4.00588
+vel_error0.259256
+cur_twist x 3.74662
+des_vel 4.00963
+vel_error0.259541
+cur_twist x 3.75009
+des_vel 4.01338
+vel_error0.258
+cur_twist x 3.75538
+des_vel 4.01713
+vel_error0.258815
+cur_twist x 3.75832
+des_vel 4.02088
+vel_error0.259637
+cur_twist x 3.76124
+des_vel 4.02463
+vel_error0.257622
+cur_twist x 3.76701
+des_vel 4.02838
+vel_error0.25567
+cur_twist x 3.77271
+des_vel 4.03213
+vel_error0.256585
+cur_twist x 3.77555
+des_vel 4.03588
+vel_error0.256097
+cur_twist x 3.77978
+des_vel 4.03963
+vel_error0.257583
+cur_twist x 3.78205
+des_vel 4.04338
+vel_error0.255666
+cur_twist x 3.78772
+des_vel 4.04713
+vel_error0.257213
+cur_twist x 3.78992
+des_vel 4.05088
+vel_error0.258784
+cur_twist x 3.7921
+des_vel 4.05463
+vel_error0.261026
+cur_twist x 3.7936
+des_vel 4.05838
+vel_error0.260371
+cur_twist x 3.79801
+des_vel 4.06213
+vel_error0.261587
+cur_twist x 3.80054
+des_vel 4.06588
+vel_error0.25988
+cur_twist x 3.806
+des_vel 4.06963
+vel_error0.260772
+cur_twist x 3.80886
+des_vel 4.07338
+vel_error0.261609
+cur_twist x 3.81177
+des_vel 4.07713
+vel_error0.258686
+cur_twist x 3.81844
+des_vel 4.08088
+vel_error0.254067
+cur_twist x 3.82682
+des_vel 4.08463
+vel_error0.25474
+cur_twist x 3.82989
+des_vel 4.08838
+vel_error0.252379
+cur_twist x 3.836
+des_vel 4.09213
+vel_error0.253138
+cur_twist x 3.839
+des_vel 4.09588
+vel_error0.253935
+cur_twist x 3.84194
+des_vel 4.09963
+vel_error0.252586
+cur_twist x 3.84705
+des_vel 4.10338
+vel_error0.253746
+cur_twist x 3.84963
+des_vel 4.10713
+vel_error0.251774
+cur_twist x 3.85536
+des_vel 4.11088
+vel_error0.252818
+cur_twist x 3.85806
+des_vel 4.11463
+vel_error0.249625
+cur_twist x 3.86501
+des_vel 4.11838
+vel_error0.249901
+cur_twist x 3.86848
+des_vel 4.12213
+vel_error0.250022
+cur_twist x 3.87211
+des_vel 4.12588
+vel_error0.247768
+cur_twist x 3.87811
+des_vel 4.12963
+vel_error0.245938
+cur_twist x 3.8837
+des_vel 4.13338
+vel_error0.243789
+cur_twist x 3.88959
+des_vel 4.13713
+vel_error0.243901
+cur_twist x 3.89323
+des_vel 4.14088
+vel_error0.242323
+cur_twist x 3.89856
+des_vel 4.14463
+vel_error0.243285
+cur_twist x 3.90135
+des_vel 4.14838
+vel_error0.244254
+cur_twist x 3.90413
+des_vel 4.15214
+vel_error0.242416
+cur_twist x 3.90972
+des_vel 4.15588
+vel_error0.242857
+cur_twist x 3.91302
+des_vel 4.15963
+vel_error0.244316
+cur_twist x 3.91531
+des_vel 4.16338
+vel_error0.242421
+cur_twist x 3.92096
+des_vel 4.16713
+vel_error0.243326
+cur_twist x 3.92381
+des_vel 4.17089
+vel_error0.246486
+cur_twist x 3.9244
+des_vel 4.17463
+vel_error0.249468
+cur_twist x 3.92516
+des_vel 4.17838
+vel_error0.247195
+cur_twist x 3.93119
+des_vel 4.18213
+vel_error0.250797
+cur_twist x 3.93133
+des_vel 4.18588
+vel_error0.256104
+cur_twist x 3.92978
+des_vel 4.18963
+vel_error0.258914
+cur_twist x 3.93072
+des_vel 4.19338
+vel_error0.261083
+cur_twist x 3.9323
+des_vel 4.19713
+vel_error0.262712
+cur_twist x 3.93442
+des_vel 4.20088
+vel_error0.259179
+cur_twist x 3.9417
+des_vel 4.20463
+vel_error0.258851
+cur_twist x 3.94578
+des_vel 4.20838
+vel_error0.254847
+cur_twist x 3.95354
+des_vel 4.21213
+vel_error0.25705
+cur_twist x 3.95508
+des_vel 4.21588
+vel_error0.258639
+cur_twist x 3.95724
+des_vel 4.21963
+vel_error0.259564
+cur_twist x 3.96007
+des_vel 4.22338
+vel_error0.25349
+cur_twist x 3.96989
+des_vel 4.22713
+vel_error0.253769
+cur_twist x 3.97336
+des_vel 4.23088
+vel_error0.253975
+cur_twist x 3.9769
+des_vel 4.23463
+vel_error0.254218
+cur_twist x 3.98041
+des_vel 4.23838
+vel_error0.25115
+cur_twist x 3.98723
+des_vel 4.24213
+vel_error0.251632
+cur_twist x 3.9905
+des_vel 4.24588
+vel_error0.248733
+cur_twist x 3.99715
+des_vel 4.24963
+vel_error0.249129
+cur_twist x 4.0005
+des_vel 4.25338
+vel_error0.245755
+cur_twist x 4.00763
+des_vel 4.25713
+vel_error0.243487
+cur_twist x 4.01364
+des_vel 4.26088
+vel_error0.240832
+cur_twist x 4.02005
+des_vel 4.26463
+vel_error0.241404
+cur_twist x 4.02323
+des_vel 4.26838
+vel_error0.242143
+cur_twist x 4.02624
+des_vel 4.27213
+vel_error0.242075
+cur_twist x 4.03006
+des_vel 4.27588
+vel_error0.240019
+cur_twist x 4.03586
+des_vel 4.27963
+vel_error0.240971
+cur_twist x 4.03866
+des_vel 4.28338
+vel_error0.241849
+cur_twist x 4.04154
+des_vel 4.28713
+vel_error0.238602
+cur_twist x 4.04853
+des_vel 4.29088
+vel_error0.236368
+cur_twist x 4.05451
+des_vel 4.29463
+vel_error0.234315
+cur_twist x 4.06032
+des_vel 4.29838
+vel_error0.235113
+cur_twist x 4.06327
+des_vel 4.30213
+vel_error0.233931
+cur_twist x 4.0682
+des_vel 4.30588
+vel_error0.235089
+cur_twist x 4.07079
+des_vel 4.30963
+vel_error0.236096
+cur_twist x 4.07353
+des_vel 4.31338
+vel_error0.233631
+cur_twist x 4.07975
+des_vel 4.31713
+vel_error0.229777
+cur_twist x 4.08735
+des_vel 4.32088
+vel_error0.229804
+cur_twist x 4.09108
+des_vel 4.32463
+vel_error0.228211
+cur_twist x 4.09642
+des_vel 4.32838
+vel_error0.228932
+cur_twist x 4.09945
+des_vel 4.33213
+vel_error0.229841
+cur_twist x 4.10229
+des_vel 4.33588
+vel_error0.228109
+cur_twist x 4.10777
+des_vel 4.33963
+vel_error0.226441
+cur_twist x 4.11319
+des_vel 4.34338
+vel_error0.225444
+cur_twist x 4.11794
+des_vel 4.34713
+vel_error0.226176
+cur_twist x 4.12096
+des_vel 4.35088
+vel_error0.224679
+cur_twist x 4.1262
+des_vel 4.35463
+vel_error0.225301
+cur_twist x 4.12933
+des_vel 4.35838
+vel_error0.22451
+cur_twist x 4.13387
+des_vel 4.36213
+vel_error0.225718
+cur_twist x 4.13641
+des_vel 4.36588
+vel_error0.221819
+cur_twist x 4.14406
+des_vel 4.36963
+vel_error0.222976
+cur_twist x 4.14665
+des_vel 4.37339
+vel_error0.224105
+cur_twist x 4.14928
+des_vel 4.37713
+vel_error0.22521
+cur_twist x 4.15192
+des_vel 4.38088
+vel_error0.220927
+cur_twist x 4.15996
+des_vel 4.38463
+vel_error0.221428
+cur_twist x 4.16321
+des_vel 4.38838
+vel_error0.223483
+cur_twist x 4.1649
+des_vel 4.39213
+vel_error0.221683
+cur_twist x 4.17045
+des_vel 4.39588
+vel_error0.222695
+cur_twist x 4.17318
+des_vel 4.39963
+vel_error0.22371
+cur_twist x 4.17592
+des_vel 4.40338
+vel_error0.220172
+cur_twist x 4.18321
+des_vel 4.40713
+vel_error0.221739
+cur_twist x 4.18539
+des_vel 4.41088
+vel_error0.22281
+cur_twist x 4.18807
+des_vel 4.41463
+vel_error0.223616
+cur_twist x 4.19101
+des_vel 4.41838
+vel_error0.219654
+cur_twist x 4.19873
+des_vel 4.42213
+vel_error0.216969
+cur_twist x 4.20516
+des_vel 4.42588
+vel_error0.214987
+cur_twist x 4.21089
+des_vel 4.42963
+vel_error0.216036
+cur_twist x 4.2136
+des_vel 4.43338
+vel_error0.217156
+cur_twist x 4.21622
+des_vel 4.43713
+vel_error0.218018
+cur_twist x 4.21912
+des_vel 4.44088
+vel_error0.218842
+cur_twist x 4.22204
+des_vel 4.44463
+vel_error0.220187
+cur_twist x 4.22444
+des_vel 4.44838
+vel_error0.218362
+cur_twist x 4.23002
+des_vel 4.45213
+vel_error0.219186
+cur_twist x 4.23294
+des_vel 4.45588
+vel_error0.216901
+cur_twist x 4.23898
+des_vel 4.45963
+vel_error0.213153
+cur_twist x 4.24648
+des_vel 4.46338
+vel_error0.205639
+cur_twist x 4.25774
+des_vel 4.46713
+vel_error0.201285
+cur_twist x 4.26585
+des_vel 4.47088
+vel_error0.201087
+cur_twist x 4.26979
+des_vel 4.47463
+vel_error0.199344
+cur_twist x 4.27528
+des_vel 4.28524
+vel_error0
+cur_twist x 4.28524
+des_vel 4.28899
+vel_error-1.8175e-05
+cur_twist x 4.28901
+des_vel 4.29275
+vel_error-0.00522164
+cur_twist x 4.29797
+des_vel 4.29649
+vel_error-0.00748475
+cur_twist x 4.30398
+des_vel 4.30024
+vel_error-0.00742537
+cur_twist x 4.30767
+des_vel 4.30399
+vel_error-0.00756008
+cur_twist x 4.31155
+des_vel 4.30774
+vel_error-0.00744319
+cur_twist x 4.31518
+des_vel 4.31149
+vel_error-0.0024802
+cur_twist x 4.31397
+des_vel 4.31524
+vel_error0.00324173
+cur_twist x 4.312
+des_vel 4.31899
+vel_error0.0107106
+cur_twist x 4.30828
+des_vel 4.32274
+vel_error0.0249173
+cur_twist x 4.29782
+des_vel 4.32649
+vel_error0.0421851
+cur_twist x 4.28431
+des_vel 4.33024
+vel_error0.0529998
+cur_twist x 4.27724
+des_vel 4.33399
+vel_error0.0724249
+cur_twist x 4.26157
+des_vel 4.33774
+vel_error0.0841961
+cur_twist x 4.25354
+des_vel 4.34149
+vel_error0.0960556
+cur_twist x 4.24544
+des_vel 4.34524
+vel_error0.12499
+cur_twist x 4.22025
+des_vel 4.34899
+vel_error0.136554
+cur_twist x 4.21244
+des_vel 4.35274
+vel_error0.155624
+cur_twist x 4.19712
+des_vel 4.35649
+vel_error0.166684
+cur_twist x 4.18981
+des_vel 4.36024
+vel_error0.177485
+cur_twist x 4.18276
+des_vel 4.36399
+vel_error0.186849
+cur_twist x 4.17714
+des_vel 4.36774
+vel_error0.20445
+cur_twist x 4.16329
+des_vel 4.37149
+vel_error0.22038
+cur_twist x 4.15111
+des_vel 4.37524
+vel_error0.231259
+cur_twist x 4.14398
+des_vel 4.37899
+vel_error0.245291
+cur_twist x 4.1337
+des_vel 4.38274
+vel_error0.255398
+cur_twist x 4.12734
+des_vel 4.38649
+vel_error0.269843
+cur_twist x 4.11665
+des_vel 4.39024
+vel_error0.278162
+cur_twist x 4.11208
+des_vel 4.39399
+vel_error0.286057
+cur_twist x 4.10794
+des_vel 4.39774
+vel_error0.301357
+cur_twist x 4.09638
+des_vel 4.40149
+vel_error0.308332
+cur_twist x 4.09316
+des_vel 4.40524
+vel_error0.314577
+cur_twist x 4.09066
+des_vel 4.40899
+vel_error0.321972
+cur_twist x 4.08702
+des_vel 4.41274
+vel_error0.326982
+cur_twist x 4.08576
+des_vel 4.4165
+vel_error0.332426
+cur_twist x 4.08407
+des_vel 4.42024
+vel_error0.337021
+cur_twist x 4.08322
+des_vel 4.42399
+vel_error0.340112
+cur_twist x 4.08388
+des_vel 4.42774
+vel_error0.34407
+cur_twist x 4.08367
+des_vel 4.43149
+vel_error0.347219
+cur_twist x 4.08427
+des_vel 4.43525
+vel_error0.350711
+cur_twist x 4.08453
+des_vel 4.43899
+vel_error0.353566
+cur_twist x 4.08543
+des_vel 4.44274
+vel_error0.357363
+cur_twist x 4.08538
+des_vel 4.44649
+vel_error0.359893
+cur_twist x 4.0866
+des_vel 4.45024
+vel_error0.360737
+cur_twist x 4.08951
+des_vel 4.45399
+vel_error0.362439
+cur_twist x 4.09155
+des_vel 4.45774
+vel_error0.364451
+cur_twist x 4.09329
+des_vel 4.46149
+vel_error0.366789
+cur_twist x 4.0947
+des_vel 4.46524
+vel_error0.366163
+cur_twist x 4.09908
+des_vel 4.46899
+vel_error0.366064
+cur_twist x 4.10293
+des_vel 4.47275
+vel_error0.367452
+cur_twist x 4.10529
+des_vel 4.47649
+vel_error0.370064
+cur_twist x 4.10643
+des_vel 4.48024
+vel_error0.373755
+cur_twist x 4.10649
+des_vel 4.48399
+vel_error0.379337
+cur_twist x 4.10466
+des_vel 4.48774
+vel_error0.382184
+cur_twist x 4.10556
+des_vel 4.4915
+vel_error0.384406
+cur_twist x 4.10709
+des_vel 4.49524
+vel_error0.391654
+cur_twist x 4.10359
+des_vel 4.499
+vel_error0.395435
+cur_twist x 4.10356
+des_vel 4.50274
+vel_error0.398351
+cur_twist x 4.10439
+des_vel 4.50649
+vel_error0.400702
+cur_twist x 4.10579
+des_vel 4.51024
+vel_error0.400477
+cur_twist x 4.10976
+des_vel 4.51399
+vel_error0.401916
+cur_twist x 4.11208
+des_vel 4.51774
+vel_error0.399765
+cur_twist x 4.11798
+des_vel 4.52149
+vel_error0.398077
+cur_twist x 4.12341
+des_vel 4.52524
+vel_error0.400137
+cur_twist x 4.1251
+des_vel 4.52899
+vel_error0.398503
+cur_twist x 4.13049
+des_vel 4.53274
+vel_error0.398901
+cur_twist x 4.13384
+des_vel 4.53649
+vel_error0.399158
+cur_twist x 4.13733
+des_vel 4.54024
+vel_error0.391742
+cur_twist x 4.1485
+des_vel 4.54399
+vel_error0.39178
+cur_twist x 4.15221
+des_vel 4.54774
+vel_error0.391833
+cur_twist x 4.15591
+des_vel 4.55149
+vel_error0.391834
+cur_twist x 4.15966
+des_vel 4.55524
+vel_error0.388289
+cur_twist x 4.16695
+des_vel 4.55899
+vel_error0.389933
+cur_twist x 4.16906
+des_vel 4.56274
+vel_error0.387253
+cur_twist x 4.17549
+des_vel 4.5665
+vel_error0.382167
+cur_twist x 4.18433
+des_vel 4.57024
+vel_error0.381414
+cur_twist x 4.18883
+des_vel 4.57399
+vel_error0.381837
+cur_twist x 4.19215
+des_vel 4.57774
+vel_error0.37886
+cur_twist x 4.19888
+des_vel 4.5815
+vel_error0.376295
+cur_twist x 4.2052
+des_vel 4.58524
+vel_error0.377038
+cur_twist x 4.2082
+des_vel 4.589
+vel_error0.374433
+cur_twist x 4.21456
+des_vel 4.59274
+vel_error0.375069
+cur_twist x 4.21767
+des_vel 4.59649
+vel_error0.375917
+cur_twist x 4.22057
+des_vel 4.60024
+vel_error0.761341
+cur_twist x 3.8389
+des_vel 4.60399
+vel_error0.88719
+cur_twist x 3.7168
+des_vel 4.60774
+vel_error0.932887
+cur_twist x 3.67485
+des_vel 4.61149
+vel_error0.974557
+cur_twist x 3.63693
+des_vel 4.61524
+vel_error1.0585
+cur_twist x 3.55674
+des_vel 4.61899
+vel_error1.09695
+cur_twist x 3.52205
+des_vel 4.62274
+vel_error1.14747
+cur_twist x 3.47527
+des_vel 4.62649
+vel_error1.17642
+cur_twist x 3.45007
+des_vel 4.63024
+vel_error1.18222
+cur_twist x 3.44802
+des_vel 4.634
+vel_error1.17732
+cur_twist x 3.45668
+des_vel 4.63774
+vel_error1.16638
+cur_twist x 3.47136
+des_vel 4.64149
+vel_error1.15258
+cur_twist x 3.48892
+des_vel 4.64525
+vel_error1.08002
+cur_twist x 3.56522
+des_vel 4.64899
+vel_error1.04505
+cur_twist x 3.60394
+des_vel 4.65274
+vel_error1.023
+cur_twist x 3.62974
+des_vel 4.65649
+vel_error0.962026
+cur_twist x 3.69447
+des_vel 4.66024
+vel_error0.934644
+cur_twist x 3.7256
+des_vel 4.66399
+vel_error0.878141
+cur_twist x 3.78585
+des_vel 4.66775
+vel_error0.843617
+cur_twist x 3.82413
+des_vel 4.67149
+vel_error0.800657
+cur_twist x 3.87083
+des_vel 4.67525
+vel_error0.777104
+cur_twist x 3.89814
+des_vel 4.679
+vel_error0.754247
+cur_twist x 3.92475
+des_vel 4.68274
+vel_error0.707383
+cur_twist x 3.97536
+des_vel 4.68649
+vel_error0.663505
+cur_twist x 4.02299
+des_vel 4.69024
+vel_error0.644245
+cur_twist x 4.046
+des_vel 4.694
+vel_error0.604186
+cur_twist x 4.08981
+des_vel 4.69774
+vel_error0.561962
+cur_twist x 4.13578
+des_vel 4.70149
+vel_error0.553642
+cur_twist x 4.14785
+des_vel 4.70524
+vel_error0.522002
+cur_twist x 4.18324
+des_vel 4.70899
+vel_error0.509551
+cur_twist x 4.19944
+des_vel 4.71274
+vel_error0.497851
+cur_twist x 4.21489
+des_vel 4.71649
+vel_error0.467177
+cur_twist x 4.24931
+des_vel 4.72024
+vel_error0.46373
+cur_twist x 4.25651
+des_vel 4.72399
+vel_error0.455028
+cur_twist x 4.26896
+des_vel 4.72775
+vel_error0.434856
+cur_twist x 4.29289
+des_vel 4.7315
+vel_error0.416684
+cur_twist x 4.31481
+des_vel 4.73524
+vel_error0.409059
+cur_twist x 4.32619
+des_vel 4.73899
+vel_error0.393431
+cur_twist x 4.34556
+des_vel 4.74274
+vel_error0.387847
+cur_twist x 4.35489
+des_vel 4.74649
+vel_error0.374118
+cur_twist x 4.37237
+des_vel 4.75024
+vel_error0.369429
+cur_twist x 4.38081
+des_vel 4.754
+vel_error0.352943
+cur_twist x 4.40105
+des_vel 4.75774
+vel_error0.345817
+cur_twist x 4.41192
+des_vel 4.76149
+vel_error0.340126
+cur_twist x 4.42137
+des_vel 4.76524
+vel_error0.320637
+cur_twist x 4.4446
+des_vel 4.76899
+vel_error0.314666
+cur_twist x 4.45432
+des_vel 4.77274
+vel_error0.309795
+cur_twist x 4.46295
+des_vel 4.77649
+vel_error0.305974
+cur_twist x 4.47052
+des_vel 4.78025
+vel_error0.294731
+cur_twist x 4.48551
+des_vel 4.78399
+vel_error0.291663
+cur_twist x 4.49233
+des_vel 4.78778
+vel_error0.279707
+cur_twist x 4.50808
+des_vel 4.7915
+vel_error0.278572
+cur_twist x 4.51292
+des_vel 4.79524
+vel_error0.277824
+cur_twist x 4.51742
+des_vel 4.79899
+vel_error0.277212
+cur_twist x 4.52178
+des_vel 4.80274
+vel_error0.270703
+cur_twist x 4.53204
+des_vel 4.8065
+vel_error0.272162
+cur_twist x 4.53433
+des_vel 4.81024
+vel_error0.273184
+cur_twist x 4.53706
+des_vel 4.81399
+vel_error0.273875
+cur_twist x 4.54012
+des_vel 4.81775
+vel_error0.269831
+cur_twist x 4.54791
+des_vel 4.82149
+vel_error0.272829
+cur_twist x 4.54866
+des_vel 4.82524
+vel_error0.275623
+cur_twist x 4.54962
+des_vel 4.82899
+vel_error0.275328
+cur_twist x 4.55366
+des_vel 4.83274
+vel_error0.277039
+cur_twist x 4.5557
+des_vel 4.83649
+vel_error0.278326
+cur_twist x 4.55817
+des_vel 4.84024
+vel_error0.276643
+cur_twist x 4.5636
+des_vel 4.84399
+vel_error0.274607
+cur_twist x 4.56938
+des_vel 4.84774
+vel_error0.274791
+cur_twist x 4.57295
+des_vel 4.85149
+vel_error0.273052
+cur_twist x 4.57844
+des_vel 4.85524
+vel_error0.273748
+cur_twist x 4.58149
+des_vel 4.85899
+vel_error0.274462
+cur_twist x 4.58453
+des_vel 4.86274
+vel_error0.269042
+cur_twist x 4.5937
+des_vel 4.86649
+vel_error0.26973
+cur_twist x 4.59676
+des_vel 4.87024
+vel_error0.270378
+cur_twist x 4.59986
+des_vel 4.87399
+vel_error0.271021
+cur_twist x 4.60297
+des_vel 4.87774
+vel_error0.261565
+cur_twist x 4.61618
+des_vel 4.88149
+vel_error0.261696
+cur_twist x 4.6198
+des_vel 4.88524
+vel_error0.26196
+cur_twist x 4.62328
+des_vel 4.889
+vel_error0.262344
+cur_twist x 4.62665
+des_vel 4.89274
+vel_error0.259519
+cur_twist x 4.63322
+des_vel 4.89649
+vel_error0.259498
+cur_twist x 4.63699
+des_vel 4.90024
+vel_error0.257644
+cur_twist x 4.6426
+des_vel 4.90399
+vel_error0.25828
+cur_twist x 4.64571
+des_vel 4.90774
+vel_error0.252883
+cur_twist x 4.65486
+des_vel 4.91149
+vel_error0.253298
+cur_twist x 4.65819
+des_vel 4.91524
+vel_error0.254458
+cur_twist x 4.66079
+des_vel 4.91899
+vel_error0.255282
+cur_twist x 4.66371
+des_vel 4.92274
+vel_error0.253281
+cur_twist x 4.66946
+des_vel 4.92649
+vel_error0.254242
+cur_twist x 4.67225
+des_vel 4.93024
+vel_error0.255184
+cur_twist x 4.67506
+des_vel 4.93399
+vel_error0.25038
+cur_twist x 4.68361
+des_vel 4.93774
+vel_error0.249227
+cur_twist x 4.68851
+des_vel 4.94149
+vel_error0.250094
+cur_twist x 4.6914
+des_vel 4.94524
+vel_error0.251037
+cur_twist x 4.6942
+des_vel 4.94899
+vel_error0.248172
+cur_twist x 4.70082
+des_vel 4.95274
+vel_error0.249039
+cur_twist x 4.70371
+des_vel 4.95649
+vel_error0.249942
+cur_twist x 4.70655
+des_vel 4.96024
+vel_error0.247426
+cur_twist x 4.71281
+des_vel 4.96399
+vel_error0.246083
+cur_twist x 4.71791
+des_vel 4.96774
+vel_error0.246989
+cur_twist x 4.72076
+des_vel 4.97149
+vel_error0.247873
+cur_twist x 4.72362
+des_vel 4.97525
+vel_error0.24282
+cur_twist x 4.73242
+des_vel 4.97899
+vel_error0.244055
+cur_twist x 4.73494
+des_vel 4.98274
+vel_error0.242139
+cur_twist x 4.7406
+des_vel 4.9865
+vel_error0.243063
+cur_twist x 4.74343
+des_vel 4.99024
+vel_error0.24403
+cur_twist x 4.74621
+des_vel 4.99399
+vel_error0.242168
+cur_twist x 4.75182
+des_vel 4.99774
+vel_error0.24313
+cur_twist x 4.75461
+des_vel 5.00149
+vel_error0.244611
+cur_twist x 4.75688
+des_vel 5.00524
+vel_error0.245613
+cur_twist x 4.75963
+des_vel 5.00899
+vel_error0.240947
+cur_twist x 4.76804
+des_vel 5.01274
+vel_error0.241941
+cur_twist x 4.7708
+des_vel 5.01649
+vel_error0.242022
+cur_twist x 4.77447
+des_vel 5.02024
+vel_error0.242867
+cur_twist x 4.77737
+des_vel 5.024
+vel_error0.24174
+cur_twist x 4.78225
+des_vel 5.02774
+vel_error0.236735
+cur_twist x 4.79101
+des_vel 5.03149
+vel_error0.237539
+cur_twist x 4.79395
+des_vel 5.03524
+vel_error0.23833
+cur_twist x 4.79691
+des_vel 5.03899
+vel_error0.235723
+cur_twist x 4.80327
+des_vel 5.04274
+vel_error0.235132
+cur_twist x 4.80761
+des_vel 5.04649
+vel_error0.237303
+cur_twist x 4.80919
+des_vel 5.05024
+vel_error0.235418
+cur_twist x 4.81482
+des_vel 5.05399
+vel_error0.236332
+cur_twist x 4.81766
+des_vel 5.05774
+vel_error0.234019
+cur_twist x 4.82372
+des_vel 5.06149
+vel_error0.232698
+cur_twist x 4.82879
+des_vel 5.06524
+vel_error0.233671
+cur_twist x 4.83157
+des_vel 5.06899
+vel_error0.234638
+cur_twist x 4.83435
+des_vel 5.07274
+vel_error0.232385
+cur_twist x 4.84036
+des_vel 5.0765
+vel_error0.23277
+cur_twist x 4.84373
+des_vel 5.08025
+vel_error0.231674
+cur_twist x 4.84857
+des_vel 5.08399
+vel_error0.232684
+cur_twist x 4.85131
+des_vel 5.08774
+vel_error0.22827
+cur_twist x 4.85947
+des_vel 5.09149
+vel_error0.228936
+cur_twist x 4.86256
+des_vel 5.09524
+vel_error0.230404
+cur_twist x 4.86484
+des_vel 5.09899
+vel_error0.228726
+cur_twist x 4.87027
+des_vel 5.10274
+vel_error0.229832
+cur_twist x 4.87291
+des_vel 5.10649
+vel_error0.230951
+cur_twist x 4.87554
+des_vel 5.11024
+vel_error0.227179
+cur_twist x 4.88306
+des_vel 5.11399
+vel_error0.228321
+cur_twist x 4.88567
+des_vel 5.11774
+vel_error0.229361
+cur_twist x 4.88838
+des_vel 5.12149
+vel_error0.225669
+cur_twist x 4.89582
+des_vel 5.12524
+vel_error0.226012
+cur_twist x 4.89923
+des_vel 5.12899
+vel_error0.226541
+cur_twist x 4.90245
+des_vel 5.13274
+vel_error0.227442
+cur_twist x 4.9053
+des_vel 5.13649
+vel_error0.228329
+cur_twist x 4.90816
+des_vel 5.13649
+vel_error0.2227
+cur_twist x 4.91379
+des_vel 5.13649
+vel_error0.217023
+cur_twist x 4.91947
+des_vel 5.13649
+vel_error0.214187
+cur_twist x 4.9223
+
+Control Your TurtleBot3!
+---------------------------
+Moving around:
+        w
+   a    s    d
+        x
+
+w/x : increase/decrease linear velocity (Burger : ~ 0.22, Waffle and Waffle Pi : ~ 0.26)
+a/d : increase/decrease angular velocity (Burger : ~ 2.84, Waffle and Waffle Pi : ~ 1.82)
+
+space key, s : force stop
+
+CTRL-C to quit
+
+currently:	linear vel 0.01	 angular vel 0.0 
+currently:	linear vel 0.02	 angular vel 0.0 
+currently:	linear vel 0.03	 angular vel 0.0 
+currently:	linear vel 0.04	 angular vel 0.0 
+currently:	linear vel 0.05	 angular vel 0.0 
+currently:	linear vel 0.06	 angular vel 0.0 
+currently:	linear vel 0.07	 angular vel 0.0 
+currently:	linear vel 0.08	 angular vel 0.0 
+currently:	linear vel 0.09	 angular vel 0.0 
+currently:	linear vel 0.1	 angular vel 0.0 
+currently:	linear vel 0.11	 angular vel 0.0 
+currently:	linear vel 0.12	 angular vel 0.0 
+currently:	linear vel 0.13	 angular vel 0.0 
+currently:	linear vel 0.14	 angular vel 0.0 
+currently:	linear vel 0.15	 angular vel 0.0 
+currently:	linear vel 0.15	 angular vel -0.1 
+currently:	linear vel 0.15	 angular vel -0.2 
+currently:	linear vel 0.15	 angular vel -0.1 
+currently:	linear vel 0.15	 angular vel 0.0 
+currently:	linear vel 0.15	 angular vel -0.1 
+
+Control Your TurtleBot3!
+---------------------------
+Moving around:
+        w
+   a    s    d
+        x
+
+w/x : increase/decrease linear velocity (Burger : ~ 0.22, Waffle and Waffle Pi : ~ 0.26)
+a/d : increase/decrease angular velocity (Burger : ~ 2.84, Waffle and Waffle Pi : ~ 1.82)
+
+space key, s : force stop
+
+CTRL-C to quit
+
+currently:	linear vel 0.15	 angular vel -0.2 
+currently:	linear vel 0.15	 angular vel -0.1 
+currently:	linear vel 0.15	 angular vel 0.0 
+currently:	linear vel 0.15	 angular vel 0.1 
+currently:	linear vel 0.15	 angular vel 0.0 
+des_vel 5.13649
+vel_error0.208466
+cur_twist x 4.92803
+des_vel 5.13649
+vel_error0.208466
+cur_twist x 4.92803
+des_vel 5.13649
+vel_error0.203022
+cur_twist x 4.93347
+des_vel 5.13649
+vel_error0.195339
+cur_twist x 4.94115
+des_vel 5.13649
+vel_error0.192924
+cur_twist x 4.94357
+des_vel 5.13649
+vel_error0.190513
+cur_twist x 4.94598
+des_vel 5.13649
+vel_error0.188166
+cur_twist x 4.94832
+des_vel 5.13649
+vel_error0.181984
+cur_twist x 4.95451
+des_vel 5.13649
+vel_error0.180094
+cur_twist x 4.9564
+des_vel 5.13649
+vel_error0.17825
+cur_twist x 4.95824
+des_vel 5.13649
+vel_error0.17825
+cur_twist x 4.95824
+des_vel 5.13649
+vel_error0.17825
+cur_twist x 4.95824
+des_vel 5.13649
+vel_error0.176481
+cur_twist x 4.96001
+des_vel 5.13649
+vel_error0.176481
+cur_twist x 4.96001
+des_vel 5.13649
+vel_error0.174662
+cur_twist x 4.96183
+des_vel 5.13649
+vel_error0.179662
+cur_twist x 4.95683
+des_vel 5.13649
+vel_error0.194674
+cur_twist x 4.94182
+[0m[ INFO] [1589704895.838572501]: Publishing latched (single publish will take longer, all topics are prepared)[0m
+[0m[ INFO] [1589704895.856542784]: starting server[0m
+[0m[ INFO] [1589704895.866619587]: rviz version 1.13.7[0m
+[0m[ INFO] [1589704895.866645333]: compiled against Qt version 5.9.5[0m
+[0m[ INFO] [1589704895.866650544]: compiled against OGRE version 1.9.0 (Ghadamon)[0m
+[0m[ INFO] [1589704895.876532828]: Forcing OpenGl version 0.[0m
+[0m[ INFO] [1589704897.378593029]: Stereo is NOT SUPPORTED[0m
+[0m[ INFO] [1589704897.378640690]: OpenGl version: 4.6 (GLSL 4.6).[0m
+... logging to /home/dabinnkim/.ros/log/37052cda-981a-11ea-a0f7-309c23eb50b3/roslaunch-dabinnkim-MS-7B23-15216.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/dabinnkim/unreal_fix/AirSim/ros/src/atypical_ros/launch/airsim_all.launch
+[1mstarted roslaunch server http://dabinnkim-MS-7B23:42587/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /airsim_car_node/is_vulkan: False
+ * /airsim_car_node/object_name: CustomizationChar...
+ * /airsim_car_node/update_airsim_control_every_n_sec: 0.001
+ * /airsim_car_node/update_lidar_every_n_sec: 0.01
+ * /octomap_talker/change_id_frame: /talker/changes
+ * /octomap_talker/filter_ground: False
+ * /octomap_talker/frame_id: map
+ * /octomap_talker/listen_changes: False
+ * /octomap_talker/min_change_pub: 0
+ * /octomap_talker/occupancy_min_z: 0.2
+ * /octomap_talker/pointcloud_min_z: 0.2
+ * /octomap_talker/resolution: 0.2
+ * /octomap_talker/save_directory: ./
+ * /octomap_talker/sensor_model/hit: 0.6
+ * /octomap_talker/sensor_model/max_range: 30.0
+ * /octomap_talker/topic_changes: /octomap_tracking...
+ * /octomap_talker/track_changes: True
+ * /pid_node/kd: 0.05
+ * /pid_node/ki: 0.08
+ * /pid_node/kp: 0.7
+ * /pid_node/steer_ratio: 5.0
+ * /pid_node/update_period: 7.5
+ * /rosdistro: melodic
+ * /rosversion: 1.14.3
+
+NODES
+  /
+    airsim_car_node (atypical_ros/atypical_airsim_car_node)
+    ned_to_enu_pub (tf/static_transform_publisher)
+    octomap_talker (octomap_server/octomap_tracking_server_node)
+    pid_node (atypical_ros/pid_node)
+    rviz (rviz/rviz)
+    turtlebot_teleop_keyboard (turtlebot3_teleop/turtlebot3_teleop_key)
+    twist2stamp (atypical_ros/twist2stamp)
+
+auto-starting new master
+[1mprocess[master]: started with pid [15226][0m
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/dabinnkim/unreal_fix/AirSim/ros/src/atypical_ros/launch/airsim_all.launch http://localhost:11311
+[1msetting /run_id to 37052cda-981a-11ea-a0f7-309c23eb50b3[0m
+[1mprocess[rosout-1]: started with pid [15238][0m
+started core service [/rosout]
+[1mprocess[airsim_car_node-2]: started with pid [15245][0m
+[1mprocess[ned_to_enu_pub-3]: started with pid [15247][0m
+[1mprocess[twist2stamp-4]: started with pid [15248][0m
+[1mprocess[rviz-5]: started with pid [15261][0m
+[1mprocess[turtlebot_teleop_keyboard-6]: started with pid [15269][0m
+[1mprocess[octomap_talker-7]: started with pid [15270][0m
+[1mprocess[pid_node-8]: started with pid [15271][0m
+[1m[turtlebot_teleop_keyboard-6] process has finished cleanly
+log file: /home/dabinnkim/.ros/log/37052cda-981a-11ea-a0f7-309c23eb50b3/turtlebot_teleop_keyboard-6*.log[0m
+[pid_node-8] killing on exit
+[octomap_talker-7] killing on exit
+[rviz-5] killing on exit
+[twist2stamp-4] killing on exit
+[ned_to_enu_pub-3] killing on exit
+[airsim_car_node-2] killing on exit
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

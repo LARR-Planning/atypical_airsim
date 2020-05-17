@@ -65,16 +65,12 @@ void Controller::control(geometry_msgs::TwistStamped twist_des, geometry_msgs::T
     // }
     // else{
         // if(abs(tmp_acceleration) > 0.0)
-        {   acceleration = tmp_acceleration;
-            steer = tmp_steer;
-        // }
-        // else{
-        //     // torque = calc_torque(-acceleration);
-        //     acceleration = 0.0;
-        //     steer = tmp_steer;
-        //     cout << "Stuck in here1" << endl;
-        }
-    // }
+
+    // if(tmp_acceleration >=0.0)
+        acceleration = tmp_acceleration;
+        steer = tmp_steer;
+
+
 }
 
 
