@@ -17,14 +17,14 @@ pid_wrapper::pid_wrapper(const ros::NodeHandle &nh, const ros::NodeHandle &nh_pr
     b1 = nh_.getParam("/pid_node/update_period", update_period);
     
 
-    sub_des_acc = nh_.subscribe("/acc_cmd_body_frame", 50, &pid_wrapper::acc_cmd_cb, this);
-    sub_odom = nh_.subscribe("/airsim_car_node/PhysXCar/odom_local_ned", 50, &pid_wrapper::odom_cb, this);
+    sub_des_acc = nh_.subscribe("/acc_cmd_body_frame", 40, &pid_wrapper::acc_cmd_cb, this);
+    sub_odom = nh_.subscribe("/airsim_car_node/PhysXCar/odom_local_ned", 40, &pid_wrapper::odom_cb, this);
     // sub_vel = nh_.subscribe("/airsim_car_node/PhysXCar/twist_local_ned", 100, &pid_wrapper::twist_cb, this);
     pid_controller.set_controller(kp, ki, kd, steer_ratio);
 
 
-    pub_acc_cmd = nh_.advertise<driving_msgs::VehicleCmd>("/airsim_car_node/PhysXCar/vehicle_cmd", 50);
-    pub_vis_path = nh_.advertise<nav_msgs::Path>("desired_path", 50);
+    pub_acc_cmd = nh_.advertise<driving_msgs::VehicleCmd>("/airsim_car_node/PhysXCar/vehicle_cmd", 40);
+    pub_vis_path = nh_.advertise<nav_msgs::Path>("desired_path", 40);
 
     last_time = ros::Time::now().toSec();
 
@@ -34,7 +34,7 @@ pid_wrapper::pid_wrapper(const ros::NodeHandle &nh, const ros::NodeHandle &nh_pr
 void pid_wrapper::loop()
 {   check_point = ros::Time::now().toSec();
 
-    ros::Rate loop_rate(50);
+    ros::Rate loop_rate(40);
     pid_controller.reset();
 
     while(ros::ok())
@@ -53,7 +53,8 @@ void pid_wrapper::loop()
         vec.vector.z = cur_twist.twist.linear.z;
 
         listener.transformVector(cur_odom.child_frame_id, vec, vec2);
-
+        //cout << cur_odom.child_frame_id << endl;
+        //cout << cur_odom.header.frame_id << endl;
         cur_twist.twist.linear.x = vec2.vector.x;
         cur_twist.twist.linear.y = vec2.vector.y;
         cur_twist.twist.linear.z = vec2.vector.z;
@@ -74,11 +75,10 @@ void pid_wrapper::loop()
             //cout << "twist_des.twist.linear.x "; cout << twist_des.twist.linear.x <<endl;
             pid_controller.control(twist_des, cur_twist, time_step);
 
-           // cout << "cur_twist x ";
+            //cout << "cur_twist x ";
             //cout << cur_twist.twist.linear.x << endl;
             //cout << "cur_twist y ";
             //cout << cur_twist.twist.linear.y << endl;
-            // cout << cur_twist.twist.linear.z << endl;
 
             double acceleration = pid_controller.get_acceleration();
             // double steer = pid_controller.get_steer();
@@ -221,13 +221,19 @@ void pid_wrapper::odom_cb(const nav_msgs::Odometry &msg)
     cur_odom.pose.pose.position.y = msg.pose.pose.position.y;
     cur_odom.pose.pose.position.z = msg.pose.pose.position.z;
 
-    cur_twist.twist = msg.twist.twist;
+    // cur_twist.twist = msg.twist.twist;
+    cur_twist.twist.angular.x = msg.twist.twist.angular.x;
+    cur_twist.twist.angular.y = msg.twist.twist.angular.y;
+    cur_twist.twist.angular.z = msg.twist.twist.angular.z;        
+
+    cur_twist.twist.linear.x = msg.twist.twist.linear.x;
+    cur_twist.twist.linear.y = msg.twist.twist.linear.y;
+    cur_twist.twist.linear.z = msg.twist.twist.linear.z;
+    
     cur_twist.header.frame_id = msg.header.frame_id;
     cur_twist.header.stamp = msg.header.stamp;
     cur_twist.header.seq = msg.header.seq;
-
-
-    
+   
 
 }
 
