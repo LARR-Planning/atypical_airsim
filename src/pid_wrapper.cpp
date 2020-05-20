@@ -51,7 +51,7 @@ void pid_wrapper::loop()
         vec.vector.x = cur_twist.twist.linear.x;
         vec.vector.y = cur_twist.twist.linear.y;
         vec.vector.z = cur_twist.twist.linear.z;
-
+        if (isCallbackReceived)
         listener.transformVector(cur_odom.child_frame_id, vec, vec2);
         //cout << cur_odom.child_frame_id << endl;
         //cout << cur_odom.header.frame_id << endl;
@@ -73,10 +73,9 @@ void pid_wrapper::loop()
             twist_des.twist.angular.z = w;
 
             //cout << "twist_des.twist.linear.x "; cout << twist_des.twist.linear.x <<endl;
-            pid_controller.control(twist_des, cur_twist, time_step);
+                pid_controller.control(twist_des, cur_twist, time_step);
 
-            //cout << "cur_twist x ";
-            //cout << cur_twist.twist.linear.x << endl;
+            ROS_INFO( "[PID loop] cur_twist [x,y]=[%f,%f]",cur_twist.twist.linear.x,cur_twist.twist.linear.y);
             //cout << "cur_twist y ";
             //cout << cur_twist.twist.linear.y << endl;
 
@@ -107,7 +106,7 @@ void pid_wrapper::loop()
             pub_acc_cmd.publish(cmd);
 
         }
-
+        isCallbackReceived = false;
         ros::spinOnce();
         loop_rate.sleep();
     }
@@ -233,8 +232,13 @@ void pid_wrapper::odom_cb(const nav_msgs::Odometry &msg)
     cur_twist.header.frame_id = msg.header.frame_id;
     cur_twist.header.stamp = msg.header.stamp;
     cur_twist.header.seq = msg.header.seq;
-   
+    
+    ROS_INFO( "[PID callback] cur_twist [x,y] = [%f,%f]",cur_twist.twist.linear.x,cur_twist.twist.linear.y);
 
+    // cout << "!!!!msg twlist ";
+    // cout << msg.twist.twist.linear.y << endl;
+    isCallbackReceived = true;
+   
 }
 
 void pid_wrapper::twist_cb(const geometry_msgs::TwistStamped &msg)
