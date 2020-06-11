@@ -3,8 +3,8 @@
 This code is modified version of [here](https://github.com/microsoft/AirSim/blob/master/docs/airsim_ros_pkgs.md) for use of ROS in autonomous vehicle research.
 
 ## Dependency
-octomap_server package  
-turtlebot3_teleop_key package
+octomap_server  
+turtlebot3_teleop_key
 
 ## Installation
 1) Install and build Unreal Engine 4.24 and AirSim. Follow instructions from AirSim documentation (https://microsoft.github.io/AirSim/build_linux/)
