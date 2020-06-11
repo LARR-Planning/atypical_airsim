@@ -5,8 +5,7 @@ This code is modified version of [here](https://github.com/microsoft/AirSim/blob
 ## Installation
 1) Install and build Unreal Engine 4.24 and AirSim. Follow instructions from AirSim documentation  (https://airsim.github.io)i
 2) catkin build 
-'''bash
+```bash
 git clone https://github.com/LARR-Planning/atypical_airsim.git
 catkin build atypical_airsim
-
-'''
+```
