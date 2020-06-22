@@ -870,7 +870,7 @@ void AirsimCar_ROSWrapper::vehicle_cmd_cb(const driving_msgs::VehicleCmd::ConstP
     // std:: cout << "yaw "; std::cout << yaw << std::endl;
     car_ros_vec_[vehicle_idx].acc_cmd.twist.angular.x = 0.0;
     car_ros_vec_[vehicle_idx].acc_cmd.twist.angular.y = 0.0;
-    car_ros_vec_[vehicle_idx].acc_cmd.twist.angular.z = msg->steer_angle_cmd;
+    car_ros_vec_[vehicle_idx].acc_cmd.twist.angular.z = msg->steer_angle_cmd*(M_PI/180); // cmd steering is radian
     
 
     // todo do actual body frame?
