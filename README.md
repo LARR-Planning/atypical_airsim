@@ -21,10 +21,16 @@ source ../devel/setup.bash
 ## Run
 1) Manual control with keyboard
 ```bash 
-roslaunch atypical_ros airsim_all
+roslaunch atypical_ros airsim_all.launch
 ```
 
 2) External planner
 ```bash 
-roslaunch atypical_ros airsim_with_planner
+roslaunch atypical_ros airsim_with_planner.launch
 ```
+Then, 
+```bash 
+roslaunch atypical_driving simulation_airsim.launch  
+```
+
+
