@@ -103,6 +103,7 @@ void pid_wrapper::loop()
             acc_publish.header.stamp = ros::Time::now();
             
             driving_msgs::VehicleCmd cmd = convert_twst_to_vehicle_cmd(acc_publish.twist);
+            cmd.steer_angle_cmd*=180/M_PI;
             pub_acc_cmd.publish(cmd);
 
         }

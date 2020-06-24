@@ -1,10 +1,43 @@
 <launch> 
 
+
+	<node name="airsim_car_node" pkg="atypical_ros" type="atypical_airsim_car_node" output="screen">
+
+		<!-- ROS timer rates. Note that timer callback will be processed at maximum possible rate, upperbounded by the following ROS params -->
+		<param name="is_vulkan" type="bool" value="false" />
+		<!-- <param name="update_airsim_img_response_every_n_sec" type="double" value="0.05" />  -->
+		<param name="update_airsim_control_every_n_sec" type="double" value="0.025" />
+		<param name="update_lidar_every_n_sec" type="double" value="0.01" />
+		<param name="object_name" type="string" value="CustomizationCharacter_2" />
+<!-- 		<remap from = "/airsim_car_node/PhysXCar/vehicle_cmd" to = "/vehicle_cmd"/> -->
+	</node>
+
+	<!-- Static transforms -->
+	<include file="$(find atypical_ros)/launch/static_transforms.launch"/>
+
+	<!--<node name="eval_pub" pkg="airsim_ros_pkgs" type="eval_pub" output="screen">
+		<remap from="/car_cmd" to="/airsim_car_node/PhysXCar/vel_cmd_body_frame"/>
+	</node> -->
+
+	<node name="twist2stamp" pkg="atypical_ros" type="twist2stamp" output="screen">
+<!--		<remap from="/acc_cmd_body_frame" to="/airsim_car_node/PhysXCar/acc_cmd_body_frame"/>-->
+	</node>
+<!-- 	<node name="rviz" pkg="rviz" type="rviz" output="screen" args = "-d $(find atypical_ros)/rviz/default.rviz"/> -->
+
+	<!-- <node pkg="turtlebot_teleop" type="turtlebot_teleop_key" name="turtlebot_teleop_keyboard" output="screen">
+		<remap from="/turtlebot_teleop_keyboard/cmd_vel" to="/acc_cmd"/>
+	</node> -->
+	<include file="$(find atypical_ros)/launch/octomap_tracking_server.launch"/>
+
+
+
+
 <!-- AirSim ROS Wrapper -->
-	<include file="$(find atypical_ros)/launch/airsim_car_node.launch"/>
 <!-- Vehicle Dynamic Constraints -->
 	<!-- <include file="$(find airsim_ros_pkgs)/launch/dynamic_constraints.launch"/> -->
 <!-- Keyboard Operation with turtlebot3_teleop -->
 	<include file="$(find atypical_ros)/launch/turtlebot.launch"/>
 
+	<include file="$(find atypical_ros)/launch/pid_node.launch">
+	</include>
 </launch>

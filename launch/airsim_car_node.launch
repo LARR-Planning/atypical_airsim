@@ -21,12 +21,11 @@
 	<node name="twist2stamp" pkg="atypical_ros" type="twist2stamp" output="screen">
 <!--		<remap from="/acc_cmd_body_frame" to="/airsim_car_node/PhysXCar/acc_cmd_body_frame"/>-->
 	</node>
-	<node name="rviz" pkg="rviz" type="rviz" output="screen" args = "-d $(find atypical_ros)/rviz/default.rviz"/>
+<!-- 	<node name="rviz" pkg="rviz" type="rviz" output="screen" args = "-d $(find atypical_ros)/rviz/default.rviz"/> -->
 
 	<!-- <node pkg="turtlebot_teleop" type="turtlebot_teleop_key" name="turtlebot_teleop_keyboard" output="screen">
 		<remap from="/turtlebot_teleop_keyboard/cmd_vel" to="/acc_cmd"/>
 	</node> -->
-<!-- 	<include file="$(find atypical_ros)/launch/pid_node.launch"/> -->
 	<include file="$(find atypical_ros)/launch/octomap_tracking_server.launch"/>
 
 </launch>

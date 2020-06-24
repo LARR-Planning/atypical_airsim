@@ -8,7 +8,7 @@
         <param name="ki" type="double" value = "0.08" />
         <param name="steer_ratio" type="double" value = "5.0" />
         <param name="update_period" type="double" value = "7.5" />
-
+<!--         <remap from = "/airsim_car_node/PhysXCar/vehicle_cmd" to ="/vehicle_cmd"/> -->
     </node>
 
 </launch>
