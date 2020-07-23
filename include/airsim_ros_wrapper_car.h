@@ -85,10 +85,12 @@ private:
     ros::NodeHandle nh_;
     ros::NodeHandle nh_private_;
 
-    string object_name; // JBS
+//    string object_name; // JBS
+    vector<string> object_name_set;
     geometry_msgs::PoseStamped object_pose_enu;
     geometry_msgs::PoseStamped ned_pose_to_enu_pose(const geometry_msgs::PoseStamped & pose_ned);
-    ros::Publisher pose_object_enu_pub;
+//    ros::Publisher pose_object_enu_pub;
+    vector<ros::Publisher> pose_object_enu_pub_set;
 
 
     //Ros Publisher

@@ -86,7 +86,18 @@ void AirsimCar_ROSWrapper::initialize_ros()
     double update_airsim_control_every_n_sec;
     nh_private_.getParam("is_vulkan", is_vulkan_);
     nh_private_.getParam("update_airsim_control_every_n_sec", update_airsim_control_every_n_sec);
-    nh_private_.getParam("object_name",object_name);
+//    nh_private_.getParam("object_name",object_name);
+
+    vector<string> object_name_set_temp;
+    nh_private_.getParam("object_name_set",object_name_set_temp);
+
+    std::cout << "objects of interest: " << std::endl ;
+    for (auto str : object_name_set_temp)
+        std::cout << str << ", ";
+    std::cout << std::endl;
+
+    object_name_set = object_name_set_temp;
+
     acc_cmd_duration_ = 0.05; // todo rosparam
     // todo enforce dynamics constraints in this node as well?
     // nh_.getParam("max_vert_vel_", max_vert_vel_);
@@ -131,9 +142,11 @@ void AirsimCar_ROSWrapper::create_ros_pubs_from_settings_json()
         set_nans_to_zeros_in_pose(*vehicle_setting);
         // auto vehicle_setting_local = vehicle_setting.get();
 
-        // JBS
-        pose_object_enu_pub = nh_private_.advertise<geometry_msgs::PoseStamped>("object_pose",10);
 
+        for (auto str: object_name_set){
+            string topic = str + "_pose";
+            pose_object_enu_pub_set.push_back(nh_private_.advertise<geometry_msgs::PoseStamped>(topic,10));
+        }
 
 
         append_static_vehicle_tf(curr_vehicle_name, *vehicle_setting);
@@ -357,29 +370,32 @@ geometry_msgs::PoseStamped AirsimCar_ROSWrapper::ned_pose_to_enu_pose(const geom
 }
 
 void AirsimCar_ROSWrapper::objects_timer_cb(const ros::TimerEvent &event) {
-try{
-   ROS_DEBUG_STREAM("In timer cb");
-   std::unique_lock<std::recursive_mutex> lck(car_control_mutex_);
+    int objectIdx = 0 ;
+    for (auto str: object_name_set)
+    try{
+        ROS_DEBUG_STREAM("In timer cb");
+       std::unique_lock<std::recursive_mutex> lck(car_control_mutex_);
 
-   auto pose_true = airsim_client_object_.simGetObjectPose(object_name); // ned
-   lck.unlock();
-   // JBS
+       auto pose_true = airsim_client_object_.simGetObjectPose(str); // ned
+       lck.unlock();
+       // JBS
 
-   ROS_DEBUG_STREAM("Object "<< object_name << " : " << pose_true.position.x() << " , " << pose_true.position.y()  << " , " << pose_true.position.z());
-   geometry_msgs::PoseStamped object_pose_ned;
-   object_pose_ned.header.frame_id = "map"; // ?
-   object_pose_ned.pose.position.x = pose_true.position.x();
-   object_pose_ned.pose.position.y = pose_true.position.y();
-   object_pose_ned.pose.position.z = pose_true.position.z();
-   object_pose_ned.pose.orientation.x = pose_true.orientation.x();
-   object_pose_ned.pose.orientation.y = pose_true.orientation.y();
-   object_pose_ned.pose.orientation.z = pose_true.orientation.z();
-   object_pose_ned.pose.orientation.w = pose_true.orientation.w();
+       ROS_DEBUG_STREAM("Object "<< str << " : " << pose_true.position.x() << " , " << pose_true.position.y()  << " , " << pose_true.position.z());
+       geometry_msgs::PoseStamped object_pose_ned;
+       object_pose_ned.header.frame_id = "map"; // ?
+       object_pose_ned.pose.position.x = pose_true.position.x();
+       object_pose_ned.pose.position.y = pose_true.position.y();
+       object_pose_ned.pose.position.z = pose_true.position.z();
+       object_pose_ned.pose.orientation.x = pose_true.orientation.x();
+       object_pose_ned.pose.orientation.y = pose_true.orientation.y();
+       object_pose_ned.pose.orientation.z = pose_true.orientation.z();
+       object_pose_ned.pose.orientation.w = pose_true.orientation.w();
 
-   if (not std::isnan(pose_true.position.x())){
-    //    pose_object_enu_pub.publish(ned_pose_to_enu_pose(object_pose_ned));
-   }
-    }
+       if (not std::isnan(pose_true.position.x())){
+           pose_object_enu_pub_set[objectIdx++].publish(ned_pose_to_enu_pose(object_pose_ned));
+        //    pose_object_enu_pub.publish(ned_pose_to_enu_pose(object_pose_ned));
+       }
+        }
         catch (rpc::rpc_error& e)
     {
         std::string msg = e.get_error().as<std::string>();
@@ -765,23 +781,27 @@ void AirsimCar_ROSWrapper::lidar_timer_cb(const ros::TimerEvent& event)
                 lidar_pub_vec_[ctr].publish(lidar_msg);
 
                 //JBS
-            
-                auto pose_true = airsim_client_object_.simGetObjectPose(object_name); // ned
-                ROS_DEBUG_STREAM("Object "<< object_name << " : " << pose_true.position.x() << " , " << pose_true.position.y()  << " , " << pose_true.position.z());
-                geometry_msgs::PoseStamped object_pose_ned;
-                object_pose_ned.header.frame_id = "map"; // ?
-                object_pose_ned.pose.position.x = pose_true.position.x();
-                object_pose_ned.pose.position.y = pose_true.position.y();
-                object_pose_ned.pose.position.z = pose_true.position.z();
-                object_pose_ned.pose.orientation.x = pose_true.orientation.x();
-                object_pose_ned.pose.orientation.y = pose_true.orientation.y();
-                object_pose_ned.pose.orientation.z = pose_true.orientation.z();
-                object_pose_ned.pose.orientation.w = pose_true.orientation.w();
+                int objectIdx = 0;
+                for (auto str : object_name_set) {
+                    auto pose_true = airsim_client_object_.simGetObjectPose(str); // ned
+                    ROS_DEBUG_STREAM("Object " << str << " : " << pose_true.position.x() << " , "
+                                               << pose_true.position.y() << " , " << pose_true.position.z());
+                    geometry_msgs::PoseStamped object_pose_ned;
+                    object_pose_ned.header.frame_id = "map"; // ?
+                    object_pose_ned.pose.position.x = pose_true.position.x();
+                    object_pose_ned.pose.position.y = pose_true.position.y();
+                    object_pose_ned.pose.position.z = pose_true.position.z();
+                    object_pose_ned.pose.orientation.x = pose_true.orientation.x();
+                    object_pose_ned.pose.orientation.y = pose_true.orientation.y();
+                    object_pose_ned.pose.orientation.z = pose_true.orientation.z();
+                    object_pose_ned.pose.orientation.w = pose_true.orientation.w();
 
-                if (not std::isnan(pose_true.position.x())){
-                    pose_object_enu_pub.publish(ned_pose_to_enu_pose(object_pose_ned));
+                    if (not std::isnan(pose_true.position.x())) {
+
+                        pose_object_enu_pub_set[objectIdx++].publish(ned_pose_to_enu_pose(object_pose_ned));
+//                        pose_object_enu_pub.publish(ned_pose_to_enu_pose(object_pose_ned));
+                    }
                 }
-                
                 ctr++;
             } 
         }
