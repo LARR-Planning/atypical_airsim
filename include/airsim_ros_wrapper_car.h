@@ -24,6 +24,7 @@
 #include <sensor_msgs/Imu.h>
 #include <atypical_ros/GPSYaw.h>
 #include <driving_msgs/VehicleCmd.h>
+#include <driving_msgs/DetectedObjectArray.h> // JBS
 
 #include <tf2/LinearMath/Matrix3x3.h>
 #include <tf2/LinearMath/Quaternion.h>
@@ -87,11 +88,14 @@ private:
 
 //    string object_name; // JBS
     vector<string> object_name_set;
+    vector<double> object_rad_set;
     geometry_msgs::PoseStamped object_pose_enu;
     geometry_msgs::PoseStamped ned_pose_to_enu_pose(const geometry_msgs::PoseStamped & pose_ned);
 //    ros::Publisher pose_object_enu_pub;
     vector<ros::Publisher> pose_object_enu_pub_set;
 
+    ros::Publisher pubDetectedObjects; // JBS
+    driving_msgs::DetectedObjectArray objectsArray; // object should be emitted based on object_pose
 
     //Ros Publisher
     ros::Publisher pub_tf_odom;
@@ -138,7 +142,7 @@ private:
         ros::Publisher pub_odom_local_ned;
         ros::Publisher pub_global_gps;
         ros::Publisher pub_twist_local_ned;
-        
+
         ros::Subscriber sub_acc_cmd_body_frame;
         ros::Subscriber sub_acc_cmd_world_frame;
         ros::Subscriber sub_vehicle_cmd;

@@ -91,6 +91,11 @@ void AirsimCar_ROSWrapper::initialize_ros()
     vector<string> object_name_set_temp;
     nh_private_.getParam("object_name_set",object_name_set_temp);
 
+    vector<double> object_rad_set_temp;
+    nh_private_.getParam("object_radius_set",object_rad_set_temp);
+    object_rad_set = object_rad_set_temp;
+
+
     std::cout << "objects of interest: " << std::endl ;
     for (auto str : object_name_set_temp)
         std::cout << str << ", ";
@@ -115,8 +120,9 @@ void AirsimCar_ROSWrapper::create_ros_pubs_from_settings_json()
     // subscribe to control commands on global nodehandle
     // gimbal_angle_quat_cmd_sub_ = nh_private_.subscribe("gimbal_angle_quat_cmd", 50, &AirsimCar_ROSWrapper::gimbal_angle_quat_cmd_cb, this);
     // gimbal_angle_euler_cmd_sub_ = nh_private_.subscribe("gimbal_angle_euler_cmd", 50, &AirsimCar_ROSWrapper::gimbal_angle_euler_cmd_cb, this);
-    origin_geo_point_pub_ = nh_private_.advertise<atypical_ros::GPSYaw>("origin_geo_point", 10);       
+    origin_geo_point_pub_ = nh_private_.advertise<atypical_ros::GPSYaw>("origin_geo_point", 10);
 
+    pubDetectedObjects =  nh_private_.advertise<driving_msgs::DetectedObjectArray>("/detected_objects",1);
     // airsim_img_request_vehicle_name_pair_vec_.clear();
     // image_pub_vec_.clear();
     // cam_info_pub_vec_.clear();s
@@ -147,6 +153,8 @@ void AirsimCar_ROSWrapper::create_ros_pubs_from_settings_json()
             string topic = str + "_pose";
             pose_object_enu_pub_set.push_back(nh_private_.advertise<geometry_msgs::PoseStamped>(topic,10));
         }
+
+
 
 
         append_static_vehicle_tf(curr_vehicle_name, *vehicle_setting);
@@ -780,8 +788,11 @@ void AirsimCar_ROSWrapper::lidar_timer_cb(const ros::TimerEvent& event)
                 lidar_msg.header.stamp = ros::Time::now();
                 lidar_pub_vec_[ctr].publish(lidar_msg);
 
-                //JBS
+                //JBS object retrieve
                 int objectIdx = 0;
+                objectsArray.objects.clear();
+                static driving_msgs::DetectedObject object;
+
                 for (auto str : object_name_set) {
                     auto pose_true = airsim_client_object_.simGetObjectPose(str); // ned
                     ROS_DEBUG_STREAM("Object " << str << " : " << pose_true.position.x() << " , "
@@ -796,12 +807,19 @@ void AirsimCar_ROSWrapper::lidar_timer_cb(const ros::TimerEvent& event)
                     object_pose_ned.pose.orientation.z = pose_true.orientation.z();
                     object_pose_ned.pose.orientation.w = pose_true.orientation.w();
 
-                    if (not std::isnan(pose_true.position.x())) {
+                    object.id = objectIdx;
+                    object.dimensions.x = 2*object_rad_set[objectIdx];
+                    object.dimensions.y = 2*object_rad_set[objectIdx]; // play with this! JBS
 
+                    if (not std::isnan(pose_true.position.x())) {
                         pose_object_enu_pub_set[objectIdx++].publish(ned_pose_to_enu_pose(object_pose_ned));
 //                        pose_object_enu_pub.publish(ned_pose_to_enu_pose(object_pose_ned));
+                        object.odom.pose.pose = ned_pose_to_enu_pose(object_pose_ned).pose;
+                        objectsArray.objects.push_back(object);
                     }
                 }
+
+                pubDetectedObjects.publish(objectsArray);
                 ctr++;
             } 
         }
