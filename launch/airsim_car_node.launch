@@ -10,8 +10,8 @@
 		<param name="object_name" type="string" value="CustomizationCharacter_2" />
 
 		<!--multiple objects available -->
-        <rosparam param="object_name_set">[CustomizationCharacter_2, SplineCarJBS_2 ]</rosparam>
-        <rosparam param="object_radius_set">[0.8, 1.4]</rosparam>
+        <rosparam param="object_name_set">[CustomizationCharacter_2, SplineCarJBS_2, CustomizationCharacter2 ]</rosparam>
+        <rosparam param="object_radius_set">[0.8, 1.4,0.8]</rosparam>
 
 
 		<remap from = "/airsim_car_node/PhysXCar/vehicle_cmd" to = "/vehicle_cmd"/>
